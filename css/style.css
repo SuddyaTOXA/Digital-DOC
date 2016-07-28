@@ -83,8 +83,8 @@ img {
     -khtml-user-select: none;
     user-select: none;
 }
-.content-box {
-    max-width: 1240px;
+.container {
+    max-width: 1220px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
