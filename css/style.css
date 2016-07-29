@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:14px "Open Sans", Arial, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:18px "Open Sans"; background:#fff; color:#415365; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -15,8 +15,8 @@ textarea                       { vertical-align:top; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { color:#000; text-decoration:underline; }
-a:hover                        { text-decoration:none; }
+a:link, a:visited              { color:#000; text-decoration:none; }
+a:hover                        { text-decoration:underline; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -59,18 +59,23 @@ button:hover {
 .btn, a.btn {
     display: inline-block;
     margin: 0;
-    padding: 12px 24px 10px;
+    padding: 14px 35px 13px;
     border: 3px solid #000000;
     -webkit-border-radius: 2em;
     -moz-border-radius: 2em;
     border-radius: 2em;
     text-transform: capitalize;
-    font: 700 20px/1 'Open Sans';
+    font-size: 20px;
+    font-weight: 700;
     color: #000000;
     text-align: center;
     cursor: pointer;
 }
-
+.btn:hover { text-decoration: none; }
+.btn.yellow { color: #ffcc00; border-color: #ffcc00; }
+.btn.yellow:hover { color: #ffffff; border-color: #ffcc00; background-color: #ffcc00; }
+.btn.blue { color: #17f0d4; border-color: #17f0d4; }
+.btn.blue:hover { color: #ffffff; border-color: #17f0d4; background-color: #17f0d4; }
 
 input::-webkit-input-placeholder {
     -webkit-transition: 0.25s;
@@ -119,6 +124,9 @@ img {
     padding: 0 20px;
 }
 
+.yellow-text {
+    color: #ffcc00;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -129,15 +137,91 @@ img {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.header {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+    .header-top-box {
+        overflow: hidden;
+        padding-top: 55px;
+        margin-bottom: 33px;
+    }
+        .header-top-box .logo {
+            float: left;
+            margin-top: 5px;
+        }
+        .header-top-box .header-top-btn-box {
+            float: right;
+        }
 
-/*----------------------------------------------------------------------------------*/
 /*--------------------------------------NAV-----------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
+.main-nav {
+    margin-bottom: 33px;
+}
+    .main-nav > ul {
+        display: table;
+        width: 100%;
+    }
+        .main-nav  ul > li {
+            display: table-cell;
+            table-layout: fixed;
+        }
+            .main-nav > ul > li > a {
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
+/*-------------------------------------HOME----------------------------------------*/
+.hero-banner{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+    .banner-box {
+        position: relative;
+        display: table-cell;
+        width: 500px;
+        height: 1200px;
+        padding-top: 92px;
+        padding-bottom: 50px;
+        vertical-align: middle;
+    }
+        .banner-title {
+            margin-bottom: 34px;
+            font-weight: 800;
+            font-size: 100px;
+            text-transform: uppercase;
+            line-height: 0.9;
+            letter-spacing: -3px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .banner-box p {
+            margin-bottom: 16px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-transform: uppercase;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .banner-box p:last-of-type {
+            margin-bottom: 41px;
+        }
+            .banner-box a {
+                margin-right: 15px;
+            }
+            .banner-box a:last-child {
+                margin-right: 0;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
