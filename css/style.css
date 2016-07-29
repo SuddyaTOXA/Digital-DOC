@@ -118,6 +118,11 @@ img {
     user-select: none;
 }
 .white { color: #ffffff;}
+.radius {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
 .container {
     max-width: 1220px;
     width: 100%;
@@ -125,7 +130,7 @@ img {
     padding: 0 20px;
 }
 .section {
-    padding: 155px 0 100px;
+    padding: 138px 0 100px;
     text-align: center;
 }
     .title {
