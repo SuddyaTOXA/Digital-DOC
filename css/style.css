@@ -9,6 +9,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 	outline:none;
 	list-style:none;
 }
+p { line-height: 1.6; }
 select, input, textarea        { vertical-align:middle; }
 textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
@@ -225,9 +226,9 @@ img {
                     line-height: 1.6;
                 }
 
-.yellow-text {
-    color: #ffcc00;
-}
+.yellow-text { color: #ffcc00; }
+.extrabold-text { font-weight: 800; }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -390,35 +391,91 @@ img {
             padding-left: 60px;
         }
 
-        .section-communicate-trough {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+.section-main-slider {
+
+}
+    .main-item-slider {
+        display: block;
+        max-width: 1680px;
+        width: 100%;
+        margin-top: 135px;
+        margin-bottom: 95px;
+        height: auto;
+    }
+        .item {
+            overflow: hidden;
         }
 
-        .section-our-plan {
-            background: -moz-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* ff3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(240,241,243,1))); /* safari4+,chrome */
-            background: -webkit-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* safari5.1+,chrome10+ */
-            background: -o-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* opera 11.10+ */
-            background: -ms-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* ie10+ */
-            background: linear-gradient(0deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* w3c */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#F0F1F3',GradientType=0 ); /* ie6-9 */
+        .item-img {
+            float: left;
+            overflow: hidden;
+            display: inline-block;
+            width: 580px;
+            height: 580px;
+            margin-right: 120px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 580px;
+            background-color: #ffffff;
         }
-            .section-our-plan .cell-list {
-                text-align: center;
-                margin-bottom: 60px;
+            .item-img img {
+                max-width: 100%;
+                max-height: 100%;
+                vertical-align: middle;
+                line-height: normal;
             }
-                .section-our-plan .cell-list > li:nth-child(even) {
-                    margin-top: 30px;
+            .item-content {
+
+            }
+                .item-content {
+                    display: table-cell;
+                    height: 580px;
+                    vertical-align: middle;
                 }
-                    .section-our-plan .cell-box {
-                        padding: 10px 50px 40px;
-                        text-align: center;
+                    .item-content .item-name {
+                        font-size: 50px;
+                        font-weight: 300;
+                        margin-bottom: 26px;
                     }
-                        .section-our-plan .description-cell {
-                            margin-bottom: 0;
-                        }
+                    .item-content .item-text {
+                        margin-bottom: 42px;
+                    }
+                    .item-content p {
+                        margin-bottom: 18px;
+                    }
+                    .item-content > :last-child {
+                        margin-bottom: 0;
+                    }
+.section-our-plan {
+    background: -moz-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(240,241,243,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#F0F1F3',GradientType=0 ); /* ie6-9 */
+}
+    .section-our-plan .cell-list {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+        .section-our-plan .cell-list > li:nth-child(even) {
+            margin-top: 30px;
+        }
+            .section-our-plan .cell-box {
+                padding: 10px 50px 40px;
+                text-align: center;
+            }
+                .section-our-plan .description-cell {
+                    margin-bottom: 0;
+                }
+.section-communicate-trough {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
