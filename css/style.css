@@ -411,6 +411,15 @@ img {
 }
     .container.hero-container {
         max-width: 1600px;
+        padding-top: 135px;
+        padding-bottom: 100px;
+        background: -moz-linear-gradient(123deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(24,38,49,1)), color-stop(50%, rgba(24,38,49,1)), color-stop(51%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(123deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(123deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(123deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* ie10+ */
+        background: linear-gradient(327deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182631', endColorstr='#ffffff',GradientType=0 ); /* ie6-9 */
     }
     .main-item-slider {
         display: block;
@@ -421,7 +430,6 @@ img {
             overflow: hidden;
             max-width: 1180px;
             margin: 0 auto;
-            padding-top: 135px;
         }
 
         .item-img {
@@ -489,7 +497,6 @@ img {
         left: 50%;
         width: 28px;
         height: 44px;
-        padding-top: 135px;
         margin-top: -24px;
         margin-left: -14px;
         background: url(../img/content/arrow_prev.png) no-repeat center transparent;
@@ -522,7 +529,6 @@ img {
         left: 50%;
         width: 28px;
         height: 44px;
-        padding-top: 135px;
         margin-top: -24px;
         margin-left: -14px;
         background: url(../img/content/arrow_next.png) no-repeat center transparent;
@@ -533,19 +539,6 @@ img {
         transition: 0.35s;
     }
 
-.slider-main-bg {
-    position: absolute;
-    top: 0;
-    width: 1275px;
-    height: 710px;
-    background-color: red;background: -moz-linear-gradient(119deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(24,38,49,1)), color-stop(50%, rgba(24,38,49,1)), color-stop(51%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(119deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(119deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(119deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* ie10+ */
-    background: linear-gradient(331deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182631', endColorstr='#ffffff',GradientType=0 ); /* ie6-9 */
-}
 .section-our-plan {
     background: -moz-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(240,241,243,1))); /* safari4+,chrome */
@@ -569,6 +562,47 @@ img {
                 .section-our-plan .description-cell {
                     margin-bottom: 0;
                 }
+
+.section-person-slider {
+    background-color: #ffffff;
+}
+
+.slider-tab-box {
+    background: #f0f1f3;
+}
+.tabs {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.tabs > li {
+    overflow: hidden;
+    display: table-cell;
+    padding: 30px 35px;
+}
+.tabs li.on { background: #f90; color: #fff; }
+
+.person-ava-box {
+    float: left;
+    overflow: hidden;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    background-color: #ffffff;
+}
+.person-ava-box img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    line-height: normal;
+}
+
 .section-communicate-trough {
     background-position: center;
     background-repeat: no-repeat;
