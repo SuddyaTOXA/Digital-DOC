@@ -538,6 +538,22 @@ img {
         -o-transition: 0.2s;
         transition: 0.35s;
     }
+    .owl-dots {
+        text-align: center;
+    }
+.owl-dot span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #ced2d7;
+}
+.owl-dot.active span {
+    background-color: #415365;
+    border-color: #415365;
+}
 
 .section-our-plan {
     background: -moz-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* ff3.6+ */
@@ -566,9 +582,56 @@ img {
 .section-person-slider {
     background-color: #ffffff;
 }
+    .section-person-slider .title {
+        margin-bottom: 65px;
+    }
+.slider-tab-content-box {
+    background-color: #f0f1f3;
+}
 
-.slider-tab-box {
-    background: #f0f1f3;
+.box-tabs-list > li.visible .box {
+    display: block;
+    -webkit-animation: scale 0.7s ease-in-out;
+    -moz-animation: scale 0.7s ease-in-out;
+    animation: scale 0.7s ease-in-out;
+}
+
+
+.box * {
+    -webkit-animation: scale 0.7s ease-in-out;
+    -moz-animation: scale 0.7s ease-in-out;
+    animation: scale 0.7s ease-in-out;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.01);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.box {
+    display: none;
+    position: relative;
+    padding: 40px 110px 115px;
+    text-align: center;
+    background-image: url(../img/content/quote.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.box p {
+    margin-bottom: 18px;
+}
+.box > :last-child {
+    margin-bottom: 0;
 }
 .tabs {
     display: table;
@@ -579,8 +642,15 @@ img {
     overflow: hidden;
     display: table-cell;
     padding: 30px 35px;
+    opacity: 0.7;
 }
-.tabs li.on { background: #f90; color: #fff; }
+.tabs li.on {
+    background: #fff;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    opacity: 1;
+}
 
 .person-ava-box {
     float: left;
@@ -599,7 +669,6 @@ img {
 .person-ava-box img {
     max-width: 100%;
     max-height: 100%;
-    vertical-align: middle;
     line-height: normal;
 }
 
