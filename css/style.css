@@ -398,7 +398,7 @@ img {
                 background-image: url(../img/content/star.png);
             }
             .hero-banner-bottom-call-box .american-a a{
-               color: #ffffff;
+                color: #ffffff;
                 text-decoration: none;
             }
         .hero-banner-bottom-came-see-box {
@@ -417,13 +417,12 @@ img {
     .container.hero-container {
         max-width: 1600px;
         padding-top: 135px;
-        background: -moz-linear-gradient(123deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* ff3.6+ */
-        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(24,38,49,1)), color-stop(50%, rgba(24,38,49,1)), color-stop(51%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
-        background: -webkit-linear-gradient(123deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* safari5.1+,chrome10+ */
-        background: -o-linear-gradient(123deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* opera 11.10+ */
-        background: -ms-linear-gradient(123deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* ie10+ */
-        background: linear-gradient(327deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(24,38,49,1) 50%, rgba(24,38,49,1) 100%); /* w3c */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182631', endColorstr='#ffffff',GradientType=0 ); /* ie6-9 */
+        background: -moz-linear-gradient(142deg, rgba(24,38,49,1) 0%, rgba(24,38,49,1) 40%, rgba(255,255,255,1) 40.1%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(142deg, rgba(24,38,49,1) 0%, rgba(24,38,49,1) 40%, rgba(255,255,255,1) 40.1%, rgba(255,255,255,1) 100%);
+        background: -o-linear-gradient(142deg, rgba(24,38,49,1) 0%, rgba(24,38,49,1) 40%, rgba(255,255,255,1) 40.1%, rgba(255,255,255,1) 100%);
+        background: -ms-linear-gradient(142deg, rgba(24,38,49,1) 0%, rgba(24,38,49,1) 40%, rgba(255,255,255,1) 40.1%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(142deg, rgba(24,38,49,1) 0%, rgba(24,38,49,1) 40%, rgba(255,255,255,1) 40.1%, rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182631', endColorstr='#ffffff',GradientType=0 );
     }
     .main-item-slider {
         display: block;
