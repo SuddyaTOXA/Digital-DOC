@@ -17,15 +17,15 @@ $(document).ready(function() {
     });
 
     //auto-rotate every 5 seconds
-    setInterval(function() {
-
-        //get currently-on tab
-        var onTab = tabs.filter('.on');
-        var onBox = tabsListBox.filter('.visible');
-        //click either next tab, if exists, else first one
-        var nextTab = onTab.index() < tabs.length-1 ? onTab.next() : tabs.first();
-        nextTab.click();
-        var nextBox = onBox.index() < tabsListBox.length-1 ? onBox.next() : tabsListBox.first();
-        nextBox.click();
-    }, 7000);
+    //setInterval(function() {
+    //
+    //    //get currently-on tab
+    //    var onTab = tabs.filter('.on');
+    //    var onBox = tabsListBox.filter('.visible');
+    //    //click either next tab, if exists, else first one
+    //    var nextTab = onTab.index() < tabs.length-1 ? onTab.next() : tabs.first();
+    //    nextTab.click();
+    //    var nextBox = onBox.index() < tabsListBox.length-1 ? onBox.next() : tabsListBox.first();
+    //    nextBox.click();
+    //}, 7000);
 });
