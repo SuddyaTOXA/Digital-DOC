@@ -28,4 +28,5 @@ $(document).ready(function() {
     //    var nextBox = onBox.index() < tabsListBox.length-1 ? onBox.next() : tabsListBox.first();
     //    nextBox.click();
     //}, 7000);
+    //
 });
