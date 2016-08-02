@@ -16,6 +16,11 @@ $(document).ready(function() {
         tabsListBox.eq(liId).addClass('visible').siblings('.visible').removeClass('visible');
     });
 
+
+    var offSetTop = $("#person-slider").offset().top,
+        elementScroll = $("#person-slider");
+
+
     //auto-rotate every 5 seconds
     //setInterval(function() {
     //
