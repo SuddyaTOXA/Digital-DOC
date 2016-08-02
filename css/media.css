@@ -19,17 +19,20 @@
 }
 
 @media all and (max-width: 1080px) {
-
+    .person-ava-box {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .person-info-box {
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 1024px) {
-
 }
 
 @media all and (max-width: 991px) {
-    .header {
-        background-color: rgba(0,0,0,0.25);
-    }
 .header-top-box {
     padding-top: 20px;
     margin-bottom: 16px;
@@ -52,12 +55,46 @@
 
 }
 
+@media all and (max-width: 900px) {
+    .section-our-plan .list-wrap-img {
+        top: -75px;
+        left: 50%;
+        margin-left: -75px;
+        width: 150px;
+        height: 150px;
+        line-height: 130px;
+    }
+    .section-our-plan .list-wrap-bg {
+        padding-top: 75px;
+    }
+    .section-our-plan .cell-box {
+        padding: 10px 25px 25px;
+    }
+
+
+    .footer-logo {
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    .footer-nav > ul {
+        float: none;
+        width: 100%;
+    }
+}
+
 @media all and (max-width: 860px) {
+    .header-top-box .header-top-btn-box {
+        display: none;
+    }
+
 
 }
 
 @media all and (max-width: 768px) {
-
+    .tabs > li {
+        padding: 30px 10px;
+    }
 }
 
 @media all and (max-width: 782px) {
@@ -65,7 +102,31 @@
 }
 
 @media all and (max-width: 767px) {
+.footer-logo {
+    padding: 15px 0 0;
+}
+    .footer-nav > ul > li {
+        display: block;
+    }
+        .footer-nav > ul > li > a {
+            padding: 18px 0 16px;
+            width: -webkit-calc(100% + 40px);
+            width: -moz-calc(100% + 40px);
+            width: calc(100% + 40px);
+            margin-left: -20px;
 
+        }
+.footer-bottom-box {
+    text-align: center;
+}
+    .footer-social {
+        float: none;
+        display: inline-block;
+    }
+    .copyright {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
 }
 
 @media all and (max-width: 680px) {
@@ -73,7 +134,15 @@
 }
 
 @media all and (max-width: 640px) {
-
+    .tabs {
+        display: none;
+    }
+    .box-tabs-list > li .tabs-mini {
+        display: block;
+    }
+    .box-tabs-list > li.visible .tabs-mini {
+        display: block;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -81,6 +150,10 @@
 }
 
 @media all and (max-width: 560px) {
+
+}
+
+@media all and (max-width: 500px) {
 
 }
 
