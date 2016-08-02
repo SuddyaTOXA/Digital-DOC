@@ -1,0 +1,105 @@
+@media all and (min-width: 1800px) {
+
+}
+
+@media all and (max-width: 1499px) {
+
+}
+
+@media all and (max-width: 1400px) {
+
+}
+
+@media all and (max-width: 1280px) {
+
+}
+
+@media all and (max-width: 1199px) {
+
+}
+
+@media all and (max-width: 1080px) {
+
+}
+
+@media all and (max-width: 1024px) {
+
+}
+
+@media all and (max-width: 991px) {
+    .header {
+        background-color: rgba(0,0,0,0.25);
+    }
+.header-top-box {
+    padding-top: 20px;
+    margin-bottom: 16px;
+}
+    .desktop {
+        display: none !important;
+    }
+
+    .mobile-menu-wrap,
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .header-top-box .header-top-btn-box {
+        margin-right: 80px;
+    }
+}
+
+@media all and (max-width: 960px) {
+
+}
+
+@media all and (max-width: 860px) {
+
+}
+
+@media all and (max-width: 768px) {
+
+}
+
+@media all and (max-width: 782px) {
+
+}
+
+@media all and (max-width: 767px) {
+
+}
+
+@media all and (max-width: 680px) {
+
+}
+
+@media all and (max-width: 640px) {
+
+}
+
+@media all and (max-width: 600px) {
+
+}
+
+@media all and (max-width: 560px) {
+
+}
+
+@media all and (max-width: 480px) {
+
+}
+
+@media all and (max-width: 420px) {
+
+}
+
+@media all and (max-width: 380px) {
+
+}
+
+@media all and (max-width: 360px) {
+
+}
+
+@media all and (max-width: 340px) {
+
+}
