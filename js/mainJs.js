@@ -31,21 +31,31 @@ $(document).ready(function() {
 
 
     $(window).on('load resize', function() {
-        var tabs = $('.tabs li'),
-            tabsListBox = $('.box-tabs-list > li'),
+        var tabsLi = $('.tabs li'),
+            tabsListBoxLi = $('.box-tabs-list > li'),
             tabsMini = $('.tabs-mini');
 
         if ($(window).width() <= '640') {
+            tabsMini.parent().removeClass('visible');
+
             tabsMini.click(function() {
-                $(this).parent().addClass('visible').siblings('.visible').removeClass('visible');
+                if ($(this).parent().hasClass('visible')){
+                    $(this).parent().removeClass('visible');
+                } else {
+                    $(this).parent().addClass('visible').siblings('.visible').removeClass('visible');
+                }
             });
 
-
         } if ($(window).width() > '640') {
-            tabs.click(function() {
+            tabsListBoxLi.removeClass('visible');
+            tabsLi.removeClass('on');
+            tabsLi.first('li').addClass('on');
+            tabsListBoxLi.first('li').addClass('visible');
+
+            tabsLi.click(function() {
                 var liId = $(this).index();
                 $(this).addClass('on').siblings('.on').removeClass('on');
-                tabsListBox.eq(liId).addClass('visible').siblings('.visible').removeClass('visible');
+                tabsListBoxLi.eq(liId).addClass('visible').siblings('.visible').removeClass('visible');
             });
 
             //setInterval(function() {
