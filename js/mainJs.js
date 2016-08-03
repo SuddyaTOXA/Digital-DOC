@@ -37,6 +37,7 @@ $(document).ready(function() {
 
         if ($(window).width() <= '640') {
             tabsMini.parent().removeClass('visible');
+            tabsLi.removeClass('on');
 
             tabsMini.click(function() {
                 if ($(this).parent().hasClass('visible')){
