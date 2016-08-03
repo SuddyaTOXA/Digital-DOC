@@ -367,10 +367,12 @@ img {
         opacity: 1;
     }
 
-        .mobile-menu-box {
+        /*.mobile-menu-box,*/
+        .mobile-menu-nav-wrap{
             width: 320px;
             max-width: 85%;
             position: absolute;
+            top: -96px;
             right: -320px;
             z-index: 2;
             -webkit-transition: top 0.35s;
@@ -387,20 +389,22 @@ img {
             box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
             padding-bottom: 120px;
         }
-        .showing .mobile-menu-box {
+        /*.showing .mobile-menu-box,*/
+        .showing .mobile-menu-nav-wrap {
             right: 0;
+            padding-top: 20px;
         }
 
-            .mobile-menu {
-
-            }
-                .mobile-menu > li > a {
+                .mobile-menu  li  a {
                     position: relative;
                     display: block;
                     padding: 15px 15px 13px;
-                    font-size: 16px;
+                    font-size: 14px;
                     color: #ffffff;
                     text-decoration: none;
+                }
+                .mobile-menu > li > a {
+                    font-size: 16px;
                 }
                 .mobile-menu li a:hover,
                 .mobile-menu .current-menu-item > a,
@@ -412,14 +416,44 @@ img {
                     color: #ffcc00;
                     text-decoration: none;
                 }
+        .mobile-menu .expanded:after {
+            content: "\f107";
+            font-family: FontAwesome;
+            font-size: 25px;
+            line-height: 1;
+            text-indent: 0;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+            right: 50px;
+            display: inline-block;
+            color: #ffffff;
+        }
+        .mobile-menu .expanded:hover:after {
+            color: #ffcc00;
+        }
+        .mobile-menu .expanded.open:after {
+            content: "\f106";
+        }
 
+        .mobile-menu .sub-menu {
+            display: none;
+        }
+        .mobile-menu .sub-menu a {
+            padding-left: 30px;
+        }
+        .mobile-menu .sub-menu .sub-menu a {
+            padding-left: 45px;
+        }
         .mobile-menu-toggle {
             position: absolute;
             right: 0;
             top: 0;
             height: 96px;
             width: 80px;
-            background-color: rgba(45,57,69,0.95);
+            background-color: rgba(45,57,69,0);
             vertical-align: middle;
             cursor: pointer;
             font-size: 26px;
@@ -458,7 +492,12 @@ img {
                 bottom: -9px;
             }
         .mobile-menu-toggle.active {
-            background-color: #374756;
+            right: 16px;
+            top: 28px;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(45,57,69,0);
+            z-index: 10000;
         }
             .mobile-menu-toggle.active span {
                 background-color: transparent;

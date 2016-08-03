@@ -13,12 +13,12 @@ $(document).ready(function() {
         $('.mobile-menu-wrap').toggleClass('showing');
         $(document.body).toggleClass('overflow');
     });
-    //$(".mobile-menu a").on('click', function(){
-    //    $(this).toggleClass('open').siblings('.sub-menu').slideToggle(350);
-    //});
-    //$(window).on('load', function(){
-    //    $(".mobile-menu a + .sub-menu").siblings('a').toggleClass('expanded').attr("href", "#");
-    //});
+    $(".mobile-menu a").on('click', function(){
+        $(this).toggleClass('open').siblings('.sub-menu').slideToggle(350);
+    });
+    $(window).on('load', function(){
+        $(".mobile-menu a + .sub-menu").siblings('a').toggleClass('expanded').attr("href", "#");
+    });
 
     // for Owl Carousel sliders
     $('.main-item-slider').owlCarousel({
