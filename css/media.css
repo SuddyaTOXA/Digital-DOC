@@ -63,15 +63,23 @@
     .desktop {
         display: none !important;
     }
-
+    .banner-box-wrap {
+        float: none;
+    }
+    .banner-box {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
     .mobile-menu-wrap,
     .mobile-menu-toggle {
         display: block;
     }
-
     .header-top-box .header-top-btn-box {
         margin-right: 80px;
     }
+
+
     .section {
         padding: 80px 0 60px;
     }
@@ -187,6 +195,10 @@
 }
 
 @media all and (max-width: 640px) {
+    .logo img {
+        height: 35px;
+    }
+
     .section-person-slider {
         padding-bottom: 40px;
     }
@@ -312,7 +324,9 @@
 }
 
 @media all and (max-width: 420px) {
-
+    .logo img {
+        height: 30px;
+    }
 }
 
 @media all and (max-width: 380px) {
@@ -335,7 +349,9 @@
 }
 
 @media all and (max-width: 360px) {
-
+    .logo img {
+        height: 25px;
+    }
 }
 
 @media all and (max-width: 340px) {

@@ -368,10 +368,10 @@ img {
             position: absolute;
             right: -320px;
             z-index: 2;
-            -webkit-transition: right 0.35s;
-            -moz-transition: right 0.35s;
-            -o-transition: right 0.35s;
-            transition: right 0.35s;
+            -webkit-transition: top 0.35s;
+            -moz-transition: top 0.35s;
+            -o-transition: top 0.35s;
+            transition: top 0.35s;
             height: 100%;
             overflow: auto;
             background-color: rgba(45,57,69,0.95);
