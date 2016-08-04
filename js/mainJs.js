@@ -40,11 +40,7 @@ $(document).ready(function() {
             tabsLi.removeClass('on');
 
             tabsMini.click(function() {
-                if ($(this).parent().hasClass('visible')){
-                    $(this).parent().removeClass('visible');
-                } else {
-                    $(this).parent().addClass('visible').siblings('.visible').removeClass('visible');
-                }
+                $(this).parent().toggleClass('visible');
             });
 
         } if ($(window).width() > '640') {
