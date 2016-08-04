@@ -70,11 +70,23 @@
         display: none !important;
     }
     .banner-box-wrap {
+        display: table;
+        text-align: center;
+        width: 100%;
         float: none;
     }
     .banner-box {
         text-align: center;
         width: 100%;
+    }
+    .hero-banner:before {
+        background: -moz-linear-gradient(0deg, rgba(0,0,0,0.35) 35%, rgba(0,0,0,0.35) 100%); /* ff3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(35%, rgba(0,0,0,0.35)), color-stop(100%, rgba(0,0,0,0.35))); /* safari4+,chrome */
+        background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.35) 35%,  rgba(0,0,0,0.35) 100%); /* safari5.1+,chrome10+ */
+        background: -o-linear-gradient(0deg, rgba(0,0,0,0.35) 35%, rgba(0,0,0,0.35) 100%); /* opera 11.10+ */
+        background: -ms-linear-gradient(0deg, rgba(0,0,0,0.35) 35%, rgba(0,0,0,0.35) 100%); /* ie10+ */
+        background: linear-gradient(90deg, rgba(0,0,0,0.35) 35%, rgba(0,0,0,0.35) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
     }
         .banner-title {
             font-size: 75px;
@@ -86,6 +98,16 @@
         .banner-box p:last-child {
             margin-bottom: 20px;
         }
+        .hero-banner-bottom-call-box {
+            width: 300px;
+        }
+        .hero-banner-bottom-call-box .american-a {
+            padding-left: 80px;
+            font-size: 18px;
+        }
+        .hero-banner-bottom-box > .container:before {
+            margin-right: -320px;
+        }
     .mobile-menu-wrap,
     .mobile-menu-toggle {
         display: block;
@@ -93,7 +115,6 @@
     .header-top-box .header-top-btn-box {
         margin-right: 80px;
     }
-
 
     .section {
         padding: 80px 0 60px;
@@ -116,9 +137,7 @@
         height: 150px;
         line-height: 130px;
     }
-    /*.section-our-plan .list-wrap-bg {*/
-        /*padding-top: 75px;*/
-    /*}*/
+
     .section-our-plan .cell-box {
         padding: 10px 25px 25px;
     }
@@ -214,6 +233,7 @@
     .section-our-plan .cell-list > li {
         margin-bottom: 120px;
     }
+
 }
 
 @media all and (max-width: 640px) {
@@ -301,7 +321,11 @@
 }
 
 @media all and (max-width: 600px) {
-
+    .owl-stage-outer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+    }
 }
 
 @media all and (max-width: 560px) {

@@ -376,8 +376,7 @@ img {
         opacity: 1;
     }
 
-        /*.mobile-menu-nav-wrap,*/
-        .mobile-menu-box {
+        .mobile-menu-nav-wrap{
             width: 320px;
             max-width: 85%;
             position: absolute;
@@ -396,13 +395,24 @@ img {
             -ms-box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
             -o-box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
             box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
-            padding-bottom: 120px;
+            padding-bottom: 40px;
         }
 
-        /*.showing .mobile-menu-nav-wrap,*/
-        .showing .mobile-menu-box {
+        .showing .mobile-menu-nav-wrap {
             right: 0;
             padding-top: 20px;
+        }
+        .mobile-menu-box {
+            margin-bottom: 20px;
+        }
+        .mobile-menu-logo-box {
+            padding: 15px 50px 5px 15px;
+        }
+            .mobile-menu-logo-box img {
+                height: 25px;
+            }
+        .mobile-menu-btn-box {
+            text-align: center;
         }
 
                 .mobile-menu  li  a {
@@ -437,7 +447,7 @@ img {
             position: absolute;
             top: 50%;
             margin-top: -12px;
-            right: 50px;
+            right: 20px;
             display: inline-block;
             color: #ffffff;
         }
@@ -507,7 +517,6 @@ img {
             height: 40px;
             width: 40px;
             background-color: rgba(45,57,69,0);
-            z-index: 10000;
         }
             .mobile-menu-toggle.active span {
                 background-color: transparent;
@@ -519,7 +528,7 @@ img {
                 -o-transform: rotate(45deg);
                 transform: rotate(45deg);
                 top: 0;
-                background: #ffcc00;
+                background: transparent;
             }
             .mobile-menu-toggle.active span:after {
                 -moz-transform: rotate(-45deg);
@@ -528,8 +537,30 @@ img {
                 -o-transform: rotate(-45deg);
                 transform: rotate(-45deg);
                 bottom: 0;
-                background: #ffcc00;
+                background: transparent;
             }
+
+    .mobile-menu-wrap .mobile-menu-toggle.active span {
+        background-color: transparent;
+    }
+    .mobile-menu-wrap .mobile-menu-toggle.active span:before {
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 0;
+        background: #ffcc00;
+    }
+    .mobile-menu-wrap .mobile-menu-toggle.active span:after {
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        bottom: 0;
+        background: #ffcc00;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -596,9 +627,11 @@ img {
                 .banner-box p span { color: #ffcc00; }
                 .banner-box a {
                     margin-right: 15px;
+                    margin-bottom: 15px;
                 }
                 .banner-box a:last-child {
                     margin-right: 0;
+                    margin-bottom: 0;
                 }
     .hero-banner-bottom-box {
         position: absolute;
@@ -662,17 +695,19 @@ img {
                 text-decoration: none;
             }
         .hero-banner-bottom-came-see-box {
+            position: relative;
             display: table-cell;
             vertical-align: middle;
             padding-left: 60px;
+            padding-right: 140px;
         }
             .hero-banner-bottom-came-see-box p span { color: #ffcc00; }
-            .hero-banner-bottom-came-see-box  a.btn {
-                float: right;
-                padding: 5px 24px 6px;
-                margin-left: 20px;
+            .came-see {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -17px !important;
             }
-
                 .hero-banner-bottom-came-see-box  a.btn i {
                     margin-left: 3px;
                 }
