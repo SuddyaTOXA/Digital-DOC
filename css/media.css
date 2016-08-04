@@ -233,7 +233,32 @@
     .section-our-plan .cell-list > li {
         margin-bottom: 120px;
     }
-
+    .hero-banner-bottom-wrap {
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+        .hero-banner-bottom-came-see-box,
+        .hero-banner-bottom-call-box {
+            display: block;
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .hero-banner-bottom-call-box {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .hero-banner-bottom-came-see-box {
+            padding-bottom: 50px;
+        }
+            .came-see {
+                right: 50%;
+                bottom: 10px;
+                margin-top: 0 !important;
+                margin-right: -62px !important;
+            }
 }
 
 @media all and (max-width: 640px) {
