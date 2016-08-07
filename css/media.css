@@ -22,7 +22,7 @@
         padding-top: 20px;
         padding-bottom: 15px;
     }
-        .main-nav ul > li {
+        .main-nav ul li a {
             padding: 15px 0 16px;
         }
     .hero-banner-bottom-wrap {
