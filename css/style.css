@@ -265,35 +265,59 @@ img {
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .header {
+    width: 100%;
+}
+
+    .header-top-box {
+        overflow: hidden;
+        padding-top: 31px;
+        padding-bottom: 30px;
+        background-color: #ffffff;
+    }
+        .header-top-box .logo {
+            float: left;
+            margin-top: 3px;
+        }
+        .header-top-box .header-top-btn-box {
+            float: right;
+        }
+    .header-menu-wrap {
+        background-color: #425365;
+    }
+
+.home-header.header {
     position: absolute;
     z-index: 10000;
     top: 0;
     left: 0;
-    width: 100%;
     background: -moz-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.4) 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.4)), color-stop(60%, rgba(0,0,0,0.25)), color-stop(100%, rgba(0,0,0,0))); /* safari4+,chrome */
     background: -webkit-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.4) 100%); /* safari5.1+,chrome10+ */
     background: -o-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.4) 100%); /* opera 11.10+ */
     background: -ms-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.4) 100%); /* ie10+ */
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.4) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* ie6-9 */}
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+}
 
-    .header-top-box {
+    .home-header .header-top-box {
         overflow: hidden;
         padding-top: 55px;
-        margin-bottom: 33px;
+        padding-bottom: 33px;
+        background-color: transparent;
     }
-        .header-top-box .logo {
+        .home-header .header-top-box .logo {
             float: left;
             margin-top: 5px;
         }
-        .header-top-box .header-top-btn-box {
+        .home-header .header-top-box .header-top-btn-box {
             float: right;
         }
-
+    .home-header .header-menu-wrap {
+        background-color: transparent;
+    }
 /*--------------------------------------NAV-----------------------------------------*/
 .main-nav {
-    margin-bottom: 33px;
+    /*margin-bottom: 33px;*/
 }
     .main-nav > ul {
         display: table;
@@ -302,7 +326,21 @@ img {
     }
         .main-nav  ul > li {
             display: table-cell;
-           text-align: center;
+            text-align: center;
+            padding: 32px 0 33px;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+        }
+        .main-nav li:hover {
+            overflow: hidden;
+            background-color: #374756;
+            cursor: pointer;
+        }
+        .home-header .main-nav li:hover {
+            background-color: transparent;
+            cursor: pointer;
         }
             .main-nav  li  a {
                 font-size: 16px;
@@ -312,6 +350,7 @@ img {
                 text-decoration: none;
             }
             .main-nav  a:hover,
+            .main-nav  li:hover a,
             .main-nav .current-menu-item > a,
             .main-nav .current_page_item > a,
             .main-nav .current-menu-parent > a,
@@ -346,6 +385,9 @@ img {
     -o-transition-delay: 0.35s;
     transition-delay: 0.35s;
 }
+
+
+/*burger-menu*/
 .home .mobile-menu-wrap {
     top: 96px;
 }
@@ -375,7 +417,6 @@ img {
     .showing .mobile-menu-overlay {
         opacity: 1;
     }
-
         .mobile-menu-nav-wrap{
             width: 320px;
             max-width: 85%;
@@ -397,7 +438,6 @@ img {
             box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
             padding-bottom: 40px;
         }
-
         .showing .mobile-menu-nav-wrap {
             right: 0;
             padding-top: 20px;
@@ -414,7 +454,6 @@ img {
         .mobile-menu-btn-box {
             text-align: center;
         }
-
                 .mobile-menu  li  a {
                     position: relative;
                     display: block;
@@ -436,27 +475,27 @@ img {
                     color: #ffcc00;
                     text-decoration: none;
                 }
-        .mobile-menu .expanded:after {
-            content: "\f107";
-            font-family: FontAwesome;
-            font-size: 25px;
-            line-height: 1;
-            text-indent: 0;
-            width: 25px;
-            height: 25px;
-            position: absolute;
-            top: 50%;
-            margin-top: -12px;
-            right: 20px;
-            display: inline-block;
-            color: #ffffff;
-        }
-        .mobile-menu .expanded:hover:after {
-            color: #ffcc00;
-        }
-        .mobile-menu .expanded.open:after {
-            content: "\f106";
-        }
+        /*.mobile-menu .expanded:after {*/
+            /*content: "\f107";*/
+            /*font-family: FontAwesome;*/
+            /*font-size: 25px;*/
+            /*line-height: 1;*/
+            /*text-indent: 0;*/
+            /*width: 25px;*/
+            /*height: 25px;*/
+            /*position: absolute;*/
+            /*top: 50%;*/
+            /*margin-top: -12px;*/
+            /*right: 20px;*/
+            /*display: inline-block;*/
+            /*color: #ffffff;*/
+        /*}*/
+        /*.mobile-menu .expanded:hover:after {*/
+            /*color: #ffcc00;*/
+        /*}*/
+        /*.mobile-menu .expanded.open:after {*/
+            /*content: "\f106";*/
+        /*}*/
 
         .mobile-menu .sub-menu {
             display: none;
@@ -635,7 +674,7 @@ img {
                 }
     .hero-banner-bottom-box {
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         right: 0;
         overflow: hidden;
@@ -1054,6 +1093,30 @@ img {
 .section-learn-more-today .cell-list {
     padding-top: 20px;
 }
+
+/*-------------------------------------ABOUT-US-------------------------------------*/
+.page-banner {
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #324046;
+}
+    .page-banner-box {
+        display: table;
+        width: 100%;
+        height: 220px;
+        padding: 24px 0;
+    }
+        .page-banner-title {
+            display: table-cell;
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            vertical-align: middle;
+            color: #ffffff;
+        }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/

@@ -13,12 +13,12 @@ $(document).ready(function() {
         $('.mobile-menu-wrap').toggleClass('showing');
         $(document.body).toggleClass('overflow');
     });
-    $(".mobile-menu a").on('click', function(){
-        $(this).toggleClass('open').siblings('.sub-menu').slideToggle(350);
-    });
-    $(window).on('load', function(){
-        $(".mobile-menu a + .sub-menu").siblings('a').toggleClass('expanded').attr("href", "#");
-    });
+    //$(".mobile-menu a").on('click', function(){
+    //    $(this).toggleClass('open').siblings('.sub-menu').slideToggle(350);
+    //});
+    //$(window).on('load', function(){
+    //    $(".mobile-menu a + .sub-menu").siblings('a').toggleClass('expanded').attr("href", "#");
+    //});
 
     // for Owl Carousel sliders
     $('.main-item-slider').owlCarousel({
@@ -55,17 +55,17 @@ $(document).ready(function() {
                 tabsListBoxLi.eq(liId).addClass('visible').siblings('.visible').removeClass('visible');
             });
 
-            //setInterval(function() {
-            //
-            //    //get currently-on tab
-            //    var onTab = tabs.filter('.on');
-            //    var onBox = tabsListBox.filter('.visible');
-            //    //click either next tab, if exists, else first one
-            //    var nextTab = onTab.index() < tabs.length-1 ? onTab.next() : tabs.first();
-            //    nextTab.click();
-            //    var nextBox = onBox.index() < tabsListBox.length-1 ? onBox.next() : tabsListBox.first();
-            //    nextBox.click();
-            //}, 7000);
+            setInterval(function() {
+
+                //get currently-on tab
+                var onTab = tabsLi.filter('.on');
+                var onBox = tabsListBoxLi.filter('.visible');
+                //click either next tab, if exists, else first one
+                var nextTab = onTab.index() < tabsLi.length-1 ? onTab.next() : tabsLi.first();
+                nextTab.click();
+                var nextBox = onBox.index() < tabsListBoxLi.length-1 ? onBox.next() : tabsListBoxLi.first();
+                nextBox.click();
+            }, 7000);
         }
     });
 
