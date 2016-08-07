@@ -745,19 +745,26 @@ img {
             position: relative;
             display: table-cell;
             vertical-align: middle;
-            padding-left: 60px;
-            padding-right: 140px;
+            padding-left: 40px;
+            padding-right: 170px;
         }
-            .hero-banner-bottom-came-see-box p span {
-                color: #ffcc00;
-                font-weight: 700;
+            .hero-banner-bottom-came-see-box p {
+                text-align: right;
+                font-size: 20px;
             }
-            .came-see {
-                position: absolute;
-                right: 0;
-                top: 50%;
-                margin-top: -17px !important;
-            }
+                .hero-banner-bottom-came-see-box p span {
+                    color: #ffcc00;
+                    font-weight: 700;
+                }
+                .hero-banner-bottom-came-see-box .came-see {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    font-weight: 600;
+                    padding: 5px 24px 7px;
+                    margin-top: -20px !important;
+                    font-size: 18px;
+                }
                 .hero-banner-bottom-came-see-box  a.btn i {
                     margin-left: 3px;
                 }
