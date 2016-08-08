@@ -71,6 +71,7 @@ a[href^="tel"] {
     color: #415365;
     text-align: center;
     cursor: pointer;
+
     text-decoration: none;
 }
 
@@ -81,7 +82,7 @@ a[href^="tel"] {
 .btn.blue:hover { color: #ffffff; background-color: #17f0d4; }
 .btn.small { font-size: 14px; border-width: 2px; padding: 4px 22px 5px; }
 .btn.middle { font-size: 14px; border-width: 2px; padding: 7px 22px 8px; }
-
+.btn.wide { min-width: 377px; padding: 14px 35px 13px; }
 input::-webkit-input-placeholder {
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
@@ -976,10 +977,6 @@ img {
                 text-align: center;
             }
 
-    .section-our-plan a.btn {
-        min-width: 377px;
-        padding: 14px 25px 13px;
-    }
 
 .section-person-slider {
     background-color: #ffffff;
