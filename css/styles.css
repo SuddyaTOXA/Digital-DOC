@@ -367,12 +367,16 @@ img {
                 color: #ffcc00;
             }
 .home-header .main-nav .sub-menu {
-    background: transparent;
+    background: rgba(45,57,69,0.7);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 .main-nav .sub-menu {
+    overflow: hidden;
     display: block;
     position: absolute;
     z-index: 10;
@@ -398,7 +402,6 @@ img {
 }
 .main-nav .sub-menu li {
     display: block;
-    /*background: #425365;*/
     min-width: 250px;
 }
 .main-nav .sub-menu > li:last-child {
@@ -428,7 +431,7 @@ img {
 .home-header .main-nav .sub-menu .current-menu-parent a,
 .home-header .main-nav .sub-menu .current-menu-ancestor a,
 .home-header .main-nav .sub-menu .current-page-ancestor a {
-    background: transparent;
+    background: rgba(45,57,69,0.8);
 }
 
 .main-nav .sub-menu .sub-menu {
