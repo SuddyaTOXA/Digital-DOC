@@ -202,6 +202,9 @@
     .owl-next:before {
         top: 250px;
     }
+    .mobile-menu-btn-box {
+        display: block;
+    }
     .header-top-box .header-top-btn-box {
         display: none;
     }
@@ -441,7 +444,10 @@
 }
 
 @media all and (max-width: 480px) {
-
+    .btn, a.btn {
+        padding: 11px 28px 12px;
+        font-size: 18px;
+    }
 
     .title {
         max-width: 100%;

@@ -59,6 +59,7 @@ a[href^="tel"] {
 
 .btn, a.btn {
     display: inline-block;
+    max-width: 100%;
     margin: 0;
     padding: 13px 35px 14px;
     border: 3px solid #415365;
@@ -494,6 +495,7 @@ img {
                 height: 25px;
             }
         .mobile-menu-btn-box {
+            display: none;
             text-align: center;
         }
                 .mobile-menu  li  a {
@@ -975,7 +977,8 @@ img {
             }
 
     .section-our-plan a.btn {
-        padding: 14px 100px 13px;
+        min-width: 377px;
+        padding: 14px 25px 13px;
     }
 
 .section-person-slider {
