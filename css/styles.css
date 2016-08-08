@@ -341,7 +341,6 @@ img {
             transition: 0.2s;
         }
         .main-nav > ul > li:hover {
-            overflow: hidden;
             background-color: #374756;
             cursor: pointer;
         }
@@ -382,9 +381,9 @@ img {
     -webkit-border-radius: 0 0 5px 5px;
     -moz-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;
-    -webkit-box-shadow: 0 1px 3px rgba(236,234,232,1);
-    -moz-box-shadow: 0 1px 3px rgba(236,234,232,1);
-    box-shadow: 0 1px 3px rgba(236,234,232,1);
+    -webkit-box-shadow: 0 2px 8px -3px rgba(255,255,255,0.25);
+    -moz-box-shadow: 0 2px 8px -3px rgba(255,255,255,0.25);
+    box-shadow: 0 2px 8px -3px rgba(255,255,255,0.25);
     transition: all .2s ease-in-out;
 }
 .main-nav > ul > li:hover .sub-menu {
@@ -416,7 +415,7 @@ img {
 .main-nav .sub-menu .current-menu-parent a,
 .main-nav .sub-menu .current-menu-ancestor a,
 .main-nav .sub-menu .current-page-ancestor a {
-    background: #182631;
+    background: #374756;
     color: #ffcc00;
 }
 
