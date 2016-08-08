@@ -394,7 +394,7 @@ img {
 .main-nav .sub-menu li {
     display: block;
     background: #425365;
-    min-width: 280px;
+    min-width: 250px;
 }
 .main-nav .sub-menu > li:last-child {
     padding-bottom: 8px;
@@ -417,6 +417,9 @@ img {
 .main-nav .sub-menu .current-page-ancestor a {
     background: #374756;
     color: #ffcc00;
+}
+.main-nav .sub-menu .sub-menu {
+    display: none;
 }
 
 .mobile-menu-wrap,
