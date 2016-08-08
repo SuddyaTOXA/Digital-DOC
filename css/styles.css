@@ -60,7 +60,7 @@ a[href^="tel"] {
 .btn, a.btn {
     display: inline-block;
     margin: 0;
-    padding: 14px 35px 13px;
+    padding: 13px 35px 14px;
     border: 3px solid #415365;
     -webkit-border-radius: 2em;
     -moz-border-radius: 2em;
@@ -74,11 +74,10 @@ a[href^="tel"] {
 }
 
 .btn.yellow { color: #ffcc00; border-color: #ffcc00; }
-.btn.yellow:hover { color: #ffffff; border-color: #ffcc00; background-color: #ffcc00; }
-.btn.yellow-invers { color: #ffffff; border-color: #ffcc00; background-color: #ffcc00;}
-.btn.yellow-invers:hover { color: #ffcc00; border-color: #ffcc00; background-color: transparent }
+.btn.yellow:hover, .btn.yellow-invers { color: #ffffff; border-color: #ffcc00; background-color: #ffcc00; }
+.btn.yellow-invers:hover { color: #ffcc00; background-color: transparent }
 .btn.blue { color: #17f0d4; border-color: #17f0d4; }
-.btn.blue:hover { color: #ffffff; border-color: #17f0d4; background-color: #17f0d4; }
+.btn.blue:hover { color: #ffffff; background-color: #17f0d4; }
 .btn.small { font-size: 14px; border-width: 2px; padding: 4px 22px 5px; }
 
 input::-webkit-input-placeholder {
@@ -829,7 +828,8 @@ img {
                         font-weight: 300;
                         margin-bottom: 26px;
                     }
-                    .item-content .item-name strong {
+                    .item-content .item-name strong,
+                    .item-content .item-name span {
                         font-weight: 800;
                     }
                     .item-content .item-text {
@@ -1150,7 +1150,7 @@ img {
         float: left;
         padding-top: 27px;
         padding-bottom: 23px;
-        margin-right: 30px;
+        margin-right: 20px;
     }
         .footer-nav  {
             overflow: hidden;
@@ -1158,6 +1158,7 @@ img {
         }
             .footer-nav  > li {
                 display: inline-table;
+                margin-left: -4px;
             }
                 .footer-nav  > li > a {
                     display: block;
