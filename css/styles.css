@@ -340,16 +340,16 @@ img {
             -o-transition: 0.2s;
             transition: 0.2s;
         }
-        .main-nav li:hover {
+        .main-nav > ul > li:hover {
             overflow: hidden;
             background-color: #374756;
             cursor: pointer;
         }
-        .home-header .main-nav li:hover {
+        .home-header .main-nav > ul > li:hover {
             background-color: transparent;
             cursor: pointer;
         }
-            .main-nav li  a {
+            .main-nav > ul > li > a {
                 display: block;
                 padding: 32px 5px 33px;
                 font-size: 16px;
@@ -367,6 +367,58 @@ img {
             .main-nav .current-page-ancestor > a {
                 color: #ffcc00;
             }
+
+.main-nav .sub-menu {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 87px;
+    left: 0;
+    min-width: 100%;
+    background: #425365;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(236,234,232,1);
+    -moz-box-shadow: 0 1px 3px rgba(236,234,232,1);
+    box-shadow: 0 1px 3px rgba(236,234,232,1);
+    transition: all .2s ease-in-out;
+}
+.main-nav > ul > li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+.main-nav .sub-menu li {
+    display: block;
+    background: #425365;
+    min-width: 280px;
+}
+.main-nav .sub-menu > li:last-child {
+    padding-bottom: 8px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+.main-nav .sub-menu a {
+    display: block;
+    padding: 13px 20px 13px 25px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+.main-nav .sub-menu a:hover,
+.main-nav .sub-menu .current-menu-item a,
+.main-nav .sub-menu .current_page_item a,
+.main-nav .sub-menu .current-menu-parent a,
+.main-nav .sub-menu .current-menu-ancestor a,
+.main-nav .sub-menu .current-page-ancestor a {
+    background: #182631;
+    color: #ffcc00;
+}
 
 .mobile-menu-wrap,
 .mobile-menu-toggle {
