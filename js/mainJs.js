@@ -31,10 +31,11 @@ $(document).ready(function() {
 
 
     $(window).on('load resize', function() {
-        var tabsLi = $('.tabs li'),
-            tabsListBoxLi = $('.box-tabs-list > li'),
+        var tabsLi = $('.tabs').children('li'),
+            tabsListBoxLi = $('.box-tabs-list').children('li'),
             tabsMini = $('.tabs-mini'),
             box = $('.box');
+
         if ($(window).width() <= '640') {
             tabsMini.parent().removeClass('visible');
             tabsLi.removeClass('on');
