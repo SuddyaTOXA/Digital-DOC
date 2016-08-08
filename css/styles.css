@@ -414,7 +414,8 @@ img {
     background: rgba(45,57,69,0.8);
 }
 
-.main-nav .sub-menu .sub-menu {
+.main-nav .sub-menu .sub-menu,
+.mobile-menu .sub-menu .sub-menu {
     display: none;
 }
 
@@ -521,7 +522,6 @@ img {
                     color: #ffcc00;
                     text-decoration: none;
                 }
-
 
         .mobile-menu .sub-menu {
             display: block;
