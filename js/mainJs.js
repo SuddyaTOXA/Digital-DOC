@@ -40,12 +40,17 @@ $(document).ready(function() {
             tabsLi.removeClass('on');
 
             tabsMini.click(function() {
-                $(this).parent().toggleClass('visible');
+                $(this).next().toggle('500');
+                $(this).parent().toggleClass('quote');
             });
 
         } if ($(window).width() > '640') {
             tabsListBoxLi.removeClass('visible');
+            tabsMini.parent().removeClass('quote');
             tabsLi.removeClass('on');
+
+            tabsMini.next().attr('style', '');
+
             tabsLi.first('li').addClass('on');
             tabsListBoxLi.first('li').addClass('visible');
 
@@ -55,17 +60,20 @@ $(document).ready(function() {
                 tabsListBoxLi.eq(liId).addClass('visible').siblings('.visible').removeClass('visible');
             });
 
-            //setInterval(function() {
-            //
-            //    //get currently-on tab
-            //    var onTab = tabsLi.filter('.on');
-            //    var onBox = tabsListBoxLi.filter('.visible');
-            //    //click either next tab, if exists, else first one
-            //    var nextTab = onTab.index() < tabsLi.length-1 ? onTab.next() : tabsLi.first();
-            //    nextTab.click();
-            //    var nextBox = onBox.index() < tabsListBoxLi.length-1 ? onBox.next() : tabsListBoxLi.first();
-            //    nextBox.click();
-            //}, 10000);
+            setInterval(function() {
+
+                //get currently-on tab
+                var onTab = tabsLi.filter('.on');
+                var onBox = tabsListBoxLi.filter('.visible');
+                //click either next tab, if exists, else first one
+                var nextTab = onTab.index() < tabsLi.length-1 ? onTab.next() : tabsLi.first();
+                nextTab.click();
+                var nextBox = onBox.index() < tabsListBoxLi.length-1 ? onBox.next() : tabsListBoxLi.first();
+                nextBox.click();
+            }, 10000);
+
+            //intervalId = setInterval("some_func()",timer);
+            //clearInterval(intervalId);//после этого слайдер ПОЛНОСТЬЮ остановится. Не забудте перезапустить.
         }
     });
 

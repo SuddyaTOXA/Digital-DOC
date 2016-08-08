@@ -1064,7 +1064,9 @@ img {
     opacity: 1;
 }
 .person-info-box {
-    padding-top: 11px;
+    display: table-cell;
+    height: 80px;
+    vertical-align: middle;
 }
     .person-ava-box {
         float: left;
