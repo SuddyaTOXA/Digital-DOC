@@ -103,7 +103,7 @@
     .banner-box {
         text-align: center;
         width: 100%;
-        padding-top: 60px;
+        padding-top: 15%;
         padding-bottom: 30px;
     }
     .hero-banner:before {
@@ -347,13 +347,17 @@
     }
     .banner-box p {
         font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .banner-box p + .btn {
+        margin-top: 10px;
     }
 
     .section-person-slider {
         padding-bottom: 40px;
     }
     .section-person-slider .title {
-        margin-bottom: 10px;
+        margin-bottom: 40px;
     }
 
     .tabs {
@@ -363,6 +367,7 @@
         padding: 25px 25px 50px;
     }
     .box-tabs-list > li {
+        overflow: hidden;
         margin-bottom: 20px;
         border: 2px solid #ffcc00;
         -webkit-border-radius: 10px;
@@ -468,6 +473,10 @@
     .item-content .item-name {
         font-size: 34px;
     }
+
+    .banner-box {
+        padding-top: 25%;
+    }
 }
 
 @media all and (max-width: 420px) {
@@ -542,5 +551,7 @@
 }
 
 @media all and (max-width: 340px) {
-
+    .mobile-menu-wrap .mobile-menu-toggle {
+        right: 10px;
+    }
 }
