@@ -134,7 +134,7 @@ img {
     padding: 0 20px;
 }
 .section {
-    padding: 138px 0 100px;
+    padding: 88px 0 100px;
     text-align: center;
 }
     .title {
@@ -146,7 +146,7 @@ img {
         .title span { color: #ffcc00; }
     .section-content {
         max-width: 980px;
-        margin:  10px auto 50px;
+        margin:  10px auto 80px;
     }
         .section-content p {
             margin-bottom: 12px;
@@ -332,7 +332,8 @@ img {
         table-layout: fixed;
         width: 100%;
     }
-        .main-nav  ul > li {
+        .main-nav > ul > li {
+            position: relative;
             display: table-cell;
             text-align: center;
             -webkit-transition: 0.2s;
@@ -349,8 +350,9 @@ img {
             background-color: transparent;
             cursor: pointer;
         }
-            .main-nav  li  a {
-                padding: 32px 0 33px;
+            .main-nav li  a {
+                display: block;
+                padding: 32px 5px 33px;
                 font-size: 16px;
                 font-weight: 400;
                 text-transform: uppercase;
@@ -358,7 +360,7 @@ img {
                 text-decoration: none;
             }
             .main-nav  a:hover,
-            .main-nav  li:hover a,
+            /*.main-nav  li:hover a,*/
             .main-nav .current-menu-item > a,
             .main-nav .current_page_item > a,
             .main-nav .current-menu-parent > a,
@@ -366,16 +368,7 @@ img {
             .main-nav .current-page-ancestor > a {
                 color: #ffcc00;
             }
-            .main-nav .sub-menu {
-                margin-top: 10px;
-            }
-            .main-nav .sub-menu li {
-                display: inline-block;
-            }
-            .main-nav .sub-menu li a{
-                display: block;
-                padding: 5px 0;
-            }
+
 .mobile-menu-wrap,
 .mobile-menu-toggle {
     display: none;
@@ -939,6 +932,7 @@ img {
 }
 
 .section-our-plan {
+    padding-top: 124px;
     background: -moz-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(240,241,243,1))); /* safari4+,chrome */
     background: -webkit-linear-gradient(90deg, rgba(240,241,243,1) 0%, rgba(255,255,255,1) 100%); /* safari5.1+,chrome10+ */
@@ -982,6 +976,7 @@ img {
 .section-person-slider {
     background-color: #ffffff;
     padding: 87px 0 0;
+    margin-bottom: 50px;
 }
     .section-person-slider .title {
         max-width: 1180px;
@@ -1102,6 +1097,7 @@ img {
     display: none;
 }
 .section-communicate-trough {
+    padding-top: 139px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1151,21 +1147,19 @@ img {
     .footer-logo {
         float: left;
         padding-top: 27px;
-        width: 25%;
+        padding-bottom: 23px;
+        margin-right: 30px;
     }
-        .footer-nav > ul {
-            float: right;
-            display: table;
-            width: 75%;
-            text-align: center;
+        .footer-nav  {
+            overflow: hidden;
+            text-align: right;
         }
-            .footer-nav > ul > li {
-                display: table-cell;
-                table-layout: fixed;
+            .footer-nav  > li {
+                display: inline-table;
             }
-                .footer-nav > ul > li > a {
+                .footer-nav  > li > a {
                     display: block;
-                    padding: 32px 0 30px;
+                    padding: 32px 15px 30px;
                     font-size: 13px;
                     text-transform: uppercase;
                     color: #ffffff;
@@ -1225,11 +1219,3 @@ img {
             .footer-social i.fa {
                 font-size: 20px;
             }
-        /*.footer-social a {*/
-             /*font-size: 14px;*/
-             /*color: #545d66;*/
-            /*text-decoration: none;*/
-         /*}*/
-            /*.footer-social i.fa-inverse {*/
-                /*color: #182631;*/
-            /*}*/

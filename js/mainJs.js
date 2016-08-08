@@ -55,17 +55,17 @@ $(document).ready(function() {
                 tabsListBoxLi.eq(liId).addClass('visible').siblings('.visible').removeClass('visible');
             });
 
-            setInterval(function() {
-
-                //get currently-on tab
-                var onTab = tabsLi.filter('.on');
-                var onBox = tabsListBoxLi.filter('.visible');
-                //click either next tab, if exists, else first one
-                var nextTab = onTab.index() < tabsLi.length-1 ? onTab.next() : tabsLi.first();
-                nextTab.click();
-                var nextBox = onBox.index() < tabsListBoxLi.length-1 ? onBox.next() : tabsListBoxLi.first();
-                nextBox.click();
-            }, 7000);
+            //setInterval(function() {
+            //
+            //    //get currently-on tab
+            //    var onTab = tabsLi.filter('.on');
+            //    var onBox = tabsListBoxLi.filter('.visible');
+            //    //click either next tab, if exists, else first one
+            //    var nextTab = onTab.index() < tabsLi.length-1 ? onTab.next() : tabsLi.first();
+            //    nextTab.click();
+            //    var nextBox = onBox.index() < tabsListBoxLi.length-1 ? onBox.next() : tabsListBoxLi.first();
+            //    nextBox.click();
+            //}, 10000);
         }
     });
 
