@@ -8,7 +8,7 @@ $(document).ready(function() {
     //}
 
     // for burger menu
-    $(".mobile-menu-toggle, .mobile-menu-overlay").on('click', function(){
+    $('.mobile-menu-toggle, .mobile-menu-overlay').on('click', function(){
         $('.mobile-menu-toggle').toggleClass('active');
         $('.mobile-menu-wrap').toggleClass('showing');
         $(document.body).toggleClass('overflow');
@@ -33,26 +33,34 @@ $(document).ready(function() {
     $(window).on('load resize', function() {
         var tabsLi = $('.tabs li'),
             tabsListBoxLi = $('.box-tabs-list > li'),
-            tabsMini = $('.tabs-mini');
-
+            tabsMini = $('.tabs-mini'),
+            box = $('.box');
         if ($(window).width() <= '640') {
             tabsMini.parent().removeClass('visible');
             tabsLi.removeClass('on');
+            $(".box").attr('style', '');
 
             tabsMini.click(function() {
                 $(this).next().toggle('500');
-                $(this).parent().toggleClass('quote');
             });
 
         } if ($(window).width() > '640') {
             tabsListBoxLi.removeClass('visible');
-            tabsMini.parent().removeClass('quote');
             tabsLi.removeClass('on');
 
             tabsMini.next().attr('style', '');
 
             tabsLi.first('li').addClass('on');
             tabsListBoxLi.first('li').addClass('visible');
+
+            var maxHeight = 0;
+                box.each(function(){
+                    if ( $(this).height() > maxHeight )
+                    {
+                        maxHeight = $(this).height();
+                    }
+                });
+            box.height(maxHeight);
 
             tabsLi.click(function() {
                 var liId = $(this).index();

@@ -181,23 +181,7 @@ img {
                     margin: 0 0 -8px;
                     float: none;
                 }
-            .list-wrap-bg {
-                /*position: relative;*/
-                /*display: block;*/
-                /*width: 100%;*/
-                /*padding-top: 95px;*/
-                /*text-align: center;*/
-                /*-webkit-border-radius: 10px 10px 0 0;*/
-                /*-moz-border-radius: 10px 10px 0 0;*/
-                /*border-radius: 10px 10px 0 0 ;*/
-                /*background: -moz-linear-gradient(270deg, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%); /!* ff3.6+ *!/*/
-                /*background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,1))); /!* safari4+,chrome *!/*/
-                /*background: -webkit-linear-gradient(270deg, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%); /!* safari5.1+,chrome10+ *!/*/
-                /*background: -o-linear-gradient(270deg, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%); /!* opera 11.10+ *!/*/
-                /*background: -ms-linear-gradient(270deg, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%); /!* ie10+ *!/*/
-                /*background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%); /!* w3c *!/*/
-                /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /!* ie6-9 *!/*/
-            }
+
                 .list-wrap-img {
                     overflow: hidden;
                     top: -95px;
@@ -1061,9 +1045,13 @@ img {
     margin-left: -64px;
     background-image: url(../img/content/quote.png);
 }
-
+.box-tabs-list > li {
+    display: table;
+    width: 100%;
+}
 .box-tabs-list > li.visible .box {
-    display: block;
+    display: table-cell;
+    vertical-align: middle;
     -webkit-animation: scale 0.7s ease-in-out;
     -moz-animation: scale 0.7s ease-in-out;
     animation: scale 0.7s ease-in-out;

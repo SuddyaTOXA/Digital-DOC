@@ -367,7 +367,7 @@
         margin-bottom: 0;
     }
 
-    .box-tabs-list > li.quote .box:before {
+    .box-tabs-list > li .box:before {
         position: absolute;
         content: '';
         width: 129px;
