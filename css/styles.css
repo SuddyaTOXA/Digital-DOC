@@ -358,7 +358,6 @@ img {
                 text-decoration: none;
             }
             .main-nav  a:hover,
-            /*.main-nav  li:hover a,*/
             .main-nav .current-menu-item > a,
             .main-nav .current_page_item > a,
             .main-nav .current-menu-parent > a,
@@ -366,15 +365,6 @@ img {
             .main-nav .current-page-ancestor > a {
                 color: #ffcc00;
             }
-.home-header .main-nav .sub-menu {
-    background: rgba(45,57,69,0.7);
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
 .main-nav .sub-menu {
     overflow: hidden;
     display: block;
@@ -387,13 +377,19 @@ img {
     opacity: 0;
     visibility: hidden;
     text-align: left;
-    -webkit-border-radius: 0 0 5px 5px;
-    -moz-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
     -webkit-box-shadow: 0 2px 8px -3px rgba(255,255,255,0.25);
     -moz-box-shadow: 0 2px 8px -3px rgba(255,255,255,0.25);
     box-shadow: 0 2px 8px -3px rgba(255,255,255,0.25);
     transition: all .2s ease-in-out;
+}
+.home-header .main-nav .sub-menu {
+    background: rgba(45,57,69,0.7);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 .main-nav > ul > li:hover .sub-menu {
     opacity: 1;
@@ -403,11 +399,6 @@ img {
 .main-nav .sub-menu li {
     display: block;
     min-width: 250px;
-}
-.main-nav .sub-menu > li:last-child {
-    -webkit-border-radius: 0 0 5px 5px;
-    -moz-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
 }
 .main-nav .sub-menu a {
     display: block;

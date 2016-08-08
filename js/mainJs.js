@@ -58,6 +58,7 @@ $(document).ready(function() {
                 var liId = $(this).index();
                 $(this).addClass('on').siblings('.on').removeClass('on');
                 tabsListBoxLi.eq(liId).addClass('visible').siblings('.visible').removeClass('visible');
+                clearInterval(interval);
             });
 
             setInterval(function() {
@@ -70,10 +71,8 @@ $(document).ready(function() {
                 nextTab.click();
                 var nextBox = onBox.index() < tabsListBoxLi.length-1 ? onBox.next() : tabsListBoxLi.first();
                 nextBox.click();
-            }, 10000);
+            }, 100000);
 
-            //intervalId = setInterval("some_func()",timer);
-            //clearInterval(intervalId);//после этого слайдер ПОЛНОСТЬЮ остановится. Не забудте перезапустить.
         }
     });
 
