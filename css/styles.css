@@ -80,6 +80,8 @@ a[href^="tel"] {
 .btn.yellow-invers:hover { color: #ffcc00; background-color: transparent }
 .btn.blue { color: #17f0d4; border-color: #17f0d4; }
 .btn.blue:hover { color: #ffffff; background-color: #17f0d4; }
+.btn.dark-blue { color: #415365; border-color: #415365; }
+.btn.dark-blue:hover { color: #ffffff; background-color: #415365; }
 .btn.wide { min-width: 377px; }
 .btn.small { font-size: 14px; border-width: 2px; padding: 4px 22px 5px; }
 .btn.middle { font-size: 14px; border-width: 2px; padding: 7px 22px 8px; }
@@ -1281,7 +1283,6 @@ img {
         text-decoration: none;
     }
     .sidebar-block {
-        padding: 2px;
         margin-bottom: 20px;
         background-color: #ffffff;
         -webkit-box-shadow: 0 0 10px -4px rgba(148, 148, 148, 0.5);
@@ -1346,6 +1347,31 @@ img {
                 .sidebar-block-content > :last-child {
                     margin-bottom: 0;
                 }
+
+        .sidebar-block .cell-box {
+            padding: 20px 20px 25px;
+            text-align: center;
+        }
+        .sidebar-block .title-cell {
+            margin-bottom: 2px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .sidebar-block a:hover .title-cell {
+            color: #ffcc00;
+        }
+        .sidebar-block .description-cell p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 2px;
+        }
+        .sidebar-block .description-cell > :last-child {
+            margin-bottom: 0;
+        }
+        .sidebar-block .cell-box a.btn {
+            margin-top: 17px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/

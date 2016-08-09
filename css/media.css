@@ -208,9 +208,18 @@
     .header-top-box .header-top-btn-box {
         display: none;
     }
-
     .box {
         padding: 75px 50px 75px;
+    }
+
+    .sidebar {
+        display: table-footer-group;
+    }
+        .sidebar-block:first-child {
+            margin-top: 40px;
+        }
+    .content-box {
+        display: table-header-group;
     }
 }
 
