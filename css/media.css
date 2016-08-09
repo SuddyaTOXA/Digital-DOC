@@ -241,6 +241,7 @@
                 width: 33.33%;
                 padding-left: 20px;
             }
+
 }
 
 @media all and (max-width: 768px) {
@@ -360,6 +361,10 @@
     }
     .sidebar-list > li {
         width: 50%;
+    }
+
+    .sidebar-list > li:nth-child(odd) {
+        clear: both;
     }
 }
 
