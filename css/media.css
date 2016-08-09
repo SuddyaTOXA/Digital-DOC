@@ -51,6 +51,9 @@
 }
 
 @media all and (max-width: 1199px) {
+    .sidebar {
+        width: 270px;
+    }
     .footer-logo {
         text-align: center;
         float: none;
@@ -211,16 +214,33 @@
     .box {
         padding: 75px 50px 75px;
     }
-
+    .container-bg.my-box-shadow {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+    }
+    .container-bg {
+        background-color: transparent;
+    }
+        .content-box {
+            display: table-header-group;
+        }
     .sidebar {
         display: table-footer-group;
     }
-        .sidebar-block:first-child {
+        .sidebar-list:first-child {
             margin-top: 40px;
         }
-    .content-box {
-        display: table-header-group;
-    }
+        .sidebar-list {
+            overflow: hidden;
+            margin-left: -20px;
+        }
+            .sidebar-list > li{
+                float: left;
+                width: 33.33%;
+                padding-left: 20px;
+            }
 }
 
 @media all and (max-width: 768px) {
@@ -338,6 +358,9 @@
     .section-our-plan .cell-list > li {
         margin-bottom: 100px;
     }
+    .sidebar-list > li {
+        width: 50%;
+    }
 }
 
 @media all and (max-width: 680px) {
@@ -431,7 +454,13 @@
 }
 
 @media all and (max-width: 560px) {
-
+    .content img.alignleft,
+    .content img.alignright {
+        display: block;
+        float: none;
+        margin: 0 auto 40px;
+        clear: both;
+    }
 }
 
 @media all and (max-width: 520px) {
@@ -455,6 +484,15 @@
         width: 100%;
         margin-bottom: 20px;
     }
+    .sidebar-list {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+        .sidebar-list > li {
+            width: 100%;
+            padding-left: 0;
+        }
+
 }
 
 @media all and (max-width: 480px) {
