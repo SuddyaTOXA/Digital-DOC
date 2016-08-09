@@ -524,6 +524,9 @@
     .banner-box {
         padding-top: 25%;
     }
+    .content {
+        padding: 20px 20px 40px;
+    }
 }
 
 @media all and (max-width: 420px) {
