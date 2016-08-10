@@ -1323,18 +1323,12 @@ img {
             border-left: none;
             padding-left: 0;
         }
-        .contact-box-list > li:last-child {
-            padding-right: 0;
-        }
-        .contact-box-list-phone > li span {
+        .list-phone-box span {
             color: #7F99B4;
         }
-        .contact-box-list-phone > li a {
+        .list-phone-box a {
             font-weight: 600;
             text-decoration: none;
-        }
-        .contact-box-list-adress {
-
         }
             .contact-box-list-work strong {
                 font-size: 16px;
