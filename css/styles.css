@@ -1328,11 +1328,13 @@ img {
                 font-weight: 700;
             }
             .contact-box-list-work span {
+                padding-right: 14px;
                 font-weight: 700;
                 color: #ffcc00;
             }
     .map-wrapper {
         position: relative;
+        min-height: 300px;
         padding-top: 51.3%;
         z-index: 5;
         overflow: hidden;
@@ -1362,14 +1364,15 @@ img {
         .contact-info-box > :last-child { margin-bottom: 0; }
     .contact-btn-box { margin-top: 14px; text-align: center; }
 
-.contact-us .content {
+    .content .other-page-title { font-size: 20px; }
+.page-template-page-contact-us .content {
     padding-top: 43px;
     font-size: 14px;
 }
-    .contact-us .content > * {
+    .page-template-page-contact-us .content > * {
         margin-bottom: 20px;
     }
-    .contact-us .content > :last-child {
+    .page-template-page-contact-us .content > :last-child {
         margin-bottom: 0;
     }
 /*----------------------------------------------------------------------------------*/
