@@ -764,26 +764,32 @@ img {
             display: table-cell;
             vertical-align: middle;
             padding-left: 40px;
-            padding-right: 170px;
         }
-            .hero-banner-bottom-came-see-box p {
+        .hero-banner-bottom-came-see-wrap {display: table; width: 100%;}
+        .hero-banner-bottom-came-see-box-text {
+            display: table-cell;
+            padding-right: 20px;
+        }
+        .hero-banner-bottom-came-see-box-btn {
+            width: 150px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+        }
+            .hero-banner-bottom-came-see-box-text p {
                 text-align: right;
                 font-size: 20px;
             }
-                .hero-banner-bottom-came-see-box p span {
+                .hero-banner-bottom-came-see-box-text p span {
                     color: #ffcc00;
                     font-weight: 700;
                 }
-                .hero-banner-bottom-came-see-box .came-see {
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
+                .hero-banner-bottom-came-see-box-btn .came-see {
                     font-weight: 600;
                     padding: 5px 24px 7px;
-                    margin-top: -20px;
                     font-size: 18px;
                 }
-                .hero-banner-bottom-came-see-box  a.btn i {
+                .hero-banner-bottom-came-see-box-btn  a.btn i {
                     margin-left: 3px;
                 }
 

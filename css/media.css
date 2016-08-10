@@ -400,6 +400,17 @@
     .sidebar-list > li:nth-child(odd) {
         clear: both;
     }
+
+    .hero-banner-bottom-came-see-box-text {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+    }
+    .hero-banner-bottom-came-see-box-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 680px) {
