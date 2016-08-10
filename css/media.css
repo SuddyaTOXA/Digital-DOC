@@ -208,6 +208,13 @@
     .mobile-menu-btn-box {
         display: block;
     }
+        .mobile-menu-btn-box a.btn {
+            padding: 11px 50px 12px;
+            margin-bottom: 70px;
+        }
+        .mobile-menu-btn-box a.btn:last-child{
+            margin-bottom: 0;
+        }
     .header-top-box .header-top-btn-box {
         display: none;
     }
@@ -490,8 +497,7 @@
         margin-bottom: 20px;
     }
     .sidebar-list {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 0;
     }
         .sidebar-list > li {
             width: 100%;
@@ -531,6 +537,9 @@
     }
     .content {
         padding: 20px 20px 40px;
+    }
+    .page-banner-title {
+        font-size: 32px;
     }
 }
 

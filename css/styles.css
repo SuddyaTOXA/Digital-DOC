@@ -555,13 +555,18 @@ img {
                 border-radius: 2px;
                 height: 4px;
                 width: 30px;
-                background: #fff;
+                background: #425365;
                 position: absolute;
                 display: block;
                 -webkit-transition: all 0.35s;
                 -moz-transition: all 0.35s;
                 -o-transition: all 0.35s;
                 transition: all 0.35s;
+            }
+            .home-header .mobile-menu-toggle span:before,
+            .home-header .mobile-menu-toggle span:after,
+            .home-header .mobile-menu-toggle span {
+                background: #ffffff;
             }
             .mobile-menu-toggle span {
                 left: 50%;
