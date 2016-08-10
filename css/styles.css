@@ -1301,11 +1301,24 @@ img {
         .contact-box-list > li {
             display: table-cell;
             width: 33.33%;
-            vertical-align: middle;
+            vertical-align: top;
             padding-left: 30px;
             padding-right: 60px;
             border-left: 1px solid #e6e6e6;
         }
+            .contact-box-list .contact-box-list-work {
+                vertical-align: middle;
+            }
+            .contact-box-list > li .fa{
+                float: left;
+                font-size: 16px;
+                margin-top: 4px;
+                margin-right: 10px;
+            }
+            .contact-box-list > li p,
+            .contact-box-list .list-phone-box{
+                overflow: hidden;
+            }
         .contact-box-list > li:first-child {
             border-left: none;
             padding-left: 0;
@@ -1313,10 +1326,10 @@ img {
         .contact-box-list > li:last-child {
             padding-right: 0;
         }
-        .contact-box-phone-list > li span {
+        .contact-box-list-phone > li span {
             color: #7F99B4;
         }
-        .contact-box-phone-list > li a {
+        .contact-box-list-phone > li a {
             font-weight: 600;
             text-decoration: none;
         }
@@ -1369,6 +1382,10 @@ img {
     padding-top: 43px;
     font-size: 14px;
 }
+    .page-template-page-contact-us .content h2,
+    .page-template-page-contact-us .content h3 {
+        font-size: 20px;
+    }
     .page-template-page-contact-us .content > * {
         margin-bottom: 20px;
     }
