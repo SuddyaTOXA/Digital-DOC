@@ -167,7 +167,8 @@
             border-bottom: 1px solid #e6e6e6;
             border-left: none;
         }
-        .contact-box-list >li:first-child {
+        .contact-box-list > li:first-child {
+            width: 100%;
             padding-top: 0;
         }
         .contact-box-list > li:last-child {
@@ -275,6 +276,8 @@
     .map-wrapper {
         margin-left: -40px;
         margin-right: -40px;
+        border-left: none;
+        border-right: none;
     }
 }
 

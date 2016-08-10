@@ -154,7 +154,7 @@ img {
         .title span { color: #ffcc00; }
     .section-content {
         max-width: 980px;
-        margin:  10px auto 80px;
+        margin:  10px auto 60px;
     }
         .section-content p {
             margin-bottom: 12px;
@@ -1306,10 +1306,10 @@ img {
     }
         .contact-box-list > li {
             display: table-cell;
-            width: 33.33%;
-            vertical-align: top;
+            width: 35%;
+            vertical-align: middle;
             padding-left: 30px;
-            padding-right: 60px;
+            padding-right: 20px;
             border-left: 1px solid #e6e6e6;
         }
             .contact-box-list .contact-box-list-work {
@@ -1318,7 +1318,7 @@ img {
             .contact-box-list > li .fa{
                 float: left;
                 font-size: 16px;
-                margin-top: 4px;
+                margin-top: 3px;
                 margin-right: 10px;
             }
             .contact-box-list > li p,
@@ -1326,6 +1326,7 @@ img {
                 overflow: hidden;
             }
         .contact-box-list > li:first-child {
+            width: 30%;
             border-left: none;
             padding-left: 0;
         }
