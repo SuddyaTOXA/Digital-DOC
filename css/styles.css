@@ -78,11 +78,14 @@ a[href^="tel"] {
 .btn.yellow { color: #ffcc00; border-color: #ffcc00; }
 .btn.yellow:hover, .btn.yellow-invers { color: #ffffff; border-color: #ffcc00; background-color: #ffcc00; }
 .btn.yellow-invers:hover { color: #ffcc00; background-color: transparent }
+.btn.light-blue-invers { color: #ffffff; border-color: #11d6bb; background-color: #11d6bb}
+.btn.light-blue-invers:hover { color: #11d6bb; background-color: transparent;}
 .btn.blue { color: #17f0d4; border-color: #17f0d4; }
 .btn.blue:hover { color: #ffffff; background-color: #17f0d4; }
 .btn.dark-blue { color: #415365; border-color: #415365; }
 .btn.dark-blue:hover { color: #ffffff; background-color: #415365; }
 .btn.wide { min-width: 377px; }
+.btn.s-wide {min-width: 210px; }
 .btn.small { font-size: 14px; border-width: 2px; padding: 4px 22px 5px; }
 .btn.middle { font-size: 14px; border-width: 2px; padding: 7px 22px 8px; }
 
@@ -183,7 +186,7 @@ img {
                 .list-box-img img {
                     max-width: 100%;
                     width: 100%;
-                    height: 100%;
+                    height: auto;
                     margin: 0 0 -8px;
                     float: none;
                 }
@@ -1172,9 +1175,13 @@ img {
         position: relative;
     }
         .container-bg {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
             background-color: rgba(255, 255, 255, 0.45);
         }
             .content-box {
+                overflow: hidden;
                 padding-top: 7px;
                 vertical-align: top;
                 display: table-cell;
@@ -1246,7 +1253,7 @@ img {
             margin-bottom: 0;
         }
         .content img {
-            max-width: 340px;
+            max-width: 100%;
             height: auto;
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
@@ -1274,6 +1281,94 @@ img {
         .content a:hover {
             text-decoration: underline;
         }
+
+/*-------------------------------------CONTACT-US-----------------------------------*/
+.contact-box {
+    padding: 20px 40px 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+    .contact-box-title {
+        margin-bottom: 12px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .contact-box-list {
+        display: table;
+        margin-bottom: 20px;
+        table-layout: fixed;
+        font-size: 14px;
+    }
+        .contact-box-list > li {
+            display: table-cell;
+            width: 33.33%;
+            vertical-align: middle;
+            padding-left: 30px;
+            padding-right: 60px;
+            border-left: 1px solid #e6e6e6;
+        }
+        .contact-box-list > li:first-child {
+            border-left: none;
+            padding-left: 0;
+        }
+        .contact-box-list > li:last-child {
+            padding-right: 0;
+        }
+        .contact-box-phone-list > li span {
+            color: #7F99B4;
+        }
+        .contact-box-phone-list > li a {
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .contact-box-list-adress {
+
+        }
+            .contact-box-list-work strong {
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .contact-box-list-work span {
+                font-weight: 700;
+                color: #ffcc00;
+            }
+    .map-wrapper {
+        position: relative;
+        padding-top: 51.3%;
+        z-index: 5;
+        overflow: hidden;
+        margin-bottom: 32px;
+    }
+        #map {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+        .google-maps-builder {
+            position: absolute !important;
+            height: 100% !important;
+            width: 100% !important;
+            top: 0;
+        }
+    .contact-info-box{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+        .contact-info-box p { margin-bottom: 8px; }
+        .contact-info-box > :last-child { margin-bottom: 0; }
+    .contact-btn-box { margin-top: 14px; text-align: center; }
+
+.contact-us .content {
+    padding-top: 43px;
+    font-size: 14px;
+}
+    .contact-us .content > * {
+        margin-bottom: 20px;
+    }
+    .contact-us .content > :last-child {
+        margin-bottom: 0;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1326,26 +1421,13 @@ img {
                 width: 48px;
                 height: 52px;
                 margin-right: 15px;
-                background-repeat: no-repeat;
             }
-                .bg-live {
-                    background-image: url(../img/content/supp.png);
-                }
-                .bg-warranty {
-                    background-image: url(../img/content/warr.png);
-                }
-                .bg-email {
-                    background-image: url(../img/content/email.png);
-                }
-                .sidebar-block a:hover .sidebar-block-bg-img.bg-live {
-                    background-image: url(../img/content/supp_hov.png);
-                }
-                .sidebar-block a:hover .sidebar-block-bg-img.bg-warranty {
-                    background-image: url(../img/content/warr_hov.png);
-                }
-                .sidebar-block a:hover .sidebar-block-bg-img.bg-email {
-                    background-image: url(../img/content/email_hov.png);
-                }
+            .sidebar-block-bg-img img {
+                max-width: 100%;
+            }
+                .sidebar-block-img-hov { display: none}
+                .sidebar-block a:hover .sidebar-block-img { display: none; }
+                .sidebar-block a:hover .sidebar-block-img-hov { display: block; }
             .sidebar-block-content {
                 overflow: hidden;
             }

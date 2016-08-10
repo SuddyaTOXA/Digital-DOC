@@ -51,9 +51,6 @@
 }
 
 @media all and (max-width: 1199px) {
-    .sidebar {
-        width: 270px;
-    }
     .footer-logo {
         text-align: center;
         float: none;
@@ -68,6 +65,10 @@
 }
 
 @media all and (max-width: 1080px) {
+    .sidebar {
+        width: 270px;
+    }
+
     .person-ava-box {
         float: none;
         display: block;
@@ -207,10 +208,12 @@
     }
     .mobile-menu-btn-box {
         display: block;
+        padding: 0 15px;
     }
         .mobile-menu-btn-box a.btn {
-            padding: 11px 50px 12px;
-            margin-bottom: 70px;
+            min-width: 80%;
+            max-width: 100%;
+            margin-bottom: 20px;
         }
         .mobile-menu-btn-box a.btn:last-child{
             margin-bottom: 0;
@@ -299,6 +302,25 @@
                 margin-top: 13px;
                 margin-right: 0;
             }
+
+    .contact-box-list {
+        text-align: left;
+        display: block
+    }
+    .contact-box-list > li {
+        display: block;
+        width: 100%;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid #e6e6e6;
+        border-left: none;
+    }
+        .contact-box-list >li:first-child {
+            padding-top: 0;
+        }
+        .contact-box-list > li:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
 }
 
 @media all and (max-width: 782px) {
@@ -540,6 +562,9 @@
     }
     .page-banner-title {
         font-size: 32px;
+    }
+    .contact-box {
+        padding: 20px 20px 40px;
     }
 }
 
