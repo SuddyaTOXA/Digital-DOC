@@ -1337,6 +1337,7 @@ img {
         z-index: 5;
         overflow: hidden;
         margin-bottom: 32px;
+        border: 1px solid #dfdfdf;
     }
         #map {
             position: absolute;
@@ -1351,6 +1352,8 @@ img {
             top: 0;
         }
     .contact-info-box{
+        max-width: 500px;
+        margin: 0 auto;
         text-align: center;
         font-size: 14px;
         font-weight: 600;
