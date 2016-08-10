@@ -1506,6 +1506,41 @@ img {
         .sidebar-block .cell-box a.btn {
             margin-top: 17px;
         }
+
+.category-sub-list {
+    position: relative;
+}
+.category-sub-list li{
+    padding-left: 30px;
+}
+.category-ico {
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 16px;
+}
+.ico-install {
+    background: url(../img/content/category_sprite.png) -18px 0;
+}
+.ico-driver {
+    background: url(../img/content/category_sprite.png) 0 0;
+}
+.ico-troubl {
+    background: url(../img/content/category_sprite.png) -36px 0;
+}
+
+.category-sub-list > li:active {
+    background-color: #ffcc00;
+}
+.category-sub-list > li:active .ico-install {
+    background: url(../img/content/category_sprite.png) -18px -18px;
+}
+.category-sub-list > li:active .ico-driver {
+    background: url(../img/content/category_sprite.png) 0 -18px;
+}
+.category-sub-list > li:active .ico-troubl {
+    background: url(../img/content/category_sprite.png) -36px -18px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
