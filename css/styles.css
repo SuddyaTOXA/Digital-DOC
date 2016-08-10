@@ -1293,7 +1293,7 @@ img {
     padding: 20px 40px 40px;
     border-bottom: 1px solid #e6e6e6;
 }
-    .contact-box-title {
+    .page-title {
         margin-bottom: 12px;
         font-size: 30px;
         font-weight: 700;
@@ -1384,7 +1384,6 @@ img {
         .contact-info-box > :last-child { margin-bottom: 0; }
     .contact-btn-box { margin-top: 14px; text-align: center; }
 
-    .content .other-page-title { font-size: 20px; }
 .page-template-page-contact-us .content {
     padding-top: 43px;
     font-size: 14px;
