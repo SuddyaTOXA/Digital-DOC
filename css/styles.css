@@ -294,6 +294,7 @@ img {
     width: 100%;
     height: 153px;
 }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1214,6 +1215,8 @@ img {
         position: relative;
     }
         .container-bg {
+            display: table;
+            width: 100%;
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
             border-radius: 5px;
@@ -1359,7 +1362,11 @@ img {
     .content-list > li{
         margin-bottom: 20px;
     }
+    .content-list > li:last-child {
+        margin-bottom: 0;
+    }
         .content-list-box {
+            overflow: hidden;
             padding: 20px 28px 22px;
             border: 2px solid #ecedef;
             -webkit-border-radius: 5px;
@@ -1390,11 +1397,17 @@ img {
                 font-size: 14px;
                 margin-top: -15px;
                 margin-bottom: 20px;
+                color: #adb4bc;
             }
                 .content-list-category a {
                     text-decoration: none;
+                    color: #adb4bc;
+                }
+                .content-list-category:hover {
+                    color: #415365;
                 }
                 .content-list-category a:hover {
+                    color: #415365;
                     text-decoration: underline;
                 }
             .content-list-text p {
@@ -1403,6 +1416,70 @@ img {
             }
             .content-list-text > :last-child {
                 margin-bottom: 0;
+            }
+/*-------------------------------------EVENT-PAGE-----------------------------------*/
+.event-page .page-title { margin-bottom: 8px; }
+    .event-page a { text-decoration: none; }
+        .event-calendar {
+            overflow: hidden;
+            float: left;
+            margin-right: 30px;
+            width: 115px;
+            height: 110px;
+            text-align: center;
+            background-image: url(../img/content/calendar.png);
+        }
+            .event-day {
+                display: block;
+                text-align: center;
+                margin-top: 29px;
+                font-size: 40px;
+                font-weight: 700;
+            }
+            .event-month {
+                display: block;
+                margin-bottom: -7px;
+                font-size: 16px;
+            }
+        .event-info-box {
+            overflow: hidden;
+            display: block;
+            margin-top: 14px;
+        }
+            .event-title {
+                margin-bottom: 4px;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .event-loc,.event-duration {
+                position: relative;
+                padding-left: 17px;
+                margin-bottom: 7px;
+                display: inline-block;
+                font-size: 14px;
+            }
+            .event-duration {
+                display: inline-block;
+                margin-right: 9px;
+                color: #ffcc00;
+            }
+            .event-loc:before,
+            .event-duration:before {
+                position: absolute;
+                left: 1px;
+                top: 3px;
+                font: 14px FontAwesome;
+                color: #8e959b;
+            }
+            .event-loc:before {
+                content: '\f041';
+            }
+            .event-duration:before {
+                content: '\f017';
+                color: #ffcc00;
+            }
+            .event-id {
+                font-size: 14px;
             }
 /*-------------------------------------SUPPORT-ISSUE--------------------------------*/
 .content-top-box {
@@ -1926,6 +2003,8 @@ img {
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .footer {
+    position: relative;
+    z-index: 5;
     background-color: #1c2c3b;
     color: #ffffff;
 }

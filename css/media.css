@@ -509,9 +509,20 @@
         margin-left: 0;
         margin-bottom: 0;
     }
-
-
-
+    .content-list-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .wp-pagenavi {
+        text-align: center;
+    }
+    .event-calendar {
+        float: none;
+        margin: 0 auto;
+    }
+    .event-info-box {
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 600px) {
