@@ -1672,13 +1672,32 @@ img {
     margin-bottom: 14px;
 }
     .category-box-list > li {
-        margin-bottom: 9px;
+        margin-bottom: 11px;
     }
     .category-title {
         font-size: 14px;
         font-weight: 800;
         margin: 0 10px 7px;
     }
+    .category-box-img {
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+        border: 1px solid #d9dde0;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+        .category-box-img img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            margin: 0 0 -5px;
+            float: none;
+        }
     .category-sub-list {
         position: relative;
     }
@@ -1706,7 +1725,11 @@ img {
                 -o-transition: none;
                 transition: none;
             }
+                .category-ico p {
+                    overflow: hidden;
+                }
                 .category-ico span{
+                    float:left;
                     display: inline-block;
                     width: 20px;
                     height: 20px;
@@ -1722,6 +1745,13 @@ img {
                 .category-sub-list > li.ico-driver:active span{background-position: 40px -18px}
                 .category-sub-list > li.ico-troubl:active span {background-position: 60px -18px}
                 .category-sub-list > li.ico-pen:active span {background-position: 20px -18px}
+        .category-btn-box {
+            padding-top: 11px;
+            border-top: 1px solid #e6e6e6;
+        }
+            .category-btn-box a:hover {
+                color: #ffcc00;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
