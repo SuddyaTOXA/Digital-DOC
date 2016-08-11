@@ -575,6 +575,14 @@
         width: 100%;
         padding-left: 0;
     }
+    .wp-pagenavi,
+    .em-pagination {
+        margin-bottom: -15px;
+    }
+    .wp-pagenavi a,
+    .em-pagination a {
+        margin-bottom: 15px;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -621,6 +629,10 @@
     }
     .content-top-box {
         padding: 0 20px;
+    }
+    .content-list-page {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 
