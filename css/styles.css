@@ -1027,7 +1027,7 @@ img {
         margin-bottom: 60px;
         text-align: center;
     }
-        .section-our-plan .cell-list > li:nth-child(even) {
+        .section-our-plan .cell-list > li:nth-child(3n+2) {
             margin-top: 30px;
         }
             .section-our-plan .cell-box {
