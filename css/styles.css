@@ -95,7 +95,7 @@ a[href^="tel"] {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 13px 8px 10px;
+    padding: 13px 16px 10px;
     border: 1px solid #ffffff;
     box-shadow: none;
     -webkit-border-radius: 5px;
@@ -110,7 +110,11 @@ a[href^="tel"] {
     -o-transition: 0.25s;
     transition: 0.25s;
 }
-
+.input-style:hover,
+.input-style:active,
+.input-style:focus{
+    background-color: #ecedef;
+}
 input::-webkit-input-placeholder {
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
@@ -1496,26 +1500,32 @@ img {
     margin-left: 20px;
     margin-bottom: 5px;
 }
+    .search-content-box {
+        display: table;
+        width: 100%;
+    }
     .search-content-box > li {
-        display: inline-block;
+       display: table-cell;
         vertical-align: middle;
-        margin-right: 5px;
     }
-    .search-content-box > li:last-child {
-        margin-right: 0;
-    }
-        .search-content-box .input-style {
-            mmin-width: 260px;
-            padding-left: 35px;
+        .search-btn {
+            width: 105px;
+            padding-left: 10px;
         }
-        .search-content-box .btn.middle {
+        .search-btn .btn {
+            width: 100%;
             padding: 11px 27px 10px;
         }
-
-        .search-content-box .search-icon {
+        .search-content-box .input-style {
+            padding-left: 35px;
+        }
+        .support-issue-page .search-content-box .input-style {
+            min-width: 265px;
+        }
+        .search-icon {
             position: relative;
         }
-        .search-content-box .search-icon:before {
+         .search-icon:before {
             content: '\f002';
             position: absolute;
             left: 10px;
@@ -1524,6 +1534,8 @@ img {
             font: 16px FontAwesome;
             color: #8e959b;
         }
+
+
 /*----------------------------------BREADCRUMBS---------------------------------*/
 .breadcrumbs-box {
     overflow: hidden;
