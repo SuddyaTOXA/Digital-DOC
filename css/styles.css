@@ -1432,9 +1432,10 @@ img {
             .event-day {
                 display: block;
                 text-align: center;
-                margin-top: 29px;
+                margin-top: 38px;
                 font-size: 40px;
                 font-weight: 700;
+                line-height: 1;
             }
             .event-month {
                 display: block;
@@ -1444,7 +1445,8 @@ img {
         .event-info-box {
             overflow: hidden;
             display: block;
-            margin-top: 14px;
+            margin-top: 10px;
+            margin-bottom: -7px;
         }
             .event-title {
                 margin-bottom: 4px;
