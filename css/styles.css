@@ -84,10 +84,32 @@ a[href^="tel"] {
 .btn.blue:hover { color: #ffffff; background-color: #17f0d4; }
 .btn.dark-blue { color: #415365; border-color: #415365; }
 .btn.dark-blue:hover { color: #ffffff; background-color: #415365; }
+.btn.dark-blue-invers { color: #ffffff; border-color: #415365; background-color: #415365; }
+.btn.dark-blue-invers:hover { color: #415365; background-color: transparent; }
 .btn.wide { min-width: 377px; }
 .btn.s-wide {min-width: 210px; }
 .btn.small { font-size: 14px; border-width: 2px; padding: 4px 22px 5px; }
 .btn.middle { font-size: 14px; border-width: 2px; padding: 7px 22px 8px; }
+
+.input-style {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 13px 8px 10px;
+    border: 1px solid #ffffff;
+    box-shadow: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8e959b;
+    background-color: #f5f6f8;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
 
 input::-webkit-input-placeholder {
     -webkit-transition: 0.25s;
@@ -1305,6 +1327,12 @@ img {
         font-size: 30px;
         font-weight: 700;
     }
+        .page-title-desc {
+            margin-top: -14px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: #acb3bb;
+        }
     .contact-box-list {
         display: table;
         margin-bottom: 20px;
@@ -1405,6 +1433,90 @@ img {
     .page-template-page-contact-us .content > :last-child {
         margin-bottom: 0;
     }
+
+/*-------------------------------------SUPPORT-ISSUE--------------------------------*/
+.content-top-box {
+    padding: 0  40px;
+}
+    .content-top-wrap {
+        overflow: hidden;
+        padding: 17px 0 20px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+/*----------------------------------SEARCH--------------------------------------*/
+.search-box {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+    .search-content-box > li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .search-content-box > li:last-child {
+        margin-right: 0;
+    }
+        .search-content-box .input-style {
+            mmin-width: 260px;
+            padding-left: 35px;
+        }
+        .search-content-box .btn.middle {
+            padding: 11px 27px 10px;
+        }
+
+        .search-content-box .search-icon {
+            position: relative;
+        }
+        .search-content-box .search-icon:before {
+            content: '\f002';
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            margin-top: -8px;
+            font: 16px FontAwesome;
+            color: #8e959b;
+        }
+/*----------------------------------BREADCRUMBS---------------------------------*/
+.breadcrumbs-box {
+    overflow: hidden;
+    display: block;
+}
+    .breadcrumbs {
+        display: block;
+        font-size: 16px;
+        margin-top: 9px;
+    }
+        .breadcrumbs > span {
+            position: relative;
+            display: inline;
+            padding: 0 8px 0 0;
+        }
+        .breadcrumbs > span:first-child {
+            padding-left: 0;
+        }
+        .breadcrumbs > span:last-child {
+            padding-right: 0;
+        }
+        .breadcrumbs > span:after{
+            content: '\203A';
+            display: inline-block;
+            height: 16px;
+            position: relative;
+            top: -1px;
+            right: -5px;
+            font-size: 18px;
+        }
+        .breadcrumbs > span:last-child:after{
+            display: none;
+        }
+            .breadcrumbs a {
+                text-decoration: none;
+            }
+            .breadcrumbs a:hover {
+                color: #ffcc00;
+            }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
