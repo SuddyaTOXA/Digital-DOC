@@ -292,10 +292,11 @@
     }
 
     .widget-categori {
-        max-width: 420px;
         margin: 40px auto 20px;
     }
-
+        .category-box-list {
+            max-width: 380px;
+        }
 }
 
 @media all and (max-width: 768px) {

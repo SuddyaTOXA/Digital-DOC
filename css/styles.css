@@ -103,7 +103,7 @@ a[href^="tel"] {
     border-radius: 5px;
     font-size: 16px;
     font-weight: 400;
-    color: #8e959b;
+    color: #415365;
     background-color: #f5f6f8;
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
@@ -1359,9 +1359,6 @@ img {
     .content-list > li{
         margin-bottom: 20px;
     }
-    .content-list > li:last-child {
-        margin-bottom: 0;
-    }
         .content-list-box {
             padding: 20px 28px 22px;
             border: 2px solid #ecedef;
@@ -1558,8 +1555,7 @@ img {
 
 
 /*-------------------------------------WP-PAGENAVI----------------------------------*/
-.wp-pagenavi,
-.em-pagination {
+.wp-pagenavi {
     display: block;
     font-size: 16px;
     font-weight: 600;
@@ -1572,7 +1568,6 @@ img {
     user-select: none;
 }
 .wp-pagenavi a,
-.em-pagination a,
 .wp-pagenavi span.current{
     display: inline-block;
     width: 30px;
@@ -1590,38 +1585,30 @@ img {
 .wp-pagenavi span.current {
     color: #ffffff;
 }
-.wp-pagenavi a:last-child,
-.em-pagination a:last-child {
+.wp-pagenavi a:last-child {
     margin-right: 0;
 }
-.wp-pagenavi a:hover,
-.em-pagination a:hover {
+.wp-pagenavi a:hover {
     color: #ffcc00;
     border-color: #ffcc00;
 }
 .wp-pagenavi a.first,
 .wp-pagenavi a.previouspostslink,
 .wp-pagenavi a.nextpostslink,
-.wp-pagenavi a.last,
-.em-pagination a.prev,
-.em-pagination a.next {
+.wp-pagenavi a.last {
     color: rgba(255, 255, 255, 0);
     position: relative;
 }
 .wp-pagenavi a.first:hover,
 .wp-pagenavi a.previouspostslink:hover,
 .wp-pagenavi a.nextpostslink:hover,
-.wp-pagenavi a.last:hover,
-.em-pagination a.prev:hover,
-.em-pagination a.next:hover {
+.wp-pagenavi a.last:hover {
     color: rgba(255, 255, 255, 0);
 }
 .wp-pagenavi .first:before,
 .wp-pagenavi .last:before,
 .wp-pagenavi .previouspostslink:before,
-.wp-pagenavi .nextpostslink:before,
-.em-pagination .prev:before,
-.em-pagination .next:before {
+.wp-pagenavi .nextpostslink:before {
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -1642,21 +1629,19 @@ img {
 .wp-pagenavi .first:hover:before,
 .wp-pagenavi .last:hover:before,
 .wp-pagenavi .previouspostslink:hover:before,
-.wp-pagenavi .nextpostslink:hover:before,
-.em-pagination .prev:hover:before,
-.em-pagination .next:hover:before {
+.wp-pagenavi .nextpostslink:hover:before {
     color: #ffcc00;
 }
 .wp-pagenavi .current,
-.wp-pagenavi .extend,
-.em-pagination span,
-.em-pagination .current {
+.wp-pagenavi .extend {
     padding: 0 7px;
     margin-right: 5px;
     color: #8B9499;
 }
-.wp-pagenavi .current,
-.em-pagination .current {
+.wp-pagenavi .extend {
+    padding-left: 2px;
+}
+.wp-pagenavi .current {
     background-color: #838F9D;
     border: 2px solid #838F9D;
     color: #ffffff;
@@ -1816,10 +1801,6 @@ img {
                 width: 100%;
                 font-size: 14px;
                 padding: 4px 8px 4px;
-                -webkit-transition: none;
-                -moz-transition: none;
-                -o-transition: none;
-                transition: none;
                 -webkit-border-radius: 5px;
                 -moz-border-radius: 5px;
                 border-radius: 5px;
