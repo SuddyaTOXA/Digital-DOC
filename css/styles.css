@@ -1231,108 +1231,21 @@ img {
             }
 
 
-/*-------------------------------------CONTENT--------------------------------------*/
-.content {
-    padding: 20px 40px 40px;
-    line-height: 1.7;
-}
-    .content > * {
-        margin-bottom: 30px;
-    }
-    .content > :last-child {
-        margin-bottom: 0;
-    }
-    .content h1 { font-size: 30px; }
-    .content h2 { font-size: 25px; }
-    .content h3 { font-size: 22px; }
-    .content h4 { font-size: 20px; }
-    .content h5 { font-size: 19px; }
-    .content h6 { font-size: 19px; }
-    .content ol {
-        counter-reset: num;
-    }
-        .content ol li {
-            display: table;
-        }
-        .content ol li:before {
-            content: counter(num) ') ';
-            counter-increment: num;
-            display: inline-block;
-            min-width: 16px;
-            margin-right: 6px;
-            font-size: 18px;
-            font-weight: 600;
-        }
-    .content ul {
-    }
-        .content ul li {
-            position: relative;
-            display: table;
-            padding-left: 16px;
-        }
-        .content ul li:before {
-            content: '\f111';
-            position: absolute;
-            left: 0;
-            top: 12px;
-            font: 7px FontAwesome;
-        }
-        .content ul li,
-        .content ol li {
-            margin-bottom: 10px;
-        }
-        .content ul li:last-child,
-        .content ol li:last-child {
-            margin-bottom: 0;
-        }
-        .content blockquote p {
-            margin-bottom: 20px;
-        }
-        .content blockquote > :last-child {
-            margin-bottom: 0;
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-        }
-        .content img.alignleft{
-            float: left;
-            margin: 7px 30px 20px 0;
-            max-width: 380px;
-        }
-        .content img.alignright{
-            float: right;
-            margin: 7px 0 20px 30px;
-            max-width: 380px;
-        }
-        .content img.aligncenter{
-            display: block;
-            margin: 0 auto 30px;
-            clear: both;
-        }
-        .content a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-        .content a:hover {
-            text-decoration: underline;
-        }
 
 /*-------------------------------------CONTACT-US-----------------------------------*/
 .contact-box {
     padding: 20px 40px 40px;
     border-bottom: 1px solid #e6e6e6;
 }
+    .content .page-title,
     .page-title {
-        margin-bottom: 12px;
+        margin-bottom: 21px;
         font-size: 30px;
         font-weight: 700;
     }
+        .content .page-title-desc,
         .page-title-desc {
-            margin-top: -14px;
+            margin-top: -25px;
             margin-bottom: 16px;
             font-size: 14px;
             color: #acb3bb;
@@ -1340,6 +1253,7 @@ img {
     .contact-box-list {
         display: table;
         margin-bottom: 20px;
+        margin-top: -5px;
         table-layout: fixed;
         font-size: 14px;
     }
@@ -1438,12 +1352,70 @@ img {
         margin-bottom: 0;
     }
 
+/*-------------------------------------SUPPORT--------------------------------------*/
+.content-list-page {
+    padding: 1px 40px 40px;
+}
+    .content-list > li{
+        margin-bottom: 20px;
+    }
+    .content-list > li:last-child {
+        margin-bottom: 0;
+    }
+        .content-list-box {
+            padding: 20px 28px 22px;
+            border: 2px solid #ecedef;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+        }
+        .content-list-box:hover {
+            border-color: #ffcc00;
+        }
+        .content-list-box:hover .content-list-title {
+            color: #ffcc00;
+        }
+            .content-list-title {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                -webkit-transition: 0.2s;
+                -moz-transition: 0.2s;
+                -o-transition: 0.2s;
+                transition: 0.2s;
+            }
+            .content-list-category {
+                display: block;
+                font-size: 14px;
+                margin-top: -15px;
+                margin-bottom: 20px;
+            }
+                .content-list-category a {
+                    text-decoration: none;
+                }
+                .content-list-category a:hover {
+                    text-decoration: underline;
+                }
+            .content-list-text p {
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+            .content-list-text > :last-child {
+                margin-bottom: 0;
+            }
 /*-------------------------------------SUPPORT-ISSUE--------------------------------*/
 .content-top-box {
     padding: 0  40px;
 }
     .content-top-wrap {
         overflow: hidden;
+        padding: 25px 0 23px;
+    }
+    .support-issue-page .content-top-wrap {
         padding: 17px 0 20px;
         border-bottom: 1px solid #e6e6e6;
     }
@@ -1496,9 +1468,11 @@ img {
 
 /*----------------------------------SEARCH--------------------------------------*/
 .search-box {
+    margin-bottom: 5px;
+}
+.support-issue-page .search-box {
     float: right;
     margin-left: 20px;
-    margin-bottom: 5px;
 }
     .search-content-box {
         display: table;
@@ -1764,6 +1738,96 @@ img {
             .category-btn-box a:hover {
                 color: #ffcc00;
             }
+/*-------------------------------------CONTENT--------------------------------------*/
+.content {
+    padding: 20px 40px 40px;
+    line-height: 1.7;
+}
+    .content > * {
+        margin-bottom: 30px;
+    }
+    .content > :last-child {
+        margin-bottom: 0;
+    }
+        .content h1 { font-size: 30px; }
+        .content h2 { font-size: 25px; }
+        .content h3 { font-size: 22px; }
+        .content h4 { font-size: 20px; }
+        .content h5 { font-size: 19px; }
+        .content h6 { font-size: 19px; }
+        .content ol {
+            counter-reset: num;
+        }
+            .content ol li {
+                display: table;
+            }
+            .content ol li:before {
+                content: counter(num) ') ';
+                counter-increment: num;
+                display: inline-block;
+                min-width: 16px;
+                margin-right: 6px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .content ul {
+            }
+            .content ul li {
+                position: relative;
+                display: table;
+                padding-left: 16px;
+            }
+            .content ul li:before {
+                content: '\f111';
+                position: absolute;
+                left: 0;
+                top: 12px;
+                font: 7px FontAwesome;
+            }
+            .content ul li,
+            .content ol li {
+                margin-bottom: 10px;
+            }
+            .content ul li:last-child,
+            .content ol li:last-child {
+                margin-bottom: 0;
+            }
+            .content blockquote p {
+                margin-bottom: 20px;
+            }
+            .content blockquote > :last-child {
+                margin-bottom: 0;
+            }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .content img.alignleft{
+            float: left;
+            margin: 7px 30px 20px 0;
+            max-width: 380px;
+        }
+        .content img.alignright{
+            float: right;
+            margin: 7px 0 20px 30px;
+            max-width: 380px;
+        }
+        .content img.aligncenter{
+            display: block;
+            margin: 0 auto 30px;
+            clear: both;
+        }
+    .content a {
+        color: #ffcc00;
+        text-decoration: none;
+    }
+    .content a:hover {
+        text-decoration: underline;
+    }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
