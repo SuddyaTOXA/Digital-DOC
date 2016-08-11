@@ -94,7 +94,7 @@
         margin-bottom: 90px;
         line-height: 400px;
     }
-    .search-box {
+    .support-issue-page .search-box {
         float: none;
         margin-left: 0;
         margin-bottom: 5px;
@@ -504,12 +504,11 @@
         font-size: 36px;
     }
     .page-action-box {
-        margin-left: 15px;
-        margin-bottom: 15px;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 0;
     }
-        a.print-act {
-            display: none;
-        }
+
 
 
 }

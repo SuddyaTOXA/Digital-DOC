@@ -1419,6 +1419,12 @@ img {
         padding: 17px 0 20px;
         border-bottom: 1px solid #e6e6e6;
     }
+    .support-issue-page .page-title {
+        margin-bottom: 25px;
+    }
+    .support-issue-page .page-title-desc {
+        margin-top: -30px;
+    }
     .page-action-box {
         float: right;
         margin-top: 5px;
@@ -1687,20 +1693,14 @@ img {
     .category-sub-list {
         position: relative;
     }
-        .category-sub-list li{
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-        }
-        .category-sub-list > li:hover {
+
+        .category-sub-list > li a:hover {
             background-color: #ecedef;
         }
-        .category-sub-list > li:active {
+        .category-sub-list > li a.active {
             background-color: #ffcc00;
+            color: #ffffff;
         }
-            .category-sub-list > li:active  a{
-               color: #ffffff;
-            }
             .category-sub-list > li > a {
                 display: block;
                 width: 100%;
@@ -1710,6 +1710,9 @@ img {
                 -moz-transition: none;
                 -o-transition: none;
                 transition: none;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
             }
                 .category-ico p {
                     overflow: hidden;
@@ -1727,10 +1730,10 @@ img {
                 .ico-troubl span {background-position: 60px 2px}
                 .ico-pen span {background-position: 20px 2px}
 
-                .category-sub-list > li.ico-install:active span {background-position: 80px -18px}
-                .category-sub-list > li.ico-driver:active span{background-position: 40px -18px}
-                .category-sub-list > li.ico-troubl:active span {background-position: 60px -18px}
-                .category-sub-list > li.ico-pen:active span {background-position: 20px -18px}
+                .category-sub-list > li.ico-install a.active span {background-position: 80px -18px}
+                .category-sub-list > li.ico-driver a.active span{background-position: 40px -18px}
+                .category-sub-list > li.ico-troubl a.active span {background-position: 60px -18px}
+                .category-sub-list > li.ico-pen a.active span {background-position: 20px -18px}
         .category-btn-box {
             padding-top: 11px;
             border-top: 1px solid #e6e6e6;
