@@ -570,10 +570,7 @@
         }
     .search-content-box > li {
         display: block;
-        margin: 0 auto 20px;
-    }
-    .search-content-box > :last-child {
-        margin-bottom: 10px;
+        margin: 0 auto 10px;
     }
     .search-btn {
         width: 100%;
