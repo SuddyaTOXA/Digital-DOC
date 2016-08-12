@@ -21,10 +21,10 @@ $(document).ready(function() {
         $('#carousel').flexslider({
             animation: "slide",
             controlNav: true,
-            animationLoop: false,
+            animationLoop: true,
             slideshow: false,
-            itemWidth: 128,
-            itemMargin: 30,
+            itemWidth: 135,
+            itemMargin: 20,
             maxItems: 4,
             move: 1,
             asNavFor: '#slider'
@@ -34,7 +34,7 @@ $(document).ready(function() {
             animation: "slide",
             controlNav: false,
             directionNav: false,
-            animationLoop: false,
+            animationLoop: true,
             slideshow: false,
             sync: "#carousel"
         });
