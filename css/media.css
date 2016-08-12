@@ -297,6 +297,9 @@
         .category-box-list {
             max-width: 380px;
         }
+    #carousel {
+        max-width: 60%;
+    }
 }
 
 @media all and (max-width: 768px) {
