@@ -1558,8 +1558,8 @@ img {
 }
 
     #slider {
-            max-width: 540px;
-            margin: 50px auto 20px;
+            max-width: 70%;
+            margin: 50px auto 30px;
             -webkit-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);
             -moz-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);
             -o-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);
@@ -1568,8 +1568,12 @@ img {
     #slider a {
         position: relative;
         display: block;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
     }
-    #slider a:hover:before {
+    #slider a:before {
         content: '\f00e';
         position: absolute;
         width: 80px;
@@ -1583,14 +1587,25 @@ img {
         text-align: center;
         color: #ffffff;
         background-color: rgba(65, 83, 101, 0.7);
+        opacity: 0;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+    }
+    #slider a:hover:before {
+        opacity: 1;
     }
     #slider.flexslider {
         border: none;
     }
     #carousel {
-        max-width: 610px;
-        margin: 0 auto;
+        max-width: 75%;
+        margin: 0 auto 80px;
     }
+        #carousel img {
+            border: 2px solid rgba(255, 204, 0, 0);
+        }
         #carousel .flex-active-slide  img {
             border: 2px solid #ffcc00;
         }
@@ -1619,6 +1634,7 @@ img {
                     .carousel-img-wrap {
                        position: relative;
                         display: block;
+                        cursor: pointer;
                     }
                     .carousel-img-wrap:before {
                         position: absolute;
