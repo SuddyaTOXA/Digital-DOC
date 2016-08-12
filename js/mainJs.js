@@ -25,6 +25,7 @@ $(document).ready(function() {
             slideshow: false,
             itemWidth: 135,
             itemMargin: 20,
+            minItems: 2,
             maxItems: 4,
             move: 1,
             asNavFor: '#slider'
@@ -38,7 +39,32 @@ $(document).ready(function() {
             slideshow: false,
             sync: "#carousel"
         });
+
+        $('#carousel-video').flexslider({
+            animation: "slide",
+            controlNav: true,
+            animationLoop: true,
+            slideshow: false,
+            itemWidth: 200,
+            itemMargin: 20,
+            minItems: 2,
+            maxItems: 3,
+            move: 1,
+            asNavFor: '#slider-video'
+        });
+
+        $('#slider-video').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,
+            animationLoop: true,
+            slideshow: false,
+            sync: "#carousel-video"
+        });
+
     });
+
+
 
     $(window).on('load resize', function() {
         var tabsLi = $('.tabs').children('li'),
@@ -95,3 +121,5 @@ $(document).ready(function() {
     });
 
 });
+
+

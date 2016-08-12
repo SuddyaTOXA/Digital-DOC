@@ -1235,7 +1235,19 @@ img {
             }
 
 
-
+/*-------------------------------------PRODUCT-PAGE---------------------------------*/
+.product-page-box {
+    display: block;
+    width: 100%;
+    padding: 34px 40px 35px;
+    background-color: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+    .product-page-box .breadcrumbs {
+        margin-top: 0;
+    }
 /*-------------------------------------CONTACT-US-----------------------------------*/
 .contact-box {
     padding: 20px 40px 40px;
@@ -1609,17 +1621,21 @@ img {
         #carousel .flex-active-slide  img {
             border: 2px solid #ffcc00;
         }
-        #carousel .flex-control-nav {
+        #carousel .flex-control-nav,
+        #carousel-video .flex-control-nav{
             bottom: -60px;
         }
-            #carousel .flex-control-paging li a {
+            #carousel .flex-control-paging li a,
+            #carousel-video .flex-control-paging li a{
                 width: 20px;
                 height: 20px;
                 display: block;
                 background-color: transparent;
             }
             #carousel .flex-control-paging li a.flex-active,
-            #carousel .flex-control-paging li a:hover {
+            #carousel .flex-control-paging li a:hover,
+            #carousel-video .flex-control-paging li a.flex-active,
+            #carousel-video .flex-control-paging li a:hover{
                 background-color: #415365;
             }
             #carousel .slides img {
@@ -1666,6 +1682,7 @@ img {
     }
 
     .flex-direction-nav a {
+        height: 44px;
         opacity: 1;
     }
     .flex-direction-nav a.flex-next:before {
@@ -1676,6 +1693,35 @@ img {
         -o-transform: rotate(180deg);
         transform: rotate(180deg);
     }
+
+/*----------------------------------VIDEOS-------------------------------------*/
+#slider-video {
+    max-width: 90%;
+    margin: 0 auto 30px;
+}
+    .slider-video-wrap {
+         position: relative;
+         padding-bottom: 56.25%; /* 16:9 */
+         padding-top: 25px;
+         height: 0;
+    }
+        .slider-video-wrap iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+   #carousel-video {
+       max-width: 80%;
+       margin: 0 auto 80px;
+   }
+   .video-title {
+       font-size: 14px
+   }
 /*----------------------------------SEARCH--------------------------------------*/
 .search-box {
     margin-bottom: 5px;
