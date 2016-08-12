@@ -1384,6 +1384,10 @@ img {
         .content-list-box:hover .content-list-title {
             color: #ffcc00;
         }
+        .content-list-box:hover .content-list-category,
+        .content-list-box:hover .content-list-category a {
+            color: #415365;
+        }
             .content-list-title {
                 font-size: 20px;
                 font-weight: 700;
@@ -1404,11 +1408,7 @@ img {
                     text-decoration: none;
                     color: #adb4bc;
                 }
-                .content-list-category:hover {
-                    color: #415365;
-                }
                 .content-list-category a:hover {
-                    color: #415365;
                     text-decoration: underline;
                 }
             .content-list-text p {
