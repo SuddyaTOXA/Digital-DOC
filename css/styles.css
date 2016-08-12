@@ -1403,6 +1403,10 @@ img {
                 margin-top: -15px;
                 margin-bottom: 20px;
                 color: #adb4bc;
+                -webkit-transition: 0.2s;
+                -moz-transition: 0.2s;
+                -o-transition: 0.2s;
+                transition: 0.2s;
             }
                 .content-list-category a {
                     text-decoration: none;
@@ -1548,7 +1552,55 @@ img {
             top: -23px;
             left: -5px;
         }
+/*-------------------------------------TESTIMONIALS-----------------------------*/
+.testimonials-slider {
+    padding: 20px 40px 40px;
+}
 
+    #slider {
+        max-width: 540px;
+    margin: 50px auto 20px;
+    }
+    #slider a {
+        position: relative;
+        display: block;
+    }
+    #slider a:hover:before {
+        content: '\f00e';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 50%;
+        top: 50%;
+        margin-top: -40px;
+        margin-left: -40px;
+        font: 45px FontAwesome;
+        line-height: 80px;
+        text-align: center;
+        color: #ffffff;
+        background-color: rgba(65, 83, 101, 0.7);
+    }
+    #carousel {
+        max-width: 610px;
+        margin: 0 auto;
+    }
+        #carousel .flex-active-slide {
+            border: 2px solid #ffcc00;
+        }
+
+        #carousel .flex-control-nav {
+            bottom: -60px;
+        }
+            #carousel .flex-control-paging li a {
+                width: 20px;
+                height: 20px;
+                display: block;
+                background-color: transparent;
+            }
+            #carousel .flex-control-paging li a.flex-active,
+            #carousel .flex-control-paging li a:hover {
+                background-color: #415365;
+            }
 /*----------------------------------SEARCH--------------------------------------*/
 .search-box {
     margin-bottom: 5px;

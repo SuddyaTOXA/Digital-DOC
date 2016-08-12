@@ -16,6 +16,29 @@ $(document).ready(function() {
     });
     //cache a reference to the tabsd
 
+    $(window).load(function() {
+        // The slider being synced must be initialized first
+        $('#carousel').flexslider({
+            animation: "slide",
+            controlNav: true,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 128,
+            itemMargin: 30,
+            maxItems: 4,
+            move: 1,
+            asNavFor: '#slider'
+        });
+
+        $('#slider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,
+            animationLoop: false,
+            slideshow: false,
+            sync: "#carousel"
+        });
+    });
 
     $(window).on('load resize', function() {
         var tabsLi = $('.tabs').children('li'),
