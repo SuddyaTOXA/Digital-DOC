@@ -1328,9 +1328,17 @@ img {
 
             }
 
-    .section-product-description .content {
-        overflow: hidden;
-        padding: 0;
+.section-product-description .content {
+    overflow: hidden;
+    padding: 0;
+}
+    .section-product-description .content h1,
+    .section-product-description .content h2,
+    .section-product-description .content h3,
+    .section-product-description .content h4,
+    .section-product-description .content h5,
+    .section-product-description .content h6 {
+        margin-bottom: 10px;
     }
 /*-------------------------------------CONTACT-US-----------------------------------*/
 .contact-box {

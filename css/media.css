@@ -84,6 +84,10 @@
         display: block;
         padding-top: 15px;
     }
+
+    .manual-list {
+        width: 280px;
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -299,6 +303,17 @@
         }
     #carousel {
         max-width: 60%;
+    }
+    .product-page-box {
+        display: table;
+    }
+    .manual-list-wrap {
+        display: table-footer-group;
+    }
+    .manual-list {
+        width: 480px;
+        margin: 40px auto 0;
+        float: none;
     }
 }
 
@@ -542,6 +557,9 @@
         margin-left: -20px;
         padding-left: 20px;
     }
+    .manual-list {
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 560px) {
@@ -598,6 +616,7 @@
     .em-pagination a {
         margin-bottom: 15px;
     }
+
 }
 
 @media all and (max-width: 480px) {
@@ -674,6 +693,10 @@
     }
     .flexslider .flex-control-nav {
         bottom: -45px;
+    }
+    .product-page-box {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
