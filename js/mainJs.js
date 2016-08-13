@@ -35,6 +35,7 @@ $(document).ready(function() {
             animation: "slide",
             controlNav: true,
             animationLoop: true,
+            itemMargin: 5,
             slideshow: false,
             sync: "#carousel"
         });
