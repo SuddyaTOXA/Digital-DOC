@@ -33,7 +33,7 @@ $(document).ready(function() {
 
         $('#slider').flexslider({
             animation: "slide",
-            controlNav: false,
+            controlNav: true,
             animationLoop: true,
             slideshow: false,
             sync: "#carousel"
@@ -54,8 +54,9 @@ $(document).ready(function() {
 
         $('#slider-video').flexslider({
             animation: "slide",
-            controlNav: false,
+            controlNav: true,
             animationLoop: true,
+            directionNav: false,
             slideshow: false,
             before: function(){
                 $('.my-video').videoController('pause');

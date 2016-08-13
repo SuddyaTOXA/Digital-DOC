@@ -1248,7 +1248,17 @@ img {
 }
     .product-page-box .breadcrumbs {
         margin-top: 0;
+        margin-bottom: 17px;
     }
+.manual-list {
+    float: left;
+    width: 335px;
+    margin-right: 40px;
+}
+.section-product-description .content {
+    overflow: hidden;
+    padding: 0;
+}
 /*-------------------------------------CONTACT-US-----------------------------------*/
 .contact-box {
     padding: 20px 40px 40px;
@@ -1627,21 +1637,21 @@ img {
         #carousel .flex-active-slide  img {
             border: 2px solid #ffcc00;
         }
-        #carousel .flex-control-nav,
-        #carousel-video .flex-control-nav{
+        #slider .flex-control-nav,
+        #slider-video .flex-control-nav {
+            display: none;
+        }
+        .flexslider .flex-control-nav {
             bottom: -60px;
         }
-            #carousel .flex-control-paging li a,
-            #carousel-video .flex-control-paging li a{
+            .flexslider .flex-control-paging li a{
                 width: 20px;
                 height: 20px;
                 display: block;
                 background-color: transparent;
             }
-            #carousel .flex-control-paging li a.flex-active,
-            #carousel .flex-control-paging li a:hover,
-            #carousel-video .flex-control-paging li a.flex-active,
-            #carousel-video .flex-control-paging li a:hover{
+            .flexslider .flex-control-paging li a.flex-active,
+            .flexslider .flex-control-paging li a:hover{
                 background-color: #415365;
             }
             #carousel .slides img {
@@ -1705,9 +1715,13 @@ img {
     }
 
 /*----------------------------------VIDEOS-------------------------------------*/
+.flexslider {
+    border: none;
+}
 #slider-video {
     max-width: 90%;
     margin: 0 auto 32px;
+
 }
     .slider-video-wrap {
          position: relative;
