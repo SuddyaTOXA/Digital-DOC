@@ -1288,21 +1288,14 @@ img {
         }
         .manual-list a:hover .manual-box {
             border-color: #ffcc00;
+            color: #ffcc00;
         }
             .manual-list a:hover .manual-box .doc {
-                -webkit-transition: 0.2s;
-                -moz-transition: 0.2s;
-                -o-transition: 0.2s;
-                transition: 0.2s;
                 display: none;
             }
             .manual-list a:hover .manual-box .doc-hov {
                 margin-top: -5px;
                 display: block;
-            }
-            .manual-list a:hover .manual-box .manual-title,
-            .manual-list a:hover .manual-box .manual-size-box {
-                color: #ffcc00;
             }
         .manual-img-box,
         .manual-title-box,
@@ -1323,10 +1316,7 @@ img {
             .manual-title {
                 font-size: 16px;
                 font-weight: 600;
-                -webkit-transition: 0.2s;
-                -moz-transition: 0.2s;
-                -o-transition: 0.2s;
-                transition: 0.2s;
+
             }
         .manual-size-box {
             width: 80px;
@@ -1335,10 +1325,7 @@ img {
             .manual-size-box span {
                 font-size: 14px;
                 font-weight: 400;
-                -webkit-transition: 0.2s;
-                -moz-transition: 0.2s;
-                -o-transition: 0.2s;
-                transition: 0.2s;
+
             }
 
     .section-product-description .content {
