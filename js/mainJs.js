@@ -70,10 +70,10 @@ $(document).ready(function() {
     });
 
     // Youtube img
-    $('.slider-video-wrap .yuotube-wrap').click(function(){
+    $('.slider-video-w.yuotube-wrap img').click(function(){
         var videoBox =  $(this).parent('.slider-video-wrap'),
             videoyId = videoBox.attr('data-youtube-id');
-             videoBox.html('<iframe class="my-video" src="http://www.youtube.com/embed/' + videoyId + '?autoplay=1&enablejsapi=1"  frameborder="0" allowfullscreen></iframe>');
+             videoBox.html('<iframe class="my-video" src="http://www.youtube.com/embed/' + videoyId autoplay=1&+ '?enablejsap i=1" frameborder="0" allowfullscreen></iframe>');
     });
 
 
