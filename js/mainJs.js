@@ -14,7 +14,7 @@ $(document).ready(function() {
         nav:true,
         items:1
     });
-    //cache a reference to the tabsd
+    //cache a reference to the tabs
 
     $(window).load(function() {
         // The slider being synced must be initialized first
@@ -34,7 +34,6 @@ $(document).ready(function() {
         $('#slider').flexslider({
             animation: "slide",
             controlNav: false,
-            directionNav: false,
             animationLoop: true,
             slideshow: false,
             sync: "#carousel"
@@ -56,7 +55,6 @@ $(document).ready(function() {
         $('#slider-video').flexslider({
             animation: "slide",
             controlNav: false,
-            directionNav: false,
             animationLoop: true,
             slideshow: false,
             sync: "#carousel-video"
@@ -64,7 +62,18 @@ $(document).ready(function() {
 
     });
 
-
+    // Youtube img
+    $('.slider-video-wrap img').click(function(){
+        var videoBox =  $(this).parent('.slider-video-wrap'),
+            videoId = videoBox.attr('data-youtube-id');
+             videoBox.html('<iframe  src="http://www.youtube.com/embed/' + videoId + '?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+    });
+    //
+    //$('#carousel-video').on("click", ".flex-prev, .flex-next, .carousel-img-wrap", function(){
+    //    $('#slider-video iframe').each(function(){
+    //        $(this).data('player').pauseVideo();
+    //    });
+    //});
 
     $(window).on('load resize', function() {
         var tabsLi = $('.tabs').children('li'),
