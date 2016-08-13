@@ -1666,6 +1666,9 @@ img {
                         background-color: rgba(65, 83, 101, 0.6);
                         z-index: 100;
                     }
+                        .carousel-img-wrap img {
+                            margin-bottom: -5px;
+                        }
                     .flex-active-slide .carousel-img-wrap:before {
                         opacity: 0;
                     }
@@ -1675,6 +1678,7 @@ img {
         height: 44px;
         left: 10px;
         background-image: url(../img/content/arrow_prev_b.png);
+        background-size: contain;
     }
     .flex-direction-nav .flex-prev,
     .flexslider:hover .flex-direction-nav .flex-prev {
@@ -1707,7 +1711,7 @@ img {
 }
     .slider-video-wrap {
          position: relative;
-         padding-bottom: 75%; /* 16:9 */
+         padding-bottom: 70%;
          height: 0;
     }
         .slider-video-wrap iframe {
@@ -1742,7 +1746,7 @@ img {
            font-weight: 600;
        }
 
-.yuotube-wrap {
+.youtube-wrap {
     display: block;
     position: relative;
     -webkit-transition: 0.2s;
@@ -1750,8 +1754,9 @@ img {
     -o-transition: 0.2s;
     transition: 0.2s;
     cursor: pointer;
+    text-align: center;
 }
-.yuotube-wrap:before {
+.youtube-wrap:before {
     position: absolute;
     content: '\f04b';
     width: 68px;
@@ -1769,7 +1774,7 @@ img {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.7);
 }
-.yuotube-wrap:hover:before {
+.youtube-wrap:hover:before {
     background-color: #cc181f;
 }
 /*----------------------------------SEARCH--------------------------------------*/

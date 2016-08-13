@@ -1,6 +1,6 @@
-@media all and (min-width: 1800px) {
+@media all and (min-width: 1220px) and (min-width: 1220px) {
 
-}
+}margin: 0 20px;
 
 @media all and (max-width: 1499px) {
     .owl-prev, .owl-next {
