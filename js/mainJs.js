@@ -58,22 +58,21 @@ $(document).ready(function() {
             animationLoop: true,
             slideshow: false,
             before: function(){
-                pauseVideo();
+                $('.my-video').videoController('pause');
             },
             sync: "#carousel-video"
         });
 
     });
 
-    // Video controller
-    $('.my-video').videoController({
-    });
 
-    // Youtube img
+    // uploading Youtube iframes
     $('.slider-video-wrap .youtube-wrap').click(function(){
         var videoBox =  $(this).parent('.slider-video-wrap'),
-            videoyId = videoBox.attr('data-youtube-id');
-             videoBox.html('<iframe class="my-video" src="http://www.youtube.com/embed/' + videoyId+'?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>');
+            id = videoBox.data('youtube-id');
+
+        videoBox.html('<iframe class="my-video" src="http://www.youtube.com/embed/' + id + '?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>');
+        videoBox.children('.my-video').videoController();
     });
 
 
@@ -132,9 +131,3 @@ $(document).ready(function() {
     });
 
 });
-
-function pauseVideo() {
-    $('.my-video').videoController('pause');
-}
-
-
