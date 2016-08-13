@@ -1741,6 +1741,36 @@ img {
            font-size: 14px;
            font-weight: 600;
        }
+
+.yuotube-wrap {
+    display: block;
+    position: relative;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.yuotube-wrap:before {
+    position: absolute;
+    content: '\f04b';
+    width: 68px;
+    height: 48px;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -34px;
+    font: 21px FontAwesome;
+    line-height: 48px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.yuotube-wrap:hover:before {
+    background-color: #cc181f;
+}
 /*----------------------------------SEARCH--------------------------------------*/
 .search-box {
     margin-bottom: 5px;
