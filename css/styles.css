@@ -1581,12 +1581,16 @@ img {
 }
 
     #slider {
-            max-width: 70%;
-            margin: 22px auto 30px;
-            /*-webkit-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);*/
-            /*-moz-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);*/
-            /*-o-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);*/
-            /*box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);*/
+        max-width: 70%;
+        margin: 22px auto 30px;
+        -webkit-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);
+        -moz-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);
+        -o-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);
+        box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);
+    }
+    #slider img {
+        display: block;
+        width: 100%;
     }
     #slider a.lupa {
         position: relative;
@@ -1654,8 +1658,7 @@ img {
             .flexslider .flex-control-paging li a:hover{
                 background-color: #415365;
             }
-            #carousel .slides img,
-            #slider .slides img {
+            #carousel .slides img {
                 -webkit-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);
                 -moz-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);
                 -o-box-shadow: 0 2px 8px 1px rgba(148, 148, 148, 0.5);
