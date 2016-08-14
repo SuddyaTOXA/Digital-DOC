@@ -64,6 +64,28 @@ $(document).ready(function() {
             sync: "#carousel-video"
         });
 
+        $('#carousel-one-product').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: true,
+            directionNav: false,
+            slideshow: false,
+            itemWidth: 110,
+            itemMargin: 10,
+            minItems: 2,
+            maxItems: 4,
+            move: 1,
+            asNavFor: '#slider-one-product'
+        });
+
+        $('#slider-one-product').flexslider({
+            animation: "slide",
+            controlNav: true,
+            animationLoop: true,
+            directionNav: false,
+            slideshow: true,
+            sync: "#carousel-one-product"
+        });
     });
 
 
