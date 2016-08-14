@@ -1248,7 +1248,7 @@ img {
 }
     .product-page-box .breadcrumbs {
         margin-top: 0;
-        margin-bottom: 17px;
+        margin-bottom: 35px;
     }
     .manual-list {
         float: left;
@@ -1307,7 +1307,7 @@ img {
             width: 29px;
         }
         .manual-img-box img {
-            width: 100%;
+            max-width: 100%;
         }
         .manual-title-box {
             padding-left: 20px;
@@ -1340,6 +1340,50 @@ img {
     .section-product-description .content h6 {
         margin-bottom: 10px;
     }
+.one-product-slider {
+    background-color: #000000;
+}
+    .move-up {
+        margin-top: -100px;
+    }
+    .one-product-wrap {
+        display: table;
+        width: 100%;
+    }
+        .one-product-slider-wrap {
+            display: table-cell;
+        }
+        .one-product-about-wrap {
+            display: table-cell;
+            width: 420px;
+            height: 660px;
+            vertical-align: middle;
+            padding: 0 10px 100px;
+        }
+            .one-product-title {
+                display: block;
+                margin-bottom: 4px;
+                font-size: 36px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+            .one-product-model {
+                display: block;
+                margin-bottom: 16px;
+                font-size: 14px;
+            }
+            .one-product-price {
+                display: block;
+                font-size: 26px;
+                font-weight: 700;
+                color: #ffcc00;
+            }
+            .one-product-about-price {
+                display: block;
+                font-size: 15px;
+                font-weight: 600
+            }
 /*-------------------------------------CONTACT-US-----------------------------------*/
 .contact-box {
     padding: 20px 40px 40px;

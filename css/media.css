@@ -716,6 +716,20 @@
     .home-header .header-top-box {
         padding-top: 30px;
     }
+    .product-page-box,
+    .manual-box,
+    .manual-title-box {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+        .manual-title,
+        .manual-size-box span{
+            font-size: 15px;
+        }
+        .manual-size-box {
+            width: 40px;
+            text-align: center;
+        }
 }
 
 @media all and (max-width: 380px) {
