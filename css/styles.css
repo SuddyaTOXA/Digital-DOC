@@ -1316,16 +1316,18 @@ img {
             .manual-title {
                 font-size: 16px;
                 font-weight: 600;
-
+                position: relative;
+                top: -1px;
             }
         .manual-size-box {
-            width: 80px;
+            width: 70px;
             text-align: right;
         }
             .manual-size-box span {
                 font-size: 14px;
                 font-weight: 400;
-
+                position: relative;
+                top: -2px;
             }
 
 .section-product-description .content {
@@ -2424,6 +2426,22 @@ img {
         text-decoration: underline;
     }
 
+/*------------------------------------ERROR-404-------------------------------------*/
+.wrap-404 {
+    text-align: center;
+    padding: 60px 0 70px;
+    color: #425365;
+    font-size: 66px;
+    letter-spacing: 0;
+}
+    .wrap-404 .error-404{
+        display: block;
+        margin-bottom: -20px;
+        font-weight: 700;
+        font-size: 180px;
+        line-height: 1;
+    }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -2512,3 +2530,17 @@ img {
             .footer-social i.fa {
                 font-size: 20px;
             }
+
+/*----------------------------------------------------------------------------------*/
+/*--------------------------------------OTHER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#fancybox-outer {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#fancybox-content {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
