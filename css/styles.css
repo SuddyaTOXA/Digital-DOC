@@ -1406,6 +1406,9 @@ img {
     width: 90%;
     margin: 0 auto;
 }
+    #slider-one-product .slides img {
+        max-height: 400px;
+    }
     #slider-one-product .flex-control-nav {
         display: none;
     }
