@@ -1700,11 +1700,14 @@ img {
     }
         .contact-box-list > li {
             display: table-cell;
-            width: 35%;
+            width: 30%;
             vertical-align: middle;
             padding-left: 30px;
             padding-right: 20px;
             border-left: 1px solid #e6e6e6;
+        }
+        .contact-box-list > .contact-box-list-adress {
+            width: 42%;
         }
             .contact-box-list .contact-box-list-work {
                 vertical-align: middle;
@@ -1733,9 +1736,6 @@ img {
         .list-phone-box a {
             font-weight: 600;
             text-decoration: none;
-        }
-        .contact-box-list-adress {
-
         }
             .contact-box-list-work strong {
                 font-size: 16px;
