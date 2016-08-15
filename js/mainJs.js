@@ -67,7 +67,7 @@ $(document).ready(function() {
         $('#carousel-one-product').flexslider({
             animation: "slide",
             controlNav: false,
-            animationLoop: true,
+            animationLoop: false,
             directionNav: false,
             slideshow: false,
             itemWidth: 110,

@@ -803,6 +803,7 @@ img {
         .hero-banner-bottom-came-see-box-text {
             display: table-cell;
             padding-right: 20px;
+            vertical-align: middle;
         }
         .hero-banner-bottom-came-see-box-btn {
             width: 150px;
@@ -1395,13 +1396,14 @@ img {
     padding-bottom: 120px;
 }
     #carousel-one-product {
-        height: 80px;
+        height: 84px;
         margin: 0 auto;
     }
         #carousel-one-product .flex-viewport {
             position: absolute !important;
             left: 50%;
             transform: translateX(-50%);
+            max-width: 100%;
         }
 #slider-one-product.flexslider,
 #carousel-one-product.flexslider {
@@ -1436,8 +1438,8 @@ img {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    width: 110px !important;
-    height: 80px !important;
+    width: 114px !important;
+    height: 84px !important;
     cursor: pointer;
 }
 #carousel-one-product .slides li:before {
@@ -1775,8 +1777,12 @@ img {
         }
         a.print-act{ background-position: -5px -85px; }
         a.mail-act{ background-position: -45px -85px; }
-        a.print-act:hover{  background-position: -5px -45px; }
+        a.print-act:hover{ background-position: -5px -45px; }
         a.mail-act:hover{ background-position: -45px -45px; }
+        .content .print-act:hover,
+        .content .mail-act:hover {
+            text-decoration: none;
+        }
         a.print-act:hover:before,
         a.mail-act:hover:before {
             position: absolute;
@@ -2056,7 +2062,7 @@ img {
             position: absolute;
             left: 12px;
             top: 50%;
-            margin-top: -9px;
+            margin-top: -8px;
             font: 16px FontAwesome;
             color: #8e959b;
         }
@@ -2163,7 +2169,7 @@ img {
     top: 50%;
     left: 50%;
     margin-left: -8px;
-    margin-top: -12px;
+    margin-top: -13px;
     font: 25px FontAwesome;
     color: #8B9499;
     -webkit-transition: 0.2s;
