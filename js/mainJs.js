@@ -17,13 +17,17 @@ $(document).ready(function() {
     //cache a reference to the tabs
 
     $(window).load(function() {
-        setInterval(function() {
-           var carProd = $('#carousel-one-product'),
-               countLi = carProd.find('img').length,
-               widthViewport = (124*countLi)-10,
-               viewPort = carProd.find('.flex-viewport');
-               viewPort.css({'width': '' + widthViewport + 'px'});
-        },100)
+        var carProd = $('#carousel-one-product'),
+            countLi = carProd.find('img').length;
+        if ( countLi > 1 ) {
+            setInterval(function() {
+              var widthViewport = (124*countLi)-10,
+                  viewPort = carProd.find('.flex-viewport');
+                  viewPort.css({'width': widthViewport + 'px'});
+            },100)
+        } else {
+            carProd.css({'display': 'none'});
+        };
     })
 
     $(window).load(function() {
