@@ -1235,8 +1235,119 @@ img {
                 -moz-border-radius: 5px;
                 border-radius: 5px;
             }
-/*--------*/
-
+/*-------------------------------------PRODUCT-LIST---------------------------------*/
+.section-product-list {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+    .product-category-wrap {
+        overflow: hidden;
+        margin-bottom: 7px;
+    }
+    .product-category-list {
+        margin-left: -20px;
+    }
+        .product-category-list li {
+            float: left;
+            width: 50%;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            opacity: 0.5;
+        }
+        .product-category-list li.active {
+            opacity: 1;
+        }
+        .product-category-list li.active .product-category-box {
+            border-color: #ffcc00;
+            overflow: hidden;
+        }
+            .product-category-list a {
+                text-decoration: none;
+            }
+                .product-category-box-wrap {
+                    position: relative;
+                }
+                .product-category-list li.active .product-category-box-wrap:before,
+                .product-category-list li.active .product-category-box-wrap:after {
+                    position: absolute;
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    left: 50%;
+                }
+                .product-category-list li.active .product-category-box-wrap:before {
+                    bottom: -13px;
+                    margin-left: -18px;
+                    border-left: 18px solid transparent;
+                    border-right: 18px solid transparent;
+                    border-top: 16px solid #ffcc00;
+                }
+                .product-category-list li.active .product-category-box-wrap:after {
+                    bottom: -9px;
+                    margin-left: -15px;
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    border-top: 13px solid #ffffff;
+                }
+                    .product-category-box {
+                        display: table;
+                        width: 100%;
+                        height: 161px;
+                        background-color: #ffffff;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px;
+                        border: 3px solid rgba(255, 255, 255, 1);
+                    }
+                        .product-category-info-wrap {
+                            display: table-cell;
+                            width: 50%;
+                            vertical-align: middle;
+                            padding: 10px;
+                        }
+                        .product-category-img-wrap {
+                            display: table-cell;
+                            width: 50%;
+                            text-align: center;
+                            vertical-align: bottom;
+                        }
+                            .product-category-img-wrap img {
+                                max-width: 100%;
+                                margin-bottom: -8px;
+                            }
+                                .product-category-title {
+                                    font-size: 28px;
+                                    font-weight: 600;
+                                }
+                                .product-category-count {
+                                    display: block;
+                                    margin-top: -3px;
+                                    font-size: 16px;
+                                }
+    .product-category-page-title {
+        overflow: hidden;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .product-category-page-title:before,
+    .product-category-page-title:after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        border-sizing: border-box;
+        width: 100%;
+        height: 1px;
+        background-color: #cdcec0;
+        border: solid #f0f1f3;
+        border-width: 0 10px;
+    }
+    .product-category-page-title:before {
+        margin-left: -100%;
+    }
+    .product-category-page-title:after {
+        margin-right: -100%;
+    }
 /*-------------------------------------PRODUCT-PAGE---------------------------------*/
 .full-with-content-box {
     display: block;
