@@ -73,7 +73,6 @@ $(document).ready(function() {
             itemWidth: 110,
             itemMargin: 10,
             minItems: 2,
-            maxItems: 8,
             asNavFor: '#slider-one-product'
         });
 

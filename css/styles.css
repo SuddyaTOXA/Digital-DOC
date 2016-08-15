@@ -1395,13 +1395,13 @@ img {
     padding-bottom: 120px;
 }
     #carousel-one-product {
-        /*max-width: 472px;*/
+        height: 80px;
         margin: 0 auto;
     }
         #carousel-one-product .flex-viewport {
-            position: absolute;
+            position: absolute !important;
             left: 50%;
-            transform: translateX(-25%);
+            transform: translateX(-50%);
         }
 #slider-one-product.flexslider,
 #carousel-one-product.flexslider {
@@ -1426,31 +1426,61 @@ img {
 .one-product-slider-wrap img {
     max-width: 700px;
 }
-#carousel-one-product .carousel-img-wrap {
-    display: inline-block;
+#carousel-one-product .slides {
+    transform: translate3d(0, 0, 0) !important;
 }
-#carousel-one-product .carousel-img-wrap:before {
+#carousel-one-product .slides li {
+    position: relative;
+    text-align: center;
+    border: 2px solid rgba(26, 21, 16, 0.78);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 110px !important;
+    height: 80px !important;
+}
+#carousel-one-product .slides li:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
     opacity: 0;
     background-color: rgba(255, 204, 0, 0.49);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 121;
 }
-#carousel-one-product .carousel-img-wrap:hover:before {
+#carousel-one-product .slides li:hover:before {
     opacity: 1;
 }
-#carousel-one-product img{
-    border: 2px solid rgba(255, 255, 255, 0);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+#carousel-one-product .slides li:hover {
+    border-color: rgba(255, 204, 0, 0.49);
 }
-#carousel-one-product .flex-active-slide img{
+#carousel-one-product .slides li.flex-active-slide {
     border: 2px solid #ffcc00;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
+    #carousel-one-product .carousel-img-wrap:before {
+        opacity: 0;
+    }
+/*#carousel-one-product .carousel-img-wrap:before {*/
+    /*opacity: 0;*/
+    /*background-color: rgba(255, 204, 0, 0.49);*/
+    /*-webkit-border-radius: 5px;*/
+    /*-moz-border-radius: 5px;*/
+    /*border-radius: 5px;*/
+/*}*/
+/*#carousel-one-product .carousel-img-wrap:hover:before {*/
+    /*opacity: 1;*/
+/*}*/
+#carousel-one-product img{
+    max-height: 76px;
+    width: auto;
+}
+
 /*-------------------------------------CONTACT-US-----------------------------------*/
 .contact-box {
     padding: 20px 40px 40px;
