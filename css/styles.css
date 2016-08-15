@@ -1395,9 +1395,14 @@ img {
     padding-bottom: 120px;
 }
     #carousel-one-product {
-        max-width: 472px;
+        /*max-width: 472px;*/
         margin: 0 auto;
     }
+        #carousel-one-product .flex-viewport {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-25%);
+        }
 #slider-one-product.flexslider,
 #carousel-one-product.flexslider {
     background-color: transparent;
@@ -1407,7 +1412,7 @@ img {
     margin: 0 auto;
 }
     #slider-one-product .slides img {
-        max-height: 400px;
+        max-height: 450px;
     }
     #slider-one-product .flex-control-nav {
         display: none;

@@ -473,7 +473,11 @@
 @media all and (max-width: 680px) {
 
 }
-
+@media all and (min-width: 641px) and (max-width: 860px) {
+    #slider-one-product {
+        margin-bottom: 20px;
+    }
+}
 @media all and (max-width: 640px) {
 .home-header .header-top-box {
     padding-top: 25px;
