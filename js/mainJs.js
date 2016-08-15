@@ -16,20 +16,6 @@ $(document).ready(function() {
     });
     //cache a reference to the tabs
 
-    $(window).load(function() {
-        var carProd = $('#carousel-one-product'),
-            countLi = carProd.find('img').length;
-        if ( countLi > 1 ) {
-            setInterval(function() {
-              var widthViewport = (124*countLi)-10,
-                  viewPort = carProd.find('.flex-viewport');
-                  viewPort.css({'width': widthViewport + 'px'});
-            },100)
-        } else {
-            carProd.css({'display': 'none'});
-        };
-    })
-
 
     $(window).load(function() {
         // The slider being synced must be initialized first
@@ -82,9 +68,10 @@ $(document).ready(function() {
         $('#carousel-one-product').flexslider({
             animation: "slide",
             controlNav: false,
-            animationLoop: false,
+            animationLoop: true,
             directionNav: false,
-            slideshow: false,
+            slideshow: true,
+            slideshowSpeed: 5000,
             itemWidth: 110,
             itemMargin: 10,
             minItems: 2,
@@ -96,9 +83,22 @@ $(document).ready(function() {
             controlNav: true,
             animationLoop: true,
             directionNav: false,
-            slideshow: false,
+            slideshow: true,
+            slideshowSpeed: 5000,
             sync: "#carousel-one-product"
         });
+
+        var carProd = $('#carousel-one-product'),
+            countLi = carProd.find('img').length;
+        if ( countLi > 1 ) {
+            setInterval(function() {
+                var widthViewport = (124*countLi)-10,
+                    viewPort = carProd.find('.flex-viewport');
+                viewPort.css({'width': widthViewport + 'px'});
+            }, 100);
+        } else {
+            carProd.css({'display': 'none'});
+        }
     });
 
 
