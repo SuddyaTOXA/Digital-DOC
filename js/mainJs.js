@@ -73,8 +73,7 @@ $(document).ready(function() {
             itemWidth: 110,
             itemMargin: 10,
             minItems: 2,
-            maxItems: 4,
-            move: 1,
+            maxItems: 8,
             asNavFor: '#slider-one-product'
         });
 
@@ -83,7 +82,7 @@ $(document).ready(function() {
             controlNav: true,
             animationLoop: true,
             directionNav: false,
-            slideshow: true,
+            slideshow: false,
             sync: "#carousel-one-product"
         });
     });

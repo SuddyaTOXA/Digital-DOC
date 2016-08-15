@@ -107,6 +107,9 @@
     .support-issue-page .search-content-box .input-style {
         min-width: auto;
     }
+    .one-product-about-wrap {
+        width: 320px;
+    }
 }
 
 @media all and (max-width: 991px) {
@@ -306,7 +309,7 @@
     #carousel {
         max-width: 60%;
     }
-    .product-page-box {
+    .full-with-content-box {
         display: table;
     }
     .manual-list-wrap {
@@ -323,8 +326,12 @@
     }
         .one-product-about-box {
             padding-top: 20px;
+            margin-bottom: 20px;
             text-align: center;
         }
+    #slider-one-product {
+        width: 100%;
+    }
 
 }
 
@@ -552,6 +559,15 @@
     .event-info-box {
         text-align: center;
     }
+    #carousel-one-product {
+        display: none;
+    }
+    #slider-one-product .flex-control-nav {
+        display: block;
+    }
+    #slider-one-product {
+        margin-bottom: 60px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -580,15 +596,6 @@
         float: none;
         margin: 0 auto 40px;
         clear: both;
-    }
-    #carousel-one-product {
-        display: none;
-    }
-    #slider-one-product .flex-control-nav {
-        display: block;
-    }
-    #slider-one-product {
-        margin-bottom: 60px;
     }
 }
 
@@ -714,16 +721,14 @@
     .flexslider .flex-control-nav {
         bottom: -45px;
     }
-    .product-page-box {
+    .full-with-content-box {
         padding-left: 20px;
         padding-right: 20px;
     }
     .one-product-title {
         font-size: 32px;
     }
-    #slider-one-product {
-        width: 80%;
-    }
+
 
     .wrap-404 {
         padding: 30px 0 40px;
@@ -751,11 +756,14 @@
     .home-header .header-top-box {
         padding-top: 30px;
     }
-    .product-page-box,
+    .full-with-content-box,
     .manual-box,
     .manual-title-box {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .manual-title-box {
+        max-width: 140px;
     }
         .manual-title,
         .manual-size-box span{
