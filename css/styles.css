@@ -1438,6 +1438,7 @@ img {
     border-radius: 5px;
     width: 110px !important;
     height: 80px !important;
+    cursor: pointer;
 }
 #carousel-one-product .slides li:before {
     position: absolute;
