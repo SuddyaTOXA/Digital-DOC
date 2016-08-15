@@ -17,6 +17,16 @@ $(document).ready(function() {
     //cache a reference to the tabs
 
     $(window).load(function() {
+        setInterval(function() {
+           var carProd = $('#carousel-one-product'),
+               countLi = carProd.find('img').length,
+               widthViewport = (124*countLi)-10,
+               viewPort = carProd.find('.flex-viewport');
+               viewPort.css({'width': '' + widthViewport + 'px'});
+        },100)
+    })
+
+    $(window).load(function() {
         // The slider being synced must be initialized first
         $('#carousel').flexslider({
             animation: "slide",
