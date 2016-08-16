@@ -351,6 +351,9 @@
         padding-left: 0;
         padding-bottom: 20px;
     }
+    .distributors-logo-box {
+        width: 200px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -590,6 +593,21 @@
     #slider-one-product {
         margin-bottom: 60px;
     }
+    .distributors-contact-managers-list {
+        margin-left: 0;
+    }
+        .distributors-contact-managers-list > li {
+            float: none;
+            width: 100%;
+            padding-left: 0;
+        }
+            .distributors-contact-managers-box {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        .distributors-logo-box {
+            width: 150px;
+        }
 }
 
 @media all and (max-width: 600px) {
@@ -789,6 +807,13 @@
     }
     .product-cart-title {
         padding-right: 100px;
+    }
+    .distributors-logo-box {
+        display: table-header-group;
+        text-align: center;
+    }
+    .distributors-left-box {
+        text-align: center;
     }
 }
 

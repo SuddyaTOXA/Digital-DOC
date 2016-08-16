@@ -1672,7 +1672,109 @@ img {
     max-height: 76px;
     width: auto;
 }
-
+/*-------------------------------------DISTRIBUTORS---------------------------------*/
+.section-distributors-map {
+    height: 150px;
+    background-color: #000000;
+}
+.distributors-info-wrap {
+    margin-top: -26px;
+}
+    .distributors-info-list li {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .distributors-info-list li:last-child {
+        border-bottom: none;
+    }
+        .distributors-info-list a {
+            text-decoration: none;
+        }
+        .distributors-info-list a:hover .distributors-name{
+            color: #ffcc00;
+        }
+            .distributors-info-box {
+                display: table;
+                width: 100%;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+                .distributors-left-box {
+                    display: table-cell;
+                    vertical-align: middle;
+                    padding-right: 20px;
+                }
+                    .distributors-name {
+                        font-size: 24px;
+                        font-weight: 700;
+                        -webkit-transition: 0.2s;
+                        -moz-transition: 0.2s;
+                        -o-transition: 0.2s;
+                        transition: 0.2s;
+                    }
+                    .distributors-site-url {
+                        display: block;
+                        margin-top: 8px;
+                        font-size: 14px;
+                    }
+                .distributors-logo-box {
+                    display: table-cell;
+                    width: 250px;
+                    vertical-align: middle;
+                }
+                    .distributors-logo-box img {
+                        max-width: 100%;
+                    }
+.distributors-contact-managers-list {
+    overflow: hidden;
+    margin-bottom: -20px;
+    margin-left: -20px;
+}
+    .distributors-contact-managers-list > li {
+        float: left;
+        width: 50%;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .distributors-contact-managers-list > li:nth-child(odd) {
+        clear: both;
+    }
+        .distributors-contact-managers-box {
+            padding: 22px 30px 24px;
+            background-color: #f5f6f8;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .distributors-contact-managers-list .fa {
+            float: left;
+            font-size: 14px;
+            margin-top: 3px;
+        }
+            .distributors-contact-managers-list a {
+                text-decoration: none;
+            }
+                .distributors-contact-location {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 18px;
+                }
+                .managers-box-name {
+                    margin-bottom: 2px;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                .managers-list-phone-box {
+                    overflow: hidden;
+                    margin-bottom: 2px;
+                    padding-left: 10px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .managers-list-email-box {
+                    overflow: hidden;
+                    padding-left: 7px;
+                    font-size: 14px;
+                }
 /*-------------------------------------CONTACT-US-----------------------------------*/
 .contact-box {
     padding: 20px 40px 40px;
