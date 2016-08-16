@@ -363,18 +363,27 @@ img {
             position: relative;
             display: table-cell;
             text-align: center;
+            cursor: pointer;
             -webkit-transition: 0.2s;
             -moz-transition: 0.2s;
             -o-transition: 0.2s;
             transition: 0.2s;
         }
-        .main-nav > ul > li:hover {
+        .main-nav > ul > li:hover,
+        .main-nav .current-menu-item,
+        .main-nav .current_page_item,
+        .main-nav .current-menu-parent,
+        .main-nav .current-menu-ancestor,
+        .main-nav .current-page-ancestor {
             background-color: #374756;
-            cursor: pointer;
         }
-        .home-header .main-nav > ul > li:hover {
+        .home-header .main-nav > ul > li:hover,
+        .home-header .main-nav .current-menu-item,
+        .home-header .main-nav .current_page_item,
+        .home-header .main-nav .current-menu-parent,
+        .home-header .main-nav .current-menu-ancestor,
+        .home-header .main-nav .current-page-ancestor  {
             background-color: transparent;
-            cursor: pointer;
         }
             .main-nav > ul > li > a {
                 display: block;
@@ -1857,13 +1866,9 @@ img {
         margin-bottom: 32px;
         border: 1px solid #dfdfdf;
     }
-        #map {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-        }
-        .google-maps-builder {
+        #map,
+        .google-maps-builder,
+        #wpgmza_map {
             position: absolute !important;
             height: 100% !important;
             width: 100% !important;
@@ -2808,7 +2813,7 @@ img {
         }
             .footer-nav > li {
                 display: inline-table;
-                margin-left: -4px;
+                margin-left: -5px;
             }
                 .footer-nav > li > a {
                     display: block;
@@ -2818,7 +2823,12 @@ img {
                     color: #ffffff;
                     text-decoration: none;
                 }
-                .footer-nav a:hover {
+                .footer-nav a:hover,
+                .footer-nav .current-menu-item a,
+                .footer-nav .current_page_item a,
+                .footer-nav .current-menu-parent a,
+                .footer-nav .current-menu-ancestor a,
+                .footer-nav .current-page-ancestor a {
                     color: #ffcc00;
                     background-color: #182631;
                 }
