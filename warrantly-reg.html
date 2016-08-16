@@ -399,43 +399,43 @@
                                             <div class="registration-input-box">
                                                 <div class="select-wrap">
                                                     <select class="select-style input-style" id="reg-select-model">
-                                                        <option selected >All categories</option>
-                                                        <option>Category 1</option>
-                                                        <option>Category2</option>
-                                                        <option>Category 3</option>
-                                                        <option>Category 4</option>
+                                                        <option selected >Select</option>
+                                                        <option>Model 1</option>
+                                                        <option>Model 2</option>
+                                                        <option>Model 3</option>
+                                                        <option>Model 4</option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="registration-label-box">
-                                                <label for="reg-last-name">
+                                                <label for="reg-serial-number">
                                                     <p>Serial number(s) Separated by comma</p>
                                                 </label>
                                             </div>
                                             <div class="registration-input-box">
-                                                <input type="text" class="input-style" id="reg-last-name">
+                                                <input type="text" class="input-style" id="reg-serial-number">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="registration-label-box">
-                                                <label for="reg-phone">
+                                                <label for="reg-name-distributor">
                                                     <p>Name of distributor purchased from</p>
                                                 </label>
                                             </div>
                                             <div class="registration-input-box">
-                                                <input type="text" class="input-style" id="reg-phone">
+                                                <input type="text" class="input-style" id="reg-name-distributor">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="registration-label-box">
-                                                <label for="reg-email">
+                                                <label for="reg-purchase">
                                                     <p>Purchase Date</p>
                                                 </label>
                                             </div>
                                             <div class="registration-input-box">
-                                                <input type="text" class="input-style" id="reg-email">
+                                                <input type="text" class="input-style" id="reg-purchase">
                                             </div>
                                         </li>
                                     </ul>
@@ -452,18 +452,28 @@
                                                 </label>
                                             </div>
                                             <div class="registration-input-box">
-                                                <input type="range" name="number" value="0" class="input-style range-class" id="reg-satisfied" min="0" max="15" aria-invalid="false">
+                                                <input type="range" name="number" value="1" class="input-style range-class" id="reg-satisfied" min="1" max="10" aria-invalid="false">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="registration-label-box">
-                                                <p>How satisfied are you with your Digital Doc purchase?</p>
+                                                <label for="reg-satisfied">
+                                                    <p>How satisfied are you with the product installation?</p>
+                                                </label>
                                             </div>
                                             <div class="registration-input-box">
-                                                <label class="check-style">
-                                                    <input type="checkbox" name="memory-donation" value="yes">
-                                                    <span>Yes.</span>
+                                                <input type="range" name="number" value="1" class="input-style range-class" id="reg-satisfied" min="1" max="10" aria-invalid="false">
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="registration-label-box">
+                                                <label for="reg-satisfied">
+                                                    <p>How satisfied are you with training you and your staff?</p>
                                                 </label>
+                                            </div>
+                                            <div class="registration-input-box">
+                                                <input type="range" name="number" value="1" class="input-style range-class" id="reg-satisfied" min="1" max="10" aria-invalid="false">
                                             </div>
                                         </li>
                                         <li>
@@ -485,7 +495,20 @@
                                                 </ul>
                                             </div>
                                         </li>
+                                        <li>
+                                            <div class="registration-label-box">
+                                                <label for="reg-name-distributor">
+                                                    <p>Enter your Smile Source account number if applicable</p>
+                                                </label>
+                                            </div>
+                                            <div class="registration-input-box">
+                                                <input type="text" class="input-style" id="reg-name-distributor">
+                                            </div>
+                                        </li>
                                     </ul>
+                                </div>
+                                <div class="registration-btn-box">
+                                    <button type="submit" class="btn yellow-invers">Send Registration</button>
                                 </div>
                             </form>
                         </div>
