@@ -813,6 +813,8 @@
         text-align: center;
     }
     .distributors-left-box {
+        padding-top: 10px;
+        padding-right: 0;
         text-align: center;
     }
 }
