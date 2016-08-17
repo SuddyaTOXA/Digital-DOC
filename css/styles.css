@@ -201,11 +201,12 @@ input:focus:-moz-placeholder { opacity: 0; }
     border-radius: 50%;
     cursor: pointer;
     color: #425365;
-    font: normal normal normal 12px/18px FontAwesome;
+    font: normal normal normal 14px/18px FontAwesome;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     text-align: center;
     background: #ffffff;
+    letter-spacing: 1;
 }
 .radio-style input[type=radio]:checked + span:before {
     content: '\f111';
@@ -2175,9 +2176,6 @@ img {
         .registration-block-list > li:last-child {
             margin-bottom: 0;
         }
-        .registration-block-list > li:hover .registration-label-box p {
-            color: #425365;
-        }
             .registration-label-box {
                 display: table-cell;
                 width: 56%;
@@ -2186,11 +2184,14 @@ img {
             }
                 .registration-label-box p {
                     font-size: 14px;
-                    color: #a7acb0;
+                    color: #425365;
                     -webkit-transition: 0.2s;
                     -moz-transition: 0.2s;
                     -o-transition: 0.2s;
                     transition: 0.2s;
+                }
+                .registration-block-list > li:hover .registration-label-box p {
+                    font-weight: 600;
                 }
             .registration-input-box {
                 display: table-cell;
@@ -2215,8 +2216,8 @@ img {
             margin-top: 40px;
             font-weight: 600;
             min-width: 280px;
-            padding-top: 15px;
-            padding-bottom: 16px;
+            padding-top: 16px;
+            padding-bottom: 15px;
         }
 /*-------------------------------------EVENT-PAGE-----------------------------------*/
 .event-page .page-title { margin-bottom: 8px; }
