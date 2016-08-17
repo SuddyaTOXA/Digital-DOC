@@ -33,8 +33,11 @@ $(document).ready(function() {
         nav:true,
         items:1
     });
-    //cache a reference to the tabs
+    // Vector map
 
+
+
+    //cache a reference to the tabs
 
     $(window).load(function() {
         // The slider being synced must be initialized first
@@ -186,3 +189,23 @@ $(document).ready(function() {
     });
 
 });
+
+var map = AmCharts.makeChart( "mapdiv", {
+
+    "type": "map",
+    "theme": "chalk",
+    "projection":"miller",
+
+    "dataProvider": {
+        "map": "worldLow",
+        "getAreasFromMap": true
+    },
+    "areasSettings": {
+        "autoZoom": true,
+        "selectedColor": "#CC0000"
+    },
+    "export": {
+        "enabled": true,
+        "position": "bottom-right"
+    }
+} );
