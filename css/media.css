@@ -621,6 +621,9 @@
         .registration-btn-box .btn{
             min-width: auto;
         }
+    .slider-container {
+        margin-top: 20px;
+    }
 }
 
 @media all and (max-width: 600px) {

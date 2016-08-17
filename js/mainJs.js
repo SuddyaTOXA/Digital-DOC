@@ -166,4 +166,11 @@ $(document).ready(function() {
         }
     });
 
+    //range slider
+    $('.range-style').jRange({
+        from: 1,
+        to: 10,
+        step: 1,
+        width:400
+    });
 });
