@@ -534,6 +534,7 @@ img {
         .main-nav .current-menu-ancestor,
         .main-nav .current-page-ancestor,
         .category .main-nav .menu-item-32,
+        .tag .main-nav .menu-item-32,
         .single-post .main-nav .menu-item-32,
         .search .main-nav .menu-item-32 {
             background-color: #374756;
@@ -545,6 +546,7 @@ img {
         .home-header .main-nav .current-menu-ancestor,
         .home-header .main-nav .current-page-ancestor,
         .category .home-header .main-nav .menu-item-32,
+        .tag .home-header .main-nav .menu-item-32,
         .single-post .home-header .main-nav .menu-item-32,
         .search .home-header .main-nav .menu-item-32 {
             background-color: transparent;
@@ -565,6 +567,7 @@ img {
             .main-nav .current-menu-ancestor > a,
             .main-nav .current-page-ancestor > a,
             .category .main-nav .menu-item-32 > a,
+            .tag .main-nav .menu-item-32 > a,
             .single-post .main-nav .menu-item-32 > a,
             .search .main-nav .menu-item-32 > a {
                 color: #ffcc00;
@@ -622,6 +625,7 @@ img {
 .main-nav .sub-menu .current-menu-ancestor a,
 .main-nav .sub-menu .current-page-ancestor a,
 .category .main-nav .sub-menu .menu-item-32 a,
+.tag .main-nav .sub-menu .menu-item-32 a,
 .single-post .main-nav .sub-menu .menu-item-32 a,
 .search .main-nav .sub-menu .menu-item-32 a {
     background: #374756;
@@ -634,6 +638,7 @@ img {
 .home-header .main-nav .sub-menu .current-menu-ancestor a,
 .home-header .main-nav .sub-menu .current-page-ancestor a,
 .category .home-header .main-nav .sub-menu .menu-item-32 a,
+.tag .home-header .main-nav .sub-menu .menu-item-32 a,
 .single-post .home-header .main-nav .sub-menu .menu-item-32 a,
 .search .home-header .main-nav .sub-menu .menu-item-32 a {
     background: rgba(45,57,69,0.8);
@@ -744,6 +749,7 @@ img {
                 .mobile-menu .current-menu-ancestor > a,
                 .mobile-menu .current-page-ancestor > a,
                 .category .mobile-menu .menu-item-32 > a,
+                .tag .mobile-menu .menu-item-32 > a,
                 .single-post .mobile-menu .menu-item-32 > a,
                 .search .mobile-menu .menu-item-32 > a {
                     background-color: #182631;
@@ -3134,6 +3140,7 @@ img {
                 .footer-nav .current-menu-ancestor a,
                 .footer-nav .current-page-ancestor a,
                 .category .footer-nav .menu-item-32 a,
+                .tag .footer-nav .menu-item-32 a,
                 .single-post .footer-nav .menu-item-32 a,
                 .search .footer-nav .menu-item-32 a {
                     color: #ffcc00;
