@@ -166,11 +166,22 @@ $(document).ready(function() {
         }
     });
 
+    // the blocking of links default behavior
+    function prevent(){
+        $('.prevent, .mobile-menu .expanded, a[href="#"]').on('click', function(event){
+            event.preventDefault();
+        });
+    }
+    prevent();
+
     //range slider
     $('.range-style').jRange({
         from: 1,
         to: 10,
         step: 1,
-        width:400
+        width: 400
+    });
+    $('#datetator').datetator({
+        useDimmer: true
     });
 });
