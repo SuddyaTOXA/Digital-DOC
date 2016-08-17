@@ -624,6 +624,9 @@
     .slider-container {
         margin-top: 20px;
     }
+    #mapdiv {
+        height: 400px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -652,6 +655,9 @@
         float: none;
         margin: 0 auto 40px;
         clear: both;
+    }
+    #mapdiv {
+        height: 350px;
     }
 }
 
@@ -839,6 +845,9 @@
         padding-top: 10px;
         padding-right: 0;
         text-align: center;
+    }
+    #mapdiv {
+        height: 250px;
     }
 }
 
