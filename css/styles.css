@@ -2193,6 +2193,10 @@ img {
                 .registration-block-list > li:hover .registration-label-box p {
                     font-weight: 600;
                 }
+                .rectification {
+                    font-size: 13px;
+                    margin-left: 5px;
+                }
             .registration-input-box {
                 display: table-cell;
                 width: 44%;
