@@ -7,6 +7,7 @@ $(document).ready(function() {
         $(document.body).toggleClass('overflow');
     });
 
+
     // the blocking of links default behavior
     function prevent(){
         $('.prevent, a[href="#"]').on('click', function(event){
@@ -14,6 +15,13 @@ $(document).ready(function() {
         });
     }
     prevent();
+
+
+    // for location href
+    $('li.href').on('click', function(){
+        window.location.href = $(this).data('href');
+    });
+
 
     //range slider
     $('.range-style').jRange({

@@ -2326,7 +2326,7 @@ img {
         padding: 25px 0 23px;
     }
     .support-issue-page .content-top-wrap {
-        padding: 17px 0 20px;
+        padding: 17px 0 24px;
         border-bottom: 1px solid #e6e6e6;
     }
     .support-issue-page .page-title {
@@ -2612,6 +2612,7 @@ img {
 .support-issue-page .search-box {
     float: right;
     margin-left: 20px;
+    margin-bottom: 0;
 }
     .search-content-box {
         display: table;
@@ -2662,7 +2663,7 @@ img {
         .breadcrumbs > span {
             position: relative;
             display: inline;
-            padding: 0 8px 0 0;
+            padding: 0 16px 0 0;
         }
         .breadcrumbs > span:first-child {
             padding-left: 0;
@@ -2676,7 +2677,7 @@ img {
             height: 16px;
             position: relative;
             top: -1px;
-            right: -5px;
+            right: -9px;
             font-size: 18px;
         }
         .breadcrumbs > span:last-child:after{
@@ -3180,4 +3181,8 @@ img {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+
+li.href {
+    cursor: pointer;
 }
