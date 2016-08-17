@@ -785,7 +785,7 @@
         margin-left: -20px;
         margin-right: -20px;
     }
-    .distributors-info-list li {
+    .distributors-info-list a {
         padding: 0 20px;
     }
     .one-product-title {
@@ -852,11 +852,11 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182631', endColorstr='#ffffff',GradientType=0 );
     }
     .btn.wide { min-width: auto; }
-    .distributors-info-list{
+    .distributors-info-list {
         margin-left: -15px;
         margin-right: -15px;
     }
-    .distributors-info-list li {
+    .distributors-info-list a {
         padding: 0 15px;
     }
     .logo img {

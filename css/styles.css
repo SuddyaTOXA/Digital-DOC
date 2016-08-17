@@ -572,19 +572,23 @@ img {
     opacity: 0;
     visibility: hidden;
     text-align: left;
-    -webkit-border-radius: 0 0 10px 10px;
-    -moz-border-radius: 0 0 10px 10px;
-    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
     -webkit-box-shadow: 0 2px 8px -3px rgba(255,255,255,0.25);
     -moz-box-shadow: 0 2px 8px -3px rgba(255,255,255,0.25);
     box-shadow: 0 2px 8px -3px rgba(255,255,255,0.25);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 .home-header .main-nav .sub-menu {
     background: rgba(45,57,69,0.7);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 .main-nav > ul > li:hover .sub-menu {
     opacity: 1;
@@ -1852,25 +1856,21 @@ img {
     background-color: #000000;
 }
 .distributors-info-wrap {
-    margin-top: -26px;
+    position: relative;
+    z-index: 1;
 }
-.distributors-info-list{
+.distributors-info-list {
     margin-left: -40px;
     margin-right: -40px;
 }
-    .distributors-info-list li {
+    .distributors-info-list a {
+        display: block;
         padding: 0 40px;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s;
+        text-decoration: none;
     }
-    .distributors-info-list li:hover {
+    .distributors-info-list a:hover {
         background-color: #fafbfb;
     }
-        .distributors-info-list a {
-            text-decoration: none;
-        }
         .distributors-info-list a:hover .distributors-name{
             color: #ffcc00;
         }
@@ -2196,14 +2196,14 @@ img {
             }
                 .registration-label-box p {
                     font-size: 14px;
-                    color: #425365;
+                    color: #576d84;
                     -webkit-transition: 0.2s;
                     -moz-transition: 0.2s;
                     -o-transition: 0.2s;
                     transition: 0.2s;
                 }
                 .registration-block-list > li:hover .registration-label-box p {
-                    font-weight: 600;
+                    color: #192632;
                 }
                 .rectification {
                     font-size: 13px;
