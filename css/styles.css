@@ -95,7 +95,6 @@ a[href^="tel"] {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 13px 16px 10px;
     border: 1px solid #ffffff;
     box-shadow: none;
     -webkit-border-radius: 5px;
@@ -109,6 +108,11 @@ a[href^="tel"] {
     -moz-transition: 0.25s;
     -o-transition: 0.25s;
     transition: 0.25s;
+}
+input.input-style {
+    height: 42px;
+    padding: 0 16px;
+    line-height: 42px;
 }
 .input-style:hover,
 .input-style:active,
@@ -214,7 +218,9 @@ input:focus:-moz-placeholder { opacity: 0; }
 }
 
 .select-wrap select {
-    padding: 13px 16px 10px;
+    height: 42px;
+    padding: 1px 16px;
+    line-height: 42px;
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
@@ -227,14 +233,14 @@ input:focus:-moz-placeholder { opacity: 0; }
     content: '\f107';
     position: absolute;
     width: 42px;
-    height: 39px;
+    height: 40px;
     right: 1px;
-    top: 2px;
+    top: 1px;
     font: 24px FontAwesome;
     color: #425365;
     z-index: 3;
     text-align: center;
-    line-height: 39px;
+    line-height: 40px;
     background-color: #f5f6f8;
     pointer-events: none;
     -webkit-border-radius: 0 5px 5px 0;

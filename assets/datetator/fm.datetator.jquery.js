@@ -139,9 +139,9 @@
 			// input element
 			$input_element = $(document.createElement('input'));
 			if (element.id !== undefined) {
-				$input_element.attr('id', plugin.settings.prefix + element.id);
+				$input_element.attr('id', plugin.settings.prefix + element.id );
 			}
-			$input_element.addClass(plugin.settings.prefix + 'element picker-hidden ' + plugin.settings.class);
+			$input_element.addClass(plugin.settings.prefix + 'element input-style picker-hidden ' + plugin.settings.class);
 			$input_element.css({
 				width: $element.css('width'),
 				padding: $element.css('padding'),
