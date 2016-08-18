@@ -22,18 +22,6 @@ $(document).ready(function() {
         window.location.href = $(this).data('href');
     });
 
-
-    //range slider
-    $('.range-style').jRange({
-        from: 1,
-        to: 10,
-        step: 1,
-        width: 400
-    });
-    $('#datetator').datetator({
-        useDimmer: true
-    });
-
     // for Owl Carousel sliders
     $('.main-item-slider').owlCarousel({
         loop:true,
@@ -196,86 +184,16 @@ $(document).ready(function() {
         }
     });
 
-});
-
-var map;
-
-AmCharts.ready(function() {
-    map = new AmCharts.AmMap();
-    //map.pathToImages = "http://www.ammap.com/lib/images/";
-    //map.panEventsEnabled = true; // this line enables pinch-zooming and dragging on touch devices
-    map.balloon = {
-        "adjustBorderColor": true,
-        "borderThickness": 0,
-        "color": "#ffffff",
-        "cornerRadius": 5,
-        "fillColor": "#192734",
-        "fillAlpha": 1,
-        "shadowAlpha": 0
-    };
-    map.projection = "miller";
-    var wordlDataProvider = {
-        mapVar: AmCharts.maps.worldLow,
-        getAreasFromMap: true,
-        //areas: [
-        //    { id: "FR", color: "#4444ff" },
-        //    { id: "RU", color: "#4444ff" },
-        //    { id: "US", color: "#4444ff" }
-        //]
-    };
-
-    map.dataProvider = wordlDataProvider;
-    map.areasSettings = {
-        autoZoom: true,
-        color : "#DDE7F0",
-        colorSolid : "#ffcc00",
-        selectedColor : "#ffcc00",
-        outlineColor : "#DDE7F0",
-        rollOverColor : "#ffcc00",
-        rollOverOutlineColor : "#9DABB8"
-    };
-    map.zoomControl = {
-        buttonIconColor: "#425365",
-        //buttonSize : "40",
-        top: "40",
-        left: "20"
-    }
-    //map.smallMap = new AmCharts.SmallMap();
-
-    map.addListener("clickMapObject", function (event) {
-        if (event.mapObject.id == "CA") {
-            loadNewMap("http://www.ammap.com/lib/maps/js/canadaLow.js", "canadaLow");
-        }
-        else if (event.mapObject.id == "US") {
-            loadNewMap("http://www.ammap.com/lib/maps/js/usaLow.js", "usaLow");
-        }
+    //range slider
+    $('.range-style').jRange({
+        from: 1,
+        to: 10,
+        step: 1,
+        width: 400
     });
-    map.addListener("homeButtonClicked", function () {
-        loadNewMap("http://www.ammap.com/lib/maps/js/worldLow.js", "worldLow");
+
+    //calendar
+    $('#datetator').datetator({
+        useDimmer: true
     });
-    map.write("mapdiv");
-
 });
-
-
-function loadNewMap (url, mapName) {
-    if (AmCharts.maps[mapName] != undefined) {
-        // the map was already loaded
-        setNewMap(mapName);
-    }
-    else {
-        // let's load the map
-        jQuery.getScript(url, function () {
-            setNewMap(mapName);
-        });
-    }
-}
-
-function setNewMap (mapName) {
-    var dataProvider = {
-        mapVar: AmCharts.maps[mapName],
-        getAreasFromMap: true
-    };
-    map.dataProvider = dataProvider;
-    map.validateData();
-}
