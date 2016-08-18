@@ -49,7 +49,9 @@ $(document).ready(function() {
             buttonIconColor: "#425365",
             //buttonSize : "40",
             top: "40",
-            left: "20"
+            left: "20",
+            maxZoomLevel: "8",
+            zoomFactor: "2"
         }
         //map.smallMap = new AmCharts.SmallMap();
 
@@ -91,8 +93,8 @@ $(document).ready(function() {
                 mapVar: AmCharts.maps[mapName],
                 getAreasFromMap: true,
                 areas: [
-                    { id: "US-CA", color: "#FEFD9E", rollOverColor: "#ffcc00", selectedColor: "#ffcc00", outlineColor: "#9DABB8" },
-                    { id: "US-TX", color: "#FEFD9E", rollOverColor: "#ffcc00", selectedColor: "#ffcc00", outlineColor: "#9DABB8" }
+                    { id: "US-CA", color: "#FEFD9E", rollOverColor: "#ffcc00", selectedColor: "#ffcc00", outlineColor: "#9DABB8", autoZoom: true },
+                    { id: "US-TX", color: "#FEFD9E", rollOverColor: "#ffcc00", selectedColor: "#ffcc00", outlineColor: "#9DABB8", autoZoom: true }
                 ]
             };
             map.areasSettings = countryAreasSettings;
