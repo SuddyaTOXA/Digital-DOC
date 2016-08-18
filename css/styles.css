@@ -1895,6 +1895,9 @@ img {
     .move-up-map {
         margin-top: -80px;
     }
+.amcharts-chart-div > svg + a {
+    display: none !important;
+}
 .distributors-info-wrap {
     position: relative;
     z-index: 1;

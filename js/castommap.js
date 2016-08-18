@@ -30,7 +30,7 @@ $(document).ready(function() {
     AmCharts.ready(function () {
         map = new AmCharts.AmMap();
         //map.pathToImages = "http://www.ammap.com/lib/images/";
-        //map.panEventsEnabled = true; // this line enables pinch-zooming and dragging on touch devices
+        map.panEventsEnabled = true; // this line enables pinch-zooming and dragging on touch devices
         map.balloon = {
             adjustBorderColor: true,
             borderThickness: 0,
