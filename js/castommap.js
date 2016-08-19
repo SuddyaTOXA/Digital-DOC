@@ -52,7 +52,7 @@ $(document).ready(function() {
             left: "20",
             maxZoomLevel: "8",
             zoomFactor: "2"
-        }
+        };
         //map.smallMap = new AmCharts.SmallMap();
 
         map.addListener("clickMapObject", function (event) {

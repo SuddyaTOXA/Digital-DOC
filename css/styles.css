@@ -2308,6 +2308,7 @@ img {
                 display: block;
                 margin-bottom: -7px;
                 font-size: 16px;
+                text-transform: uppercase;
             }
         .event-info-box {
             overflow: hidden;
@@ -2985,23 +2986,33 @@ img {
                     height: 20px;
                     margin-right: 11px;
                     background-image: url(../img/content/category_sprite.png);
+                    background-position: 20px 2px;
                 }
-                .ico-install span {background-position: 40px 2px}
-                .ico-driver span {background-position: 80px 2px}
-                .ico-troubl span {background-position: 60px 2px}
-                .ico-pen span {background-position: 20px 2px}
+                .category-ico .active span {background-position: 20px -18px;}
 
-                .category-sub-list > li.ico-install a.active span {background-position: 80px -18px}
-                .category-sub-list > li.ico-driver a.active span{background-position: 40px -18px}
-                .category-sub-list > li.ico-troubl a.active span {background-position: 60px -18px}
-                .category-sub-list > li.ico-pen a.active span {background-position: 20px -18px}
+                .ico-install span {background-position: 40px 2px;}
+                .ico-driver span {background-position: 80px 2px;}
+                .ico-troubl span {background-position: 60px 2px;}
+                .ico-pen span {background-position: 20px 2px;}
+
+                .category-sub-list > li.ico-install a.active span {background-position: 80px -18px;}
+                .category-sub-list > li.ico-driver a.active span{background-position: 40px -18px;}
+                .category-sub-list > li.ico-troubl a.active span {background-position: 60px -18px;}
+                .category-sub-list > li.ico-pen a.active span {background-position: 20px -18px;}
         .category-btn-box {
             padding-top: 11px;
             border-top: 1px solid #e6e6e6;
         }
-            .category-btn-box a:hover {
-                color: #ffcc00;
+            .category-btn-box .category-title {
+                margin-bottom: 10px;
             }
+            .category-btn-box .category-title:last-child {
+                margin-bottom: 0;
+            }
+                .category-title a:hover,
+                .category-title a.active {
+                    color: #ffcc00;
+                }
 /*-------------------------------------CONTENT--------------------------------------*/
 .content {
     padding: 20px 40px 40px;
