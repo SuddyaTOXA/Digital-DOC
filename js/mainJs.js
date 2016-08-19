@@ -125,8 +125,10 @@ $(document).ready(function() {
         var videoBox =  $(this).parent('.slider-video-wrap'),
             id = videoBox.data('youtube-id');
 
-        videoBox.html('<iframe class="my-video" src="http://www.youtube.com/embed/' + id + '?autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>');
-        videoBox.children('.my-video').videoController();
+        videoBox.html('<iframe class="my-video" src="http://www.youtube.com/embed/' + id + '?enablejsapi=1" frameborder="0" allowfullscreen></iframe>');
+        videoBox.children('.my-video').videoController({
+            videoReady: function() { videoBox.children('.my-video').videoController('play'); }
+        });
     });
 
 
