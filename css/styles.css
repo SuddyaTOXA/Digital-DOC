@@ -1588,6 +1588,7 @@ img {
     }
 /*-------------------------------------PRODUCT-PAGE---------------------------------*/
 .full-with-content-box {
+    overflow: hidden;
     display: block;
     width: 100%;
     padding: 34px 40px 35px;
@@ -1820,7 +1821,8 @@ img {
     }
 
 #carousel-one-product img{
-    max-height: 76px;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
 }
 /*-------------------------------------DISTRIBUTORS---------------------------------*/
@@ -2965,7 +2967,7 @@ img {
         margin-bottom: 30px;
     }
     .content > :last-child {
-        margin-bottom: 0;
+        /*margin-bottom: 0;*/
     }
         .content h1 { font-size: 30px; }
         .content h2 { font-size: 25px; }

@@ -354,6 +354,10 @@
     .distributors-logo-box {
         width: 200px;
     }
+
+    .slider-video-wrap {
+        padding-bottom: 72%;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -758,8 +762,17 @@
         padding-left: 20px;
     }
     .testimonials-slider {
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .slider-video-wrap {
+        padding-bottom: 75%;
+    }
+    .slider-video-wrap img,
+    .slider-video-wrap iframe {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
     }
     #slider { max-width: 80%; }
     #slider-video { max-width: 100%; }
@@ -954,6 +967,9 @@
     }
     .banner-box a {
         margin-right: 0;
+    }
+    .move-up-map {
+        margin-top: -60px;
     }
 }
 
