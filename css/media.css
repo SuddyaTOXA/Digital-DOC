@@ -983,20 +983,22 @@
 }
 
 @media print {
-    .header {display :none; }
-    .sidebar {  display: none; }
-    .content-top-wrap { display: none; }
-    .search-box { display: none; }
-    .page-action-box { display: none; }
-    .footer { display: none; }
+    .header,
+    .sidebar,
+    .content-top-wrap,
+    .search-box,
+    .page-action-box,
+    .footer {
+        display: none;
+    }
 
-body {
-    padding:0;
-    margin:0;
-    font:18px "Open Sans";
-    background:#ffffff;
-    color:#000000;
-}
+    body {
+        padding:0;
+        margin:0;
+        font: 400 18px "Open Sans", Arial, sans-serif;
+        background:#ffffff;
+        color:#000000;
+    }
     .content {
         padding: 10px;
         line-height: 1.7;
