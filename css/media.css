@@ -498,18 +498,16 @@
     }
 }
 
-@media all and (max-width: 680px) {
-
-}
 @media all and (min-width: 641px) and (max-width: 860px) {
     #slider-one-product {
         margin-bottom: 20px;
     }
 }
+
 @media all and (max-width: 640px) {
-.home-header .header-top-box {
-    padding-top: 25px;
-}
+    .home-header .header-top-box {
+        padding-top: 25px;
+    }
     .logo img {
         height: 35px;
     }
@@ -628,11 +626,23 @@
         .registration-btn-box .btn{
             min-width: auto;
         }
+        .registration-block-list > li {
+            margin-bottom: 15px;
+        }
+        .reg-questions .registration-block-list > li {
+            margin-bottom: 20px;
+        }
     .slider-container {
         margin-top: 20px;
     }
-    #mapdiv {
-        height: 400px;
+    .mapdiv {
+        height: 420px;
+    }
+    .move-up-map {
+        margin-top: -60px;
+    }
+    .mapdiv-bottom-box {
+        height: 60px;
     }
 }
 
@@ -663,8 +673,8 @@
         margin: 0 auto 40px;
         clear: both;
     }
-    #mapdiv {
-        height: 350px;
+    .mapdiv {
+        height: 370px;
     }
 }
 
@@ -862,8 +872,8 @@
         padding-right: 0;
         text-align: center;
     }
-    #mapdiv {
-        height: 250px;
+    .mapdiv {
+        height: 270px;
     }
 }
 
@@ -970,9 +980,6 @@
     }
     .banner-box a {
         margin-right: 0;
-    }
-    .move-up-map {
-        margin-top: -60px;
     }
 }
 
