@@ -351,6 +351,9 @@
         padding-left: 0;
         padding-bottom: 20px;
     }
+    .product-cart-box {
+        min-height: auto;
+    }
     .distributors-logo-box {
         width: 200px;
     }
