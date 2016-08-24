@@ -1556,11 +1556,12 @@ img {
                     margin-bottom: 24px;
                 }
                     .product-cart-desc p {
+                        background-color: rgba(255,255,255,0.6);
                         font-size: 16px;
-                        margin-bottom: 8px;
+                        padding-bottom: 8px;
                     }
                     .product-cart-desc > :last-child {
-                        margin-bottom: 0;
+                        padding-bottom: 0;
                     }
                 .product-cart-price {
                     display: block;
@@ -3048,6 +3049,7 @@ img {
     .content a {
         color: #ffcc00;
         text-decoration: none;
+        word-break: break-word;
     }
     .content a:hover {
         text-decoration: underline;
@@ -3350,4 +3352,8 @@ div.wpcf7 img.ajax-loader {
     100%{
         -moz-transform:scale(.3);
     }
+}
+
+.you-play {
+    cursor: pointer;
 }
