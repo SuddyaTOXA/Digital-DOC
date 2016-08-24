@@ -10,7 +10,7 @@ $(document).ready(function() {
    var catBox =  $('.content-top-category-box').find('.widget-category-title');
     catBox.on('click', function() {
         catBox.toggleClass('open');
-        $('.widget-category-mini-wrap').toggle(500);
+        $('.widget-category-mini-wrap').slideToggle(500);
     });
 
     // the blocking of links default behavior
@@ -63,30 +63,30 @@ $(document).ready(function() {
             sync: "#carousel"
         });
 
-        $('#carousel-video').flexslider({
-            animation: "slide",
-            controlNav: true,
-            animationLoop: true,
-            slideshow: false,
-            itemWidth: 200,
-            itemMargin: 20,
-            minItems: 2,
-            maxItems: 3,
-            move: 1,
-            asNavFor: '#slider-video'
-        });
-
-        $('#slider-video').flexslider({
-            animation: "slide",
-            controlNav: true,
-            animationLoop: true,
-            directionNav: false,
-            slideshow: false,
-            before: function(){
-                $('.my-video').videoController('pause');
-            },
-            sync: "#carousel-video"
-        });
+        //$('#carousel-video').flexslider({
+        //    animation: "slide",
+        //    controlNav: true,
+        //    animationLoop: true,
+        //    slideshow: false,
+        //    itemWidth: 200,
+        //    itemMargin: 20,
+        //    minItems: 2,
+        //    maxItems: 3,
+        //    move: 1,
+        //    asNavFor: '#slider-video'
+        //});
+        //
+        //$('#slider-video').flexslider({
+        //    animation: "slide",
+        //    controlNav: true,
+        //    animationLoop: true,
+        //    directionNav: false,
+        //    slideshow: false,
+        //    before: function(){
+        //        $('.my-video').videoController('pause');
+        //    },
+        //    sync: "#carousel-video"
+        //});
 
         $('#carousel-one-product').flexslider({
             animation: "slide",
