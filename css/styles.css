@@ -1669,6 +1669,9 @@ img {
             -o-transition: 0.2s;
             transition: 0.2s;
         }
+        .drivers .manual-box {
+            background-color: #F8F8F9;
+        }
         .manual-list a:hover .manual-box {
             border-color: #ffcc00;
             color: #ffcc00;
