@@ -165,6 +165,7 @@
             margin-right: -320px;
         }
     .mobile-menu-wrap,
+    .mobile-menu-category-toggle,
     .mobile-menu-toggle {
         display: block;
     }

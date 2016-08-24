@@ -2968,6 +2968,7 @@ img {
 .content {
     padding: 20px 40px 40px;
     line-height: 1.7;
+    word-break: break-word;
 }
     .content > * {
         margin-bottom: 30px;
@@ -3049,7 +3050,6 @@ img {
     .content a {
         color: #ffcc00;
         text-decoration: none;
-        word-break: break-word;
     }
     .content a:hover {
         text-decoration: underline;
