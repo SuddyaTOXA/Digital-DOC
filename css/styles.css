@@ -799,7 +799,7 @@ img {
             .mobile-menu-toggle:active span:after {
                 background: #ffcc00;
             }
-            
+
 .mob-menu-logo {
     width: 190px;
     height: 23px;
@@ -813,7 +813,41 @@ img {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.content-top-category-box {
+    display: none;
+}
+.content-top-category-wrap.sidebar-block {
+    margin-bottom: 40px;
+}
+    .content-top-category-box .expanded {
+        position: relative;
+        margin-bottom: 0;
+    }
+    .content-top-category-box .expanded:after {
+        content: "\f107";
+        font-family: FontAwesome;
+        font-size: 25px;
+        line-height: 1;
+        text-indent: 0;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+        right: 10px;
+        display: inline-block;
+        color: #425365;
+    }
+    .content-top-category-box .expanded:hover:after {
+        color: #ffcc00;
+    }
+    .content-top-category-box .expanded.open:after {
+        content: "\f106";
+    }
+    .widget-category-mini-wrap {
+        margin-top: 14px;
+        display: none;
+    }
 /*-------------------------------------HOME----------------------------------------*/
 .hero-banner{
     position: relative;

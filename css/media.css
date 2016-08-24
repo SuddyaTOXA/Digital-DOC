@@ -165,7 +165,7 @@
             margin-right: -320px;
         }
     .mobile-menu-wrap,
-    .mobile-menu-category-toggle,
+    .mobile-category-toggle,
     .mobile-menu-toggle {
         display: block;
     }
@@ -361,6 +361,12 @@
 
     .slider-video-wrap {
         padding-bottom: 72%;
+    }
+    .content-top-category-box {
+        display: table-header-group;
+    }
+    .widget-categori .sidebar-block-wrap {
+        display: none;
     }
 }
 

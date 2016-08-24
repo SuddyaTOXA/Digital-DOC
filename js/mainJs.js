@@ -6,7 +6,12 @@ $(document).ready(function() {
         $('.mobile-menu-wrap').toggleClass('showing');
         $(document.body).toggleClass('overflow');
     });
-
+    // for category
+   var catBox =  $('.content-top-category-box').find('.widget-category-title');
+    catBox.on('click', function() {
+        catBox.toggleClass('open');
+        $('.widget-category-mini-wrap').toggle(500);
+    });
 
     // the blocking of links default behavior
     function prevent(){
