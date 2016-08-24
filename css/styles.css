@@ -2574,22 +2574,47 @@ img {
             -moz-border-radius: 5px;
             border-radius: 5px;
         }
-   #carousel-video {
-       max-width: 80%;
-       margin: 0 auto 80px;
+   .videos-list-box {
+       overflow: hidden;
+       margin: 40px auto 0;
    }
-        #carousel-video .carousel-img-wrap:before,
-        #carousel-video .carousel-img-wrap {
-            overflow: hidden;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
+        .videos-list {
+            margin-left: -20px;
+            margin-bottom: -20px;
         }
-       .video-title {
-           margin-top: 10px;
-           font-size: 14px;
-           font-weight: 600;
-       }
+            .videos-list > li {
+                float: left;
+                width: 33.33%;
+                padding-left: 20px;
+                padding-bottom: 20px;
+            }
+            .videos-list > li:nth-child(3n+1) {
+                clear: both;
+            }
+                .videos-list > li a {
+                    text-decoration: none;
+                }
+                .videos-list > li a:hover {
+                    color: #ffcc00;
+                }
+                .videos-list-box .carousel-img-wrap:before,
+                .videos-list-box .carousel-img-wrap {
+                    overflow: hidden;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                }
+                .videos-list-box .carousel-img-wrap:before {
+                    content: none;
+                }
+                    .videos-list-box .carousel-img-wrap img {
+                        max-width: 100%;
+                    }
+               .video-title {
+                   margin-top: 10px;
+                   font-size: 14px;
+                   font-weight: 600;
+               }
 
 .youtube-wrap {
     display: block;

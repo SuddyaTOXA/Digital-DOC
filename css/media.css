@@ -488,7 +488,13 @@
     .sidebar-list > li {
         width: 50%;
     }
-
+    .videos-list > li {
+        width: 50%;
+    }
+    .videos-list > li:nth-child(3n+1) {
+        clear: none;
+    }
+    .videos-list >li:nth-child(odd),
     .sidebar-list > li:nth-child(odd) {
         clear: both;
     }
@@ -729,7 +735,15 @@
     .em-pagination a {
         margin-bottom: 15px;
     }
-
+    .videos-list {
+        margin-left: 0;
+    }
+        .videos-list > li {
+            margin: 0 auto;
+            padding-left: 0;
+            float: none;
+            width: 80%;
+        }
 }
 
 @media all and (max-width: 480px) {
