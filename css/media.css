@@ -1,5 +1,28 @@
-@media all and (min-width: 1220px) and (min-width: 1220px) {
-
+@media all and (min-width: 1480px) {
+    .mapdiv.general {
+        height: 591px;
+    }
+}
+@media all and (min-width: 1700px) {
+    .mapdiv.general {
+        height: 640px;
+    }
+}
+@media all and (min-width: 1921px) {
+    .mapdiv {
+        height: 580px;
+    }
+    .mapdiv.general {
+        height: 720px;
+    }
+}
+@media all and (min-width: 2560px) {
+    .mapdiv {
+        height: 720px;
+    }
+    .mapdiv.general {
+        height: 970px;
+    }
 }
 
 @media all and (max-width: 1499px) {
@@ -245,7 +268,17 @@
         }
 }
 
+@media all and (min-width: 861px) {
+    .first-show-860 > li:first-child {
+        display: none;
+    }
+}
+
 @media all and (max-width: 860px) {
+    .hide-860 {
+        display: none;
+    }
+
     .item-img {
         width: 350px;
         height: 350px;
@@ -418,10 +451,6 @@
                 margin-top: 13px;
                 margin-right: 0;
             }
-}
-
-@media all and (max-width: 782px) {
-
 }
 
 @media all and (max-width: 768px) {
@@ -656,6 +685,10 @@
     }
     .mapdiv-bottom-box {
         height: 60px;
+    }
+
+    .content a {
+        word-break: break-all;
     }
 }
 

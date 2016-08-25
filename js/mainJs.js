@@ -27,6 +27,11 @@ $(document).ready(function() {
         window.location.href = $(this).data('href');
     });
 
+
+    // for single video page (for responsive of iframe-videos)
+    $(".content-box").find('.content').find('iframe').wrap("<div class='videoWrapper'></div>");
+
+
     // for Owl Carousel sliders
     $('.main-item-slider').owlCarousel({
         loop:true,

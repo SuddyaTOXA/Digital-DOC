@@ -29,8 +29,7 @@ $(document).ready(function() {
 
     AmCharts.ready(function () {
         map = new AmCharts.AmMap();
-        //map.pathToImages = "http://www.ammap.com/lib/images/";
-        map.panEventsEnabled = true; // this line enables pinch-zooming and dragging on touch devices
+        map.panEventsEnabled = true;
         map.balloon = {
             adjustBorderColor: true,
             borderThickness: 0,
@@ -47,13 +46,11 @@ $(document).ready(function() {
 
         map.zoomControl = {
             buttonIconColor: "#425365",
-            //buttonSize : "40",
             top: "40",
             left: "20",
             maxZoomLevel: "8",
             zoomFactor: "2"
         };
-        //map.smallMap = new AmCharts.SmallMap();
 
         map.addListener("clickMapObject", function (event) {
             if (event.mapObject.id == "CA") {
@@ -73,11 +70,9 @@ $(document).ready(function() {
 
     function loadNewMap(url, mapName) {
         if (AmCharts.maps[mapName] != undefined) {
-            // the map was already loaded
             setNewMap(mapName);
         }
         else {
-            // let's load the map
             jQuery.getScript(url, function () {
                 setNewMap(mapName);
             });
@@ -85,9 +80,7 @@ $(document).ready(function() {
     }
 
     function setNewMap(mapName) {
-
         if (mapName == "usaLow") {
-
             map.projection = "mercator";
             map.dataProvider = {
                 mapVar: AmCharts.maps[mapName],
@@ -99,6 +92,9 @@ $(document).ready(function() {
             };
             map.areasSettings = countryAreasSettings;
             map.validateData();
+            map.addListener("clickMapObject", function (event) {
+
+            });
 
         } else if (mapName == "canadaLow") {
             map.projection = "miller";
@@ -108,15 +104,13 @@ $(document).ready(function() {
             };
             map.areasSettings = countryAreasSettings;
             map.validateData();
+
         } else {
             map.projection = "miller";
             map.dataProvider = wordlDataProvider;
             map.areasSettings = defAreasSettings;
             map.validateData();
         }
-
-
-        }
-
     }
- );
+
+});
