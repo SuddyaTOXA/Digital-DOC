@@ -37,9 +37,72 @@ a:hover                        { text-decoration:none; }
 .align-c                       { text-align:center !important; }
 .clear                         { clear:both; }
 
+/*---------------------------------CUSTOM-FONTS-------------------------------------*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tgilvd');
+    src:  url('../fonts/icomoon.eot?tgilvd#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tgilvd') format('truetype'),
+    url('../fonts/icomoon.woff?tgilvd') format('woff'),
+    url('../fonts/icomoon.svg?tgilvd#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="dig-"], [class*=" dig-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dig-cam:before {
+    content: "\e900";
+}
+.dig-driv:before {
+    content: "\e901";
+}
+.dig-email:before {
+    content: "\e902";
+}
+.dig-phone:before {
+    content: "\e903";
+}
+.dig-email-icon:before {
+    content: "\e904";
+}
+.dig-reg:before {
+    content: "\e905";
+}
+.dig-calendar:before {
+    content: "\e906";
+}
+.dig-inst:before {
+    content: "\e907";
+}
+.dig-pdf:before {
+    content: "\e908";
+}
+.dig-print:before {
+    content: "\e909";
+}
+.dig-bug:before {
+    content: "\e90a";
+}
+
+
 /*----------------------------------------------------------------------------------*/
 /*---------------------------------DEFAULT STYLES-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -432,6 +495,7 @@ img {
         .header-top-box .logo {
             float: left;
             margin-top: 3px;
+            max-width: 281px;
         }
         .header-top-box .header-top-btn-box {
             float: right;
@@ -1352,6 +1416,9 @@ img {
             line-height: normal;
             vertical-align: middle;
         }
+    .box .person-name {
+        display: inline-block;
+    }
     .person-name {
         font-size: 18px;
         font-weight: 700;
@@ -1693,17 +1760,7 @@ img {
         .drivers .manual-box {
             background-color: #F8F8F9;
         }
-        .manual-list a:hover .manual-box {
-            border-color: #ffcc00;
-            color: #ffcc00;
-        }
-            .manual-list a:hover .manual-box .doc {
-                display: none;
-            }
-            .manual-list a:hover .manual-box .doc-hov {
-                margin-top: -5px;
-                display: block;
-            }
+
         .manual-img-box,
         .manual-title-box,
         .manual-size-box {
@@ -1799,6 +1856,15 @@ img {
                 font-weight: 400;
                 color: #757575;
             }
+.one-prouct-sliderd.white-style {
+    background-color: #ffffff;
+}
+    .white-style .one-product-title {
+        color: #415365;
+    }
+    .white-style #carousel-one-product .slides li {
+        border: 2px solid rgba(26, 21, 16, 0.2);
+    }
 .one-product-carousel-wrap {
     padding-bottom: 120px;
 }
@@ -2382,33 +2448,26 @@ img {
     }
     .page-action-box {
         float: right;
-        margin-top: 5px;
+        margin-top: -3px;
         margin-left: 30px;
         margin-bottom: 30px;
     }
         .page-action-box a{
             position: relative;
             display: inline-block;
-            width: 30px;
-            height: 30px;
             margin-right: 14px;
-            background-image: url(../img/content/category_sprite.png);
-            -webkit-transition: none;
-            -moz-transition: none;
-            -o-transition: none;
-            transition: none;
+            color: #a1aab3 !important;
+            vertical-align: middle;
         }
         .page-action-box > :last-child {
             margin-right: 0;
         }
-        a.print-act{ background-position: -5px -85px; }
-        a.mail-act{ background-position: -45px -85px; }
-        a.print-act:hover{ background-position: -5px -45px; }
-        a.mail-act:hover{ background-position: -45px -45px; }
-        .content .print-act:hover,
-        .content .mail-act:hover {
-            text-decoration: none;
+        .page-action-box a:hover {
+            text-decoration: none !important;
+            color: #3e5366 !important;
         }
+            .print-act { font-size: 30px; }
+            .mail-act { font-size: 22px; }
         a.print-act:hover:before,
         a.mail-act:hover:before {
             position: absolute;
@@ -2422,12 +2481,12 @@ img {
         }
         a.print-act:hover:before {
             content: 'Print';
-            top: -23px;
+            top: -15px;
             left: -7px;
         }
         a.mail-act:hover:before {
             content: 'Email';
-            top: -23px;
+            top: -22px;
             left: -9px;
         }
 /*-------------------------------------TESTIMONIALS-----------------------------*/
@@ -2897,15 +2956,7 @@ img {
         -o-transition: 0.2s;
         transition: 0.2s;
     }
-    .sidebar-block:hover {
-        -webkit-box-shadow: 0 0 15px -3px rgba(148, 148, 148, 0.5);
-        -moz-box-shadow: 0 0 15px -3px rgba(148, 148, 148, 0.5);
-        -o-box-shadow: 0 0 15px -3px rgba(148, 148, 148, 0.5);
-        box-shadow: 0 0 15px -3px rgba(148, 148, 148, 0.5);
-    }
-    .sidebar-block a:hover .sidebar-block-content-title {
-        color: #ffcc00;
-    }
+
         .sidebar-block-wrap {
             overflow: hidden;
             padding: 22px 20px 24px;
@@ -2920,8 +2971,6 @@ img {
                 max-width: 100%;
             }
                 .sidebar-block-img-hov { display: none}
-                .sidebar-block a:hover .sidebar-block-img { display: none; }
-                .sidebar-block a:hover .sidebar-block-img-hov { display: block; }
             .sidebar-block-content {
                 overflow: hidden;
             }
@@ -3012,34 +3061,33 @@ img {
                 display: block;
                 width: 100%;
                 font-size: 14px;
-                padding: 4px 8px 4px;
+                padding: 8px;
                 -webkit-border-radius: 5px;
                 -moz-border-radius: 5px;
                 border-radius: 5px;
             }
                 .category-ico p {
                     overflow: hidden;
+                    line-height: 16px;
                 }
                 .category-ico span{
-                    float:left;
+                    float: left;
                     display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 11px;
-                    background-image: url(../img/content/category_sprite.png);
-                    background-position: 20px 2px;
+                    margin-right: 13px;
+                    color: #a0a9b0;
+                    font-size: 16px;
                 }
-                .category-ico .active span {background-position: 20px -18px;}
+                /*.category-ico .active span {background-position: 20px -18px;}*/
 
-                .ico-install span {background-position: 40px 2px;}
-                .ico-driver span {background-position: 80px 2px;}
-                .ico-troubl span {background-position: 60px 2px;}
-                .ico-pen span {background-position: 20px 2px;}
+                /*.ico-install span {background-position: 40px 2px;}*/
+                /*.ico-driver span {background-position: 80px 2px;}*/
+                /*.ico-troubl span {background-position: 60px 2px;}*/
+                /*.ico-pen span {background-position: 20px 2px;}*/
 
-                .category-sub-list > li.ico-install a.active span {background-position: 80px -18px;}
-                .category-sub-list > li.ico-driver a.active span{background-position: 40px -18px;}
-                .category-sub-list > li.ico-troubl a.active span {background-position: 60px -18px;}
-                .category-sub-list > li.ico-pen a.active span {background-position: 20px -18px;}
+                /*.category-sub-list > li.ico-install a.active span {background-position: 80px -18px;}*/
+                /*.category-sub-list > li.ico-driver a.active span{background-position: 40px -18px;}*/
+                /*.category-sub-list > li.ico-troubl a.active span {background-position: 60px -18px;}*/
+                /*.category-sub-list > li.ico-pen a.active span {background-position: 20px -18px;}*/
         .category-btn-box {
             padding-top: 11px;
             border-top: 1px solid #e6e6e6;
@@ -3053,6 +3101,12 @@ img {
                 .category-title a:hover,
                 .category-title a.active {
                     color: #ffcc00;
+                }
+                .active .dig-inst,
+                .active .dig-driv,
+                .active .dig-bug,
+                .active .dig-cam {
+                    color: #ffffff;
                 }
 /*-------------------------------------CONTENT--------------------------------------*/
 .content {
@@ -3188,6 +3242,7 @@ img {
 }
     .footer-logo {
         float: left;
+        max-width: 200px;
         padding-top: 27px;
         padding-bottom: 8px;
         margin-right: 20px;

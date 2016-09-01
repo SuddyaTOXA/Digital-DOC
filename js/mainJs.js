@@ -39,9 +39,66 @@ $(document).ready(function() {
         nav:true,
         items:1
     });
-    // Vector map
+    // tabs
 
+    $(window).on('load resize', function() {
+        var tabsLi = $('.tabs').children('li'),
+            tabsListBoxLi = $('.box-tabs-list').children('li'),
+            tabsMini = $('.tabs-mini'),
+            box = $('.box');
 
+        if ($(window).width() <= '640') {
+            tabsMini.parent().removeClass('visible');
+            tabsLi.removeClass('on');
+            $(".box").attr('style', '');
+
+            tabsMini.unbind('click');
+            tabsMini.click(function() {
+                $(this).next().toggle('500');
+            });
+
+        } if ($(window).width() > '640') {
+            tabsListBoxLi.removeClass('visible');
+            tabsLi.removeClass('on');
+
+            tabsMini.next().attr('style', '');
+
+            tabsLi.first('li').addClass('on');
+            tabsListBoxLi.first('li').addClass('visible');
+
+            var maxHeight = 0;
+            box.each(function(){
+                if ( $(this).height() > maxHeight )
+                {
+                    maxHeight = $(this).height();
+                }
+            });
+            box.height(maxHeight);
+
+            var interval;
+            var timerTab = function (){
+                interval = setInterval(function() {
+                    //get currently-on tab
+                    var onTab = tabsLi.filter('.on');
+                    var onBox = tabsListBoxLi.filter('.visible');
+                    //click either next tab, if exists, else first one
+                    var nextTab = onTab.index() < tabsLi.length-1 ? onTab.next() : tabsLi.first();
+                    nextTab.click();
+                    var nextBox = onBox.index() < tabsListBoxLi.length-1 ? onBox.next() : tabsListBoxLi.first();
+                    nextBox.click();
+                }, 8000);
+            };
+            timerTab();
+
+            tabsLi.click(function() {
+                var liId = $(this).index();
+                $(this).addClass('on').siblings('.on').removeClass('on');
+                tabsListBoxLi.eq(liId).addClass('visible').siblings('.visible').removeClass('visible');
+                clearInterval(interval);
+                timerTab();
+            });
+        }
+    });
 
     //cache a reference to the tabs
 
@@ -142,64 +199,7 @@ $(document).ready(function() {
     });
 
 
-    $(window).on('load resize', function() {
-        var tabsLi = $('.tabs').children('li'),
-            tabsListBoxLi = $('.box-tabs-list').children('li'),
-            tabsMini = $('.tabs-mini'),
-            box = $('.box');
 
-        if ($(window).width() <= '640') {
-            tabsMini.parent().removeClass('visible');
-            tabsLi.removeClass('on');
-            $(".box").attr('style', '');
-
-            tabsMini.unbind('click');
-            tabsMini.click(function() {
-                $(this).next().toggle('500');
-            });
-
-        } if ($(window).width() > '640') {
-            tabsListBoxLi.removeClass('visible');
-            tabsLi.removeClass('on');
-
-            tabsMini.next().attr('style', '');
-
-            tabsLi.first('li').addClass('on');
-            tabsListBoxLi.first('li').addClass('visible');
-
-            var maxHeight = 0;
-            box.each(function(){
-                if ( $(this).height() > maxHeight )
-                {
-                    maxHeight = $(this).height();
-                }
-            });
-            box.height(maxHeight);
-
-            var interval;
-            var timerTab = function (){
-                    interval = setInterval(function() {
-                        //get currently-on tab
-                        var onTab = tabsLi.filter('.on');
-                        var onBox = tabsListBoxLi.filter('.visible');
-                        //click either next tab, if exists, else first one
-                        var nextTab = onTab.index() < tabsLi.length-1 ? onTab.next() : tabsLi.first();
-                        nextTab.click();
-                        var nextBox = onBox.index() < tabsListBoxLi.length-1 ? onBox.next() : tabsListBoxLi.first();
-                        nextBox.click();
-                    }, 8000);
-            };
-            timerTab();
-
-            tabsLi.click(function() {
-                var liId = $(this).index();
-                $(this).addClass('on').siblings('.on').removeClass('on');
-                tabsListBoxLi.eq(liId).addClass('visible').siblings('.visible').removeClass('visible');
-                clearInterval(interval);
-                timerTab();
-            });
-        }
-    });
 
     //range slider
     $('.range-style').jRange({
