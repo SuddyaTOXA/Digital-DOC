@@ -222,11 +222,10 @@
         -o-box-shadow: 0 0 15px -3px rgba(148, 148, 148, 0.5);
         box-shadow: 0 0 15px -3px rgba(148, 148, 148, 0.5);
     }
-    .sidebar-block a:hover .sidebar-block-content-title {
+    .sidebar-block a:hover .sidebar-block-content-title,
+    .sidebar-block a:hover .sidebar-block-bg-img {
         color: #ffcc00;
     }
-    .sidebar-block a:hover .sidebar-block-img { display: none; }
-    .sidebar-block a:hover .sidebar-block-img-hov { display: block; }
 }
 
 @media all and (max-width: 980px) {
